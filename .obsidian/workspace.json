@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "f532bfc06d315a6c",
+        "id": "4e4711a806c1525f",
         "type": "tabs",
         "children": [
           {
-            "id": "3744e8289be95ce7",
+            "id": "f9e4007bc47f2da3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "compose/Custom Layout.md",
+                "file": "compose/Coroutine and LaunchedEffect.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2a127e3f4947688",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "compose/Understanding side effects.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/Custom Layout.md",
+                "file": "compose/Understanding side effects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/Custom Layout.md",
+                "file": "compose/Understanding side effects.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "compose/Custom Layout.md"
+                "file": "compose/Understanding side effects.md"
               }
             }
           },
@@ -156,8 +169,12 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "3744e8289be95ce7",
+  "active": "e2a127e3f4947688",
   "lastOpenFiles": [
+    "compose/Coroutine and LaunchedEffect.md",
+    "compose/Understanding side effects.md",
+    "compose/ViewModel in Compose.md",
+    "compose/Pasted image 20240216204007.png",
     "compose/Custom Layout.md",
     "compose/Modifier.align() in Row and Column and Box.md",
     "compose/Pasted image 20240216184404.png",
