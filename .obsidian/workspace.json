@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "be49a162d16320ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "f532bfc06d315a6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3744e8289be95ce7",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8443dfd609b8c484",
+    "type": "split",
+    "children": [
+      {
+        "id": "34c4f2d6ddac2321",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c07d257c419d4346",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c4bfe2465a5ec5f8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "864a0969a55909c3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "af662a2b6b5e1fb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "71122194b98697eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66a8a01e2fa97cfa",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "288077303f8e2e4b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fd6f2e2fa23ee7da",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e0bed2512dc8e5e6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "08ece8f87735ab8a",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "yet-another-obsidian-synchronizer:YAOS": false
+    }
+  },
+  "active": "3744e8289be95ce7",
+  "lastOpenFiles": [
+    "compose/Modifier.align() in Row and Column and Box.md",
+    "compose/Pasted image 20240216184404.png",
+    "compose/Pasted image 20240216183520.png",
+    "compose/Pasted image 20240216183440.png",
+    "compose/Pasted image 20240216183406.png",
+    "compose/Pasted image 20240216183313.png",
+    "compose/Pasted image 20240216183216.png",
+    "compose/Modifier.md",
+    "compose/Slot Api.md",
+    "compose/State and Recomposition.md",
+    "Configuration Changes.md",
+    "Untitled.canvas",
+    "compose/Pasted image 20240215212807.png",
+    "compose/Pasted image 20240215213100.png",
+    "compose/What is Compose.md",
+    "compose/UDF in compose.md",
+    "compose/Composition Local.md",
+    "0_f2YSQtf6HCz-wa7W.webp",
+    "Untitled 1.canvas",
+    "recomposition.md",
+    "compose",
+    "Welcome.md",
+    "create a link.md"
+  ]
+}
