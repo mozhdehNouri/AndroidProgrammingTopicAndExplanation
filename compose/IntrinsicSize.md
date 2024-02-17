@@ -13,3 +13,6 @@ When this composable is rendered, the height of the Row will be set to the minim
 ![[Pasted image 20240217205918.png]]
 
 ![[Pasted image 20240217205931.png]]
+
+
+To maximize rendering speeds, Compose prohibits a composable from being measured more than once during recomposition. This can be problematic if a parent needs to make sizing decisions before its children have been measured. All composables have a minimum and maximum size at which they can comfortably render their content without that content being clipped or obscured. IntrinsicSize allows a parent to scan its children and identify the minimum and maximum height and width values of its widest and tallest child, and to use that information to configure its own dimensions. 

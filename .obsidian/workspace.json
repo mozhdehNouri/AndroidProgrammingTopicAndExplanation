@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "45d58acbc6f94c75",
+        "id": "5830eda99d63f1c4",
         "type": "tabs",
         "children": [
           {
-            "id": "cf322a9d6d51bb13",
+            "id": "51104513ed73fbd7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/Pasted image 20240217205918.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/Pasted image 20240217205918.png",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "compose/Pasted image 20240217205918.png"
-              }
+              "state": {}
             }
           },
           {
@@ -152,11 +148,11 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c07d257c419d4346",
+  "active": "51104513ed73fbd7",
   "lastOpenFiles": [
-    "compose/Pasted image 20240217205931.png",
     "compose/IntrinsicSize.md",
     "compose/Pasted image 20240217205918.png",
+    "compose/Pasted image 20240217205931.png",
     "compose/Detecting Gestures in Compose.md",
     "compose/Understanding side effects.md",
     "compose/Coroutine and LaunchedEffect.md",
