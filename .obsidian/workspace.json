@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "4e4711a806c1525f",
+        "id": "192f5535dee173a4",
         "type": "tabs",
         "children": [
           {
-            "id": "f9e4007bc47f2da3",
+            "id": "0d5d3c93460f3f86",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compose/Coroutine and LaunchedEffect.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2a127e3f4947688",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compose/Understanding side effects.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/Understanding side effects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/Understanding side effects.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "compose/Understanding side effects.md"
-              }
+              "state": {}
             }
           },
           {
@@ -169,10 +148,10 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "e2a127e3f4947688",
+  "active": "0d5d3c93460f3f86",
   "lastOpenFiles": [
-    "compose/Coroutine and LaunchedEffect.md",
     "compose/Understanding side effects.md",
+    "compose/Coroutine and LaunchedEffect.md",
     "compose/ViewModel in Compose.md",
     "compose/Pasted image 20240216204007.png",
     "compose/Custom Layout.md",
