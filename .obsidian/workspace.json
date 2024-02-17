@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "192f5535dee173a4",
+        "id": "45d58acbc6f94c75",
         "type": "tabs",
         "children": [
           {
-            "id": "0d5d3c93460f3f86",
+            "id": "cf322a9d6d51bb13",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "compose/Pasted image 20240217205918.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "compose/Pasted image 20240217205918.png",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "compose/Pasted image 20240217205918.png"
+              }
             }
           },
           {
@@ -148,8 +152,12 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "0d5d3c93460f3f86",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
+    "compose/Pasted image 20240217205931.png",
+    "compose/IntrinsicSize.md",
+    "compose/Pasted image 20240217205918.png",
+    "compose/Detecting Gestures in Compose.md",
     "compose/Understanding side effects.md",
     "compose/Coroutine and LaunchedEffect.md",
     "compose/ViewModel in Compose.md",
@@ -168,11 +176,9 @@
     "Configuration Changes.md",
     "Untitled.canvas",
     "compose/Pasted image 20240215212807.png",
-    "compose/Pasted image 20240215213100.png",
     "compose/What is Compose.md",
     "compose/UDF in compose.md",
     "compose/Composition Local.md",
-    "0_f2YSQtf6HCz-wa7W.webp",
     "Untitled 1.canvas",
     "recomposition.md",
     "compose",
