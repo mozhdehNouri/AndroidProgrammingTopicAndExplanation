@@ -34,3 +34,10 @@ scpecially happend on scroll,which will lead to janky frames.
 
 
 
+Imprtant link for checking imporove recomposition in android:
+https://www.youtube.com/watch?v=EOQB8PTLkpY
+https://www.youtube.com/watch?v=Z96wfbID_Yc
+https://medium.com/androiddevelopers/jetpack-compose-debugging-recomposition-bfcf4a6f8d37
+
+compose lifecycle:
+https://developer.android.com/jetpack/compose/lifecycle#:~:text=Compose%20provides%20a%20way%20for,that%20instance%20in%20the%20composition.
