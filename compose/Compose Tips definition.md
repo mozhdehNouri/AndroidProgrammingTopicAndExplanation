@@ -45,3 +45,32 @@ note :Composable functions don’t build and return UI. They simply emit data to
 Positional memoization:
 
 Positional memoization is a form of function memoization. Function memoization is the ability of a function to cache its result based on its inputs, so it does not need to be computed again everytime the function is called for the same inputs.
+
+Positional memoization allows the runtime to remember Composable functions by design. Any Composable function inferred as restartable by the Compose compiler should also be skippable, hence automatically remembered. Compose is built on top of this mechanism.
+Positional memoization allows the runtime (presumably the Compose runtime in this case) to remember Composable functions by design. In the context of functional programming, memoization is a technique that involves caching the results of function calls based on their input parameters, in order to improve performance by avoiding redundant computations.
+
+The sentence also suggests that any Composable function inferred as restartable by the Compose compiler should also be skippable, hence automatically remembered. This implies that the Compose compiler is able to determine which functions can be restarted and skipped, and ensures they are automatically remembered for efficient processing.
+
+Finally, the sentence states that Compose is built on top of this mechanism, suggesting that positional memoization is a fundamental part of the implementation and functioning of Compose. This mechanism is likely used to optimize the performance and behavior of Composable functions within the Compose framework.
+
+---
+we can write our composable like this :
+```kt
+val textComposable: @Composable (String) -> Unit = {
+Text(
+ text = it,
+ style = MaterialTheme.typography.subtitle1
+ )
+ }
+
+ @Composable
+ fun NamePlate(name: String, lastname: String) {
+ Column(modifier = Modifier.padding(16.dp)) {
+ Text(
+ text = name,
+ style = MaterialTheme.typography.h6
+ )
+ textComposable(lastname)
+ }
+ }
+```
