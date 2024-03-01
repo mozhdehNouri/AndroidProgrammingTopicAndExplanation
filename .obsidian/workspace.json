@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "31caecb546da24fe",
+        "id": "9bab3f76ee131cd2",
         "type": "tabs",
         "children": [
           {
-            "id": "c05ec724b6a07d8e",
+            "id": "d5ab7e0d0654b47b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "compose/Recompostion.md",
+                "file": "compose/Important knowledge from compose.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/Recompostion.md",
+                "file": "compose/Important knowledge from compose.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/Recompostion.md",
+                "file": "compose/Important knowledge from compose.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "compose/Recompostion.md"
+                "file": "compose/Important knowledge from compose.md"
               }
             }
           },
@@ -156,8 +156,13 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c05ec724b6a07d8e",
+  "active": "d5ab7e0d0654b47b",
   "lastOpenFiles": [
+    "Screenshot (386).png",
+    "Screenshot (385).png",
+    "Screenshot (384).png",
+    "compose/Important knowledge from compose.md",
+    "compose/compose new.md",
     "compose/Recompostion.md",
     "compose/Compose compiler.md",
     "compose/Compose Tips definition.md",
@@ -178,8 +183,6 @@
     "compose/Pasted image 20240216184404.png",
     "compose/Pasted image 20240216183520.png",
     "compose/Pasted image 20240216183440.png",
-    "compose/Pasted image 20240216183406.png",
-    "compose/Pasted image 20240216183313.png",
     "compose/Modifier.md",
     "compose/Slot Api.md",
     "compose/State and Recomposition.md",

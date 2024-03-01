@@ -73,3 +73,9 @@ Here when selected is changed, the nearest “restartable” function/compositio
 links:
 https://github.com/androidx/androidx/blob/androidx-main/compose/compiler/design/compiler-metrics.md#functions-that-are-restartable-but-not-skippable
 https://github.com/androidx/androidx/blob/androidx-main/compose/docs/compose-api-guidelines.md#stable-types
+
+
+**Restartable**
+A ‘restartable’ function is the basis of recomposition. When Compose detects that the function inputs change, Compose restarts (re-invokes) the function with the new inputs.
+
+Going a bit deeper into how Compose works, a restartable function marks the boundary of a composition ‘scope’. The ‘scope’ in which a Snapshot (i.e MutableState) is read in is important, as it defines what block of code is restarted when the snapshot changes. Ideally a snapshot change would trigger a restart in the closest function/lambda possible, allowing the smallest amount of code to be re-run. If the host code block is not restartable, Compose then needs to traverse up the tree to find the nearest ancestor restartable ‘scope’. This could mean then that a lot of functions would need to be re-run. In practice, nearly all @Composable functions are restartable.
