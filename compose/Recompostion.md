@@ -68,3 +68,8 @@ fun ContactRow(contact: Contact, modifier: Modifier = Modifier) {
 }
 ```
 Here when selected is changed, the nearest “restartable” function/composition scope to where the state is actually read is ContactRow. You might be wondering why Row is not being selected as the nearest restartable scope? Row (as well as many other foundation composables like Column and Box) is actually an inline function, inline functions are not restartable scopes as they don’t actually end up being functions after compilation. So ContactRow is the next highest scope and therefore ContactRow re-executes. The first composable it sees is Row, as already detailed this is not a restartable scope, this also means it is not skippable and is always re-executed on recomposition. The next composable is ContactDetails, ContactDetails has been tagged as skippable because the Contact class has been inferred as immutable, so the generated code added by the Compose compiler checks if any of the composables parameters have changed. As contact has remained the same, ContactDetails is skipped. Next, ToggleButton. ToggleButton is skippable but in this case it does not matter, one of its parameters, selected, has changed and as such it is re-executed. That brings us to the end of our restartable function/scope and the recomposition ends.
+
+
+links:
+https://github.com/androidx/androidx/blob/androidx-main/compose/compiler/design/compiler-metrics.md#functions-that-are-restartable-but-not-skippable
+https://github.com/androidx/androidx/blob/androidx-main/compose/docs/compose-api-guidelines.md#stable-types
