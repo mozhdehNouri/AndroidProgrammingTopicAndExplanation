@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e806c5890fe669a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "What is composition tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/Important knowledge from compose.md",
+                "file": "What is composition tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/Important knowledge from compose.md",
+                "file": "What is composition tree.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "compose/Important knowledge from compose.md"
+                "file": "What is composition tree.md"
               }
             }
           },
@@ -156,12 +169,13 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "d5ab7e0d0654b47b",
+  "active": "e806c5890fe669a4",
   "lastOpenFiles": [
+    "compose/Important knowledge from compose.md",
+    "What is composition tree.md",
     "Screenshot (386).png",
     "Screenshot (385).png",
     "Screenshot (384).png",
-    "compose/Important knowledge from compose.md",
     "compose/compose new.md",
     "compose/Recompostion.md",
     "compose/Compose compiler.md",
@@ -182,7 +196,6 @@
     "compose/Modifier.align() in Row and Column and Box.md",
     "compose/Pasted image 20240216184404.png",
     "compose/Pasted image 20240216183520.png",
-    "compose/Pasted image 20240216183440.png",
     "compose/Modifier.md",
     "compose/Slot Api.md",
     "compose/State and Recomposition.md",

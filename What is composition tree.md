@@ -1,0 +1,1 @@
+The Composition is a tree-structure that consists of the composables that describe your UI. Next to the Composition, there exists a parallel tree, called the Semantics tree. This tree describes your UI in an alternative manner that is understandable for Accessibility services and for the Testing framework.
