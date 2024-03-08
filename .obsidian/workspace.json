@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "9bab3f76ee131cd2",
+        "id": "296548fea6012318",
         "type": "tabs",
         "children": [
           {
-            "id": "d5ab7e0d0654b47b",
+            "id": "78ea0d148fa20161",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compose/Important knowledge from compose.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e806c5890fe669a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "What is composition tree.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "What is composition tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "What is composition tree.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "What is composition tree.md"
-              }
+              "state": {}
             }
           },
           {
@@ -169,45 +148,55 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "e806c5890fe669a4",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
+    "coroutine-flow/flow/BasicFlowKonwlodge.md",
+    "coroutine-flow/flow/Flow_question_answer.md",
+    "coroutine-flow/flow/TerminalOperator.md",
+    "coroutine-flow/flow/AsLiveDataOpertor.md",
+    "coroutine-flow/flow/HotFlowAndHotFlows.md",
+    "coroutine-flow/flow/StateFlow.md",
+    "coroutine-flow/flow/SharedFlow.md",
+    "coroutine-flow/flow/IntermediateOperator.md",
+    "coroutine-flow/flow/FlowOn.md",
+    "coroutine-flow/flow/FlowBuilder.md",
+    "coroutine-flow/flow/FlowLifecycleOperatot.md",
+    "coroutine-flow/flow/ConflateOperator.md",
+    "coroutine-flow/flow/BufferOperator.md",
+    "coroutine-flow/flow/ComposeFlow.md",
+    "coroutine-flow/flow",
+    "coroutine-flow/New folder",
+    "coroutine-flow/SuspendFunction.md",
+    "coroutine-flow/CoroutineMostQuestion.md",
+    "coroutine-flow/BasicDescription.md",
+    "coroutine-flow/CoroutineBuilderExplanation.md",
+    "coroutine-flow/CoroutineContext.md",
+    "coroutine-flow",
+    "New folder",
+    "all_studing/android/architecture/domainLayer.md",
     "compose/Important knowledge from compose.md",
-    "What is composition tree.md",
+    "all_studing/README.md",
+    "all_studing/interviewAnswer.md",
+    "all_studing/cleanCodeSummery.md",
+    "all_studing/androidRoadMapLearning.md",
+    "all_studing/kotlin/coroutine/FlowInDepth-StateFlowAndSharedFlow.md",
+    "all_studing/kotlin/coroutine",
+    "all_studing/kotlin/anotation",
+    "all_studing/kotlin",
+    "all_studing/common",
+    "all_studing/atomatic-kotlin",
+    "all_studing/android/question",
     "Screenshot (386).png",
     "Screenshot (385).png",
     "Screenshot (384).png",
-    "compose/compose new.md",
-    "compose/Recompostion.md",
-    "compose/Compose compiler.md",
-    "compose/Compose Tips definition.md",
-    "compose/Side Effect.md",
     "Pasted image 20240229192556.png",
     "Pasted image 20240229192345.png",
-    "compose/everything about recompostion.md",
-    "compose/IntrinsicSize.md",
     "compose/Pasted image 20240217205918.png",
     "compose/Pasted image 20240217205931.png",
-    "compose/Detecting Gestures in Compose.md",
-    "compose/Understanding side effects.md",
-    "compose/Coroutine and LaunchedEffect.md",
-    "compose/ViewModel in Compose.md",
     "compose/Pasted image 20240216204007.png",
-    "compose/Custom Layout.md",
-    "compose/Modifier.align() in Row and Column and Box.md",
     "compose/Pasted image 20240216184404.png",
     "compose/Pasted image 20240216183520.png",
-    "compose/Modifier.md",
-    "compose/Slot Api.md",
-    "compose/State and Recomposition.md",
-    "Configuration Changes.md",
     "Untitled.canvas",
-    "compose/What is Compose.md",
-    "compose/UDF in compose.md",
-    "compose/Composition Local.md",
-    "Untitled 1.canvas",
-    "recomposition.md",
-    "compose",
-    "Welcome.md",
-    "create a link.md"
+    "Untitled 1.canvas"
   ]
 }

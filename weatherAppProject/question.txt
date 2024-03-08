@@ -1,0 +1,4 @@
+for providing interface which one use @Proivde or @ Bins
+why @bind needs abstract class and why
+-----
+We can not create an object of the interfaceor abstract class. So we can not direct inject any interfaceor abstract class. So we have to provide implementation of the interface or abstract class
