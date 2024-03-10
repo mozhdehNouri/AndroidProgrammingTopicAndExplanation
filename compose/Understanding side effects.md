@@ -25,4 +25,27 @@ LaunchedEffect(key1, key2, ...) {
 The key parameter values (of which there must be at least one) control the behavior of the coroutine through recompositions. As long as the values of any of the key parameters remain unchanged, LaunchedEffect will keep 
 the same coroutine running through multiple recompositions of the parent composable. If a key value changes, however, LaunchedEffect will cancel the current coroutine and launch a new one.
 
+----
+Compose Internal Book:
 
+a side effect is anything that escapes the control and scope of a function.side effects make functions non-deterministic, and therefore they make it hard for developers to reason about code.
+
+As we have described already, the problem on doing it right in the Composable function body is that we don’t have any control on when this effect runs, so it’ll run on every composition / recomposition, and will never get disposed, opening the door to potential leaks.
+
+Any composable enters the composition when materialized on screen, and finally leaves the composition when removed from the UI tree. Between both events, effects might run. Some effects can outlive the composable lifecycle, so you can span an effect across compositions.
+
+We could divide effect handlers in two categories:
+ - Non suspended effects: E.g: Run a side effect to initialize a callback when the Composable enters the composition, dispose it when it leaves.
+ - Suspended effects: E.g: Load data from network to feed some UI state.
+
+
+**Non suspended effects**:
+
+DisposableEffect:
+It represents a side effect of the composition lifecycle.
+
+• Used for non suspended effects that require being disposed.
+• Fired the first time (when composable enters composition) and then every time its keys change.
+• Requires onDispose callback at the end. It is disposed when the composable leaves the
+composition, and also on every recomposition when its keys have changed. In that case, the
+effect is disposed and relaunched.

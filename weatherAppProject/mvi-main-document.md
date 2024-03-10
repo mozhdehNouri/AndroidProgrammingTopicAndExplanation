@@ -74,7 +74,7 @@ design.
   the intention to perform**Model**functions.
 
 - **Model**: The definition of**Model**in MVI is completely different compared to MVP and MVVM. In
-  MVI,**Model**is a functional mechanism that takes the output from**Intent**and manipulates it to
+  MVI,**Model** is a functional mechanism that takes the output from **Intent** and manipulates it to
   UI states that could be rendered in**View**. The UI states are immutable and come from business
   logic, which follows **single source of truth** and **unidirectional data flow**.
 
