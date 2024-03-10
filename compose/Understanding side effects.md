@@ -46,6 +46,6 @@ It represents a side effect of the composition lifecycle.
 
 • Used for non suspended effects that require being disposed.
 • Fired the first time (when composable enters composition) and then every time its keys change.
-• Requires onDispose callback at the end. It is disposed when the composable leaves the
-composition, and also on every recomposition when its keys have changed. In that case, the
-effect is disposed and relaunched.
+• Requires onDispose callback at the end. It is disposed when the composable leaves the composition, and also on every recomposition when its keys have changed. In that case, theeffect is disposed and relaunched.
+
+If you’d want to only run the effect once when entering the composition and dispose it when leaving you could pass a constant as the key: DisposableEffect(true) or DisposableEffect(Unit). Note that DisposableEffect always requires at least one key.
