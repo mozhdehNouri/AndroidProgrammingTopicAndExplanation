@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "296548fea6012318",
+        "id": "72fe40099ae7716b",
         "type": "tabs",
         "children": [
           {
-            "id": "78ea0d148fa20161",
+            "id": "2ce9783d9848d9d0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "compose/Recompostion.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "compose/Recompostion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "compose/Recompostion.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "compose/Recompostion.md"
+              }
             }
           },
           {
@@ -144,11 +152,17 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c07d257c419d4346",
+  "active": "2ce9783d9848d9d0",
   "lastOpenFiles": [
+    "compose/Compose compiler.md",
+    "compose/What is Compose.md",
+    "compose/everything about recompostion.md",
+    "compose/Important knowledge from compose.md",
+    "Untitled.md",
     "coroutine-flow/flow/BasicFlowKonwlodge.md",
     "coroutine-flow/flow/Flow_question_answer.md",
     "coroutine-flow/flow/TerminalOperator.md",
@@ -173,12 +187,7 @@
     "coroutine-flow",
     "New folder",
     "all_studing/android/architecture/domainLayer.md",
-    "compose/Important knowledge from compose.md",
     "all_studing/README.md",
-    "all_studing/interviewAnswer.md",
-    "all_studing/cleanCodeSummery.md",
-    "all_studing/androidRoadMapLearning.md",
-    "all_studing/kotlin/coroutine/FlowInDepth-StateFlowAndSharedFlow.md",
     "all_studing/kotlin/coroutine",
     "all_studing/kotlin/anotation",
     "all_studing/kotlin",
