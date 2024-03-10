@@ -144,8 +144,7 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "yet-another-obsidian-synchronizer:YAOS": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "c07d257c419d4346",
