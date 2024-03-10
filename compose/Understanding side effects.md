@@ -87,3 +87,14 @@ fun Counter() {
     }
 }
 ```
+**LaunchedEffect:**
+This is the suspending variant for loading the initial state of a Composable, as soon as it enters the composition.
+Runs the effect when entering the composition.
+• Cancels the effect when leaving the composition.
+• Cancels and relaunches the effect when key/s change/s.
+• Useful to span a job across recompositions.
+• Runs the effect on the applier dispatcher (Usually AndroidUiDispatcher.Main²¹) when entering
+
+The effect runs once when entering then once again every time the key varies,
+since our effect depends on its value. It’ll get cancelled when leaving the composition.
+Remember that it’s also cancelled every time it needs to be relaunched. LaunchedEffect requires at least one key.
