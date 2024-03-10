@@ -41,7 +41,7 @@ We could divide effect handlers in two categories:
 
 **Non suspended effects**:
 
-DisposableEffect:
+**DisposableEffect:**
 It represents a side effect of the composition lifecycle.
 
 • Used for non suspended effects that require being disposed.
@@ -49,3 +49,41 @@ It represents a side effect of the composition lifecycle.
 • Requires onDispose callback at the end. It is disposed when the composable leaves the composition, and also on every recomposition when its keys have changed. In that case, theeffect is disposed and relaunched.
 
 If you’d want to only run the effect once when entering the composition and dispose it when leaving you could pass a constant as the key: DisposableEffect(true) or DisposableEffect(Unit). Note that DisposableEffect always requires at least one key.
+
+**SideEffect:**
+
+Another side effect of the composition. This one is a bit special since it’s like a “fire on this composition or forget”. If the composition fails for any reason, it is discarded.
+If you are a bit familiar with the internals of the Compose runtime, note that it’s an effect not stored in the slot table, meaning it does not outlive the composition, and it will not get retried in future across compositions or anything like that.
+
+• Used for effects that do not require disposing.
+• Runs after every single composition / recomposition.
+• Useful to publishing updates to external states.
+note:We can understand SideEffect as an effect handler meant to publish updates to some external state
+not managed by the compose State system to keep it always on sync.
+
+SideEffect is a Composable function that allows us to execute a side effect when its parent Composable is recomposed. A side effect is an operation that does not affect the UI directly, such as logging, analytics, or updating the external state. This function is useful for executing operations that do not depend on the Composable’s state or props.
+
+When a Composable is recomposed, all the code inside the Composable function is executed again, including any side effects. However, the UI will only be updated with the changes that have been made to the state or props of the Composable.
+Be aware that, the side effect triggers only when the current composable function is recomposed and not for any nested Composable functions. This means that if you have a Composable function that calls another Composable function, the SideEffect in the outer Composable function will not be triggered when the inner Composable function is recomposed
+
+```kt
+@Composable
+fun Counter() {
+    // Define a state variable for the count
+    val count = remember { mutableStateOf(0) }
+
+    // Use SideEffect to log the current value of count
+    SideEffect {
+        // Called on every recomposition
+        log("Count is ${count.value}")
+    }
+
+    Column {
+        Button(onClick = { count.value++ }) {
+            // This recomposition doesn't trigger the outer side effect
+            // every time button has been tapped
+            Text("Increase Count ${count.value}")
+        }
+    }
+}
+```
