@@ -89,7 +89,7 @@ fun Counter() {
 ```
 **LaunchedEffect:**
 This is the suspending variant for loading the initial state of a Composable, as soon as it enters the composition.
-Runs the effect when entering the composition.
+- Runs the effect when entering the composition.
 • Cancels the effect when leaving the composition.
 • Cancels and relaunches the effect when key/s change/s.
 • Useful to span a job across recompositions.
@@ -98,3 +98,65 @@ Runs the effect when entering the composition.
 The effect runs once when entering then once again every time the key varies,
 since our effect depends on its value. It’ll get cancelled when leaving the composition.
 Remember that it’s also cancelled every time it needs to be relaunched. LaunchedEffect requires at least one key.
+
+
+**currentRecomposeScope:**
+This is more an effect itself than an effect handler, but it’s interesting to cover.
+As an Android dev you might be familiar with the View system invalidate counterpart, which essentially enforces a new measuring, layout and drawing passes on your view. It was heavily used to create frame based animations using the Canvas, for example. So on every drawing tick you’d invalidate the view and therefore draw again based on some elapsed time. The currentRecomposeScope is an interface with a single purpose:
+```kt
+ interface RecomposeScope {
+ /**
+* Invalidate the corresponding scope, requesting the composer recompose      this sc\
+ ope.
+ */
+ fun invalidate()
+ }
+
+```
+So by calling currentRecomposeScope.invalidate() it will invalidate composition locally enforces recomposition.
+It can be useful when using a source of truth that is not a compose State snapshot.
+
+```kt
+interface Presenter {
+ fun loadUser(after: @Composable () -> Unit): User
+ }
+
+ @Composable
+ fun MyComposable(presenter: Presenter) {
+ val user = presenter.loadUser { currentRecomposeScope.invalidate() } // not  State!
+
+ Text("The loaded user: ${user.name}")
+ }
+```
+**Suspended effects:**
+
+**rememberCoroutineScope:**
+This call creates a CoroutineScope used to create jobs that can be thought as children of the composition.
+• Used to run suspended effects bound to the composition lifecycle.
+• Creates CoroutineScope bound to this composition lifecycle.
+• The scope is cancelled when leaving the composition.
+• Same scope is returned across compositions, so we can keep submitting more tasks to it and all ongoing ones will be cancelled when finally leaving.
+• Useful to launch jobs in response to user interactions.
+• Runs the effect on the applier dispatcher (Usually AndroidUiDispatcher.Main²⁰) when entering.
+
+The difference with LaunchedEffect is that LaunchedEffect is used for scoping jobs
+initiated by the composition, while rememberCoroutineScope is thought for scoping jobs initiated by a user interaction.
+
+
+**produceState:**
+Use launchEffect internally and this build top on  LaunchedEffect.
+• Used when your LaunchedEffect ends up feeding a State (which is most of the time).
+• Relies on LaunchedEffect.
+
+```kt
+@Composable
+ fun SearchScreen(eventId: String) {
+ val uiState = produceState(initialValue = emptyList<Speaker>(), eventId) {
+ viewModel.loadSpeakers(eventId) // suspended effect
+ }
+
+ ItemsVerticalList(uiState.value)
+ }
+```
+You can provide a default value for the state, and also one or multiple keys.
+The only gotcha is that produceState allows to not pass any key, and in that case it will call LaunchedEffect with Unit as the key, making it span across compositions. Keep that in mind since the API surface does not make it explicit.
