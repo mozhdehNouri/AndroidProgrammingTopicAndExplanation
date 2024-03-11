@@ -28,6 +28,8 @@ the same coroutine running through multiple recompositions of the parent composa
 ----
 Compose Internal Book:
 
+A side-effect in Compose is a change to the state of the app that happens outside the scope of a composable function.
+
 a side effect is anything that escapes the control and scope of a function.side effects make functions non-deterministic, and therefore they make it hard for developers to reason about code.
 
 As we have described already, the problem on doing it right in the Composable function body is that we don’t have any control on when this effect runs, so it’ll run on every composition / recomposition, and will never get disposed, opening the door to potential leaks.
@@ -160,3 +162,71 @@ Use launchEffect internally and this build top on  LaunchedEffect.
 ```
 You can provide a default value for the state, and also one or multiple keys.
 The only gotcha is that produceState allows to not pass any key, and in that case it will call LaunchedEffect with Unit as the key, making it span across compositions. Keep that in mind since the API surface does not make it explicit.
+
+
+**derivedStateOf:**
+derivedStateOf creates a new Compose state object you can observe that only updates as much as you need. In this way, it acts similarly to the Kotlin Flows distinctUntilChanged() operator. Caution: derivedStateOf is expensive, and you should only use it to avoid unnecessary recomposition when a result hasn't changed.
+This is where derivedStateOf comes in. Our state is changing more than we need our UI to update and so derivedStateOf can be used for this to reduce the number of recompositions.
+
+```kt
+var username by remember { mutableStateOf("") }
+val submitEnabled = remember {
+  derivedStateOf { isUsernameValid(username) }
+}
+```
+derivedStateOf helps to avoid unnecessary recompositions to achieve better performance.
+derivedStateOf{} is used when a compose state is derived from another compose state and the derived state is changing less frequently than the source state. derivedStateOf executes calculations block every time when internal state changes but the composable function will recompose only when the calculated value changes. This reduces the unnecessary recompositions making sure that composable should only recompose when it’s really required. To summarize, the following are important points.
+
+`derivedStateOf` is a function in Android Compose used to calculate derived state based on one or more observable state objects. It is beneficial when you want to update UI elements only when specific state changes occur without recomposing the entire composable function. You should use `derivedStateOf` when:
+
+1. Your UI depends on complex calculations or transformations of observable state objects.
+
+2. You want to avoid unnecessary recompositions when only specific parts of your state change.
+
+3. You need to optimize performance by preventing excessive recomposition.
+
+**snapshotFlow: convert Compose's State into Flows**
+
+Use snapshotFlow to convert State<T> objects into a cold Flow. snapshotFlow runs its block when collected and emits the result of the State objects read in it. When one of the State objects read inside the snapshotFlow block mutates, the Flow will emit the new value to its collector if the new value is not equal to the previous emitted value (this behavior is similar to that of Flow.distinctUntilChanged).
+
+ ```kotlin
+ val listState = rememberLazyListState()
+
+LazyColumn(state = listState) {
+    // ...
+}
+
+LaunchedEffect(listState) {
+    snapshotFlow { listState.firstVisibleItemIndex }
+        .map { index -> index > 0 }
+        .distinctUntilChanged()
+        .filter { it == true }
+        .collect {
+            MyAnalyticsService.sendScrolledPastFirstItemEvent()
+        }
+}
+```
+
+one or important usecase for useing this is use powerful flow operator.
+
+
+
+**rememberUpdatedState:**
+
+rememberUpdatedState is used when we want to keep an updated reference to a variable in a long-running side-effect without having the side-effect to restart on recomposition
+
+
+remember is needed when you don't want to do some heavy calculation/operation when your composable is recomposed. On the other hand, sometimes your operation might change so you need to do calculations or update remembered values to make sure not to use obsolete values from the initial calculation.
+
+remember - allows you to remember state from previous recompose invocation and just this. So, if you for instance randomize color at initial run. The randomized color is going to be calculated only once and later reused whenever re-compose is necessary.
+
+remember = store the value just in case recompose is called.
+
+Now, the second important thing is knowing when reCompose should actually be triggered and there the mutable states come to help.
+
+mutablestate = store the value and in case I update value trigger, recompose for all elements using this data.
+
+
+
+
+

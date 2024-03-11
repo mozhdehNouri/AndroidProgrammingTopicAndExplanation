@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0990750368a7a6d8",
+        "id": "d531c88e04f567cb",
         "type": "tabs",
         "children": [
           {
-            "id": "086d385c377e35cb",
+            "id": "429c733e75fa1622",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "af662a2b6b5e1fb2",
@@ -156,11 +157,11 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "086d385c377e35cb",
+  "active": "429c733e75fa1622",
   "lastOpenFiles": [
+    "compose/Understanding side effects.md",
     "weatherAppProject/mvi-main-document.md",
     "weatherAppProject/mvi-main-document.rar",
-    "compose/Understanding side effects.md",
     "compose/Recompostion.md",
     "compose/Compose compiler.md",
     "compose/What is Compose.md",
