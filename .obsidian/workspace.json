@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9ec21589deac457f",
+        "id": "c0fbdc3f13cbca20",
         "type": "tabs",
         "children": [
           {
-            "id": "8f23a3a358be3117",
+            "id": "d9efd8d9baacb7e9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "compose/Effects from Google explain.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "compose/Effects from Google explain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "compose/Effects from Google explain.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "compose/Effects from Google explain.md"
+              }
             }
           },
           {
@@ -148,10 +156,13 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "8f23a3a358be3117",
+  "active": "d9efd8d9baacb7e9",
   "lastOpenFiles": [
+    "compose/Effects from Google explain.md",
+    "compose/Understanding side effects.md",
+    "Untitled 1.md",
+    "compose/State and Recomposition.md",
     "What is composition tree.md",
-    "Untitled.md",
     "performance-issue/Reason of performance issue.md",
     "performance-issue/Pasted image 20240305155712.png",
     "performance-issue/Pasted image 20240305155117.png",
@@ -184,11 +195,8 @@
     "coroutine-flow/CoroutineMostQuestion.md",
     "coroutine-flow/BasicDescription.md",
     "coroutine-flow/CoroutineBuilderExplanation.md",
-    "coroutine-flow/CoroutineContext.md",
     "coroutine-flow",
     "New folder",
-    "all_studing/android/architecture/domainLayer.md",
-    "compose/Important knowledge from compose.md",
     "all_studing/kotlin/coroutine",
     "all_studing/kotlin/anotation",
     "all_studing/kotlin",
