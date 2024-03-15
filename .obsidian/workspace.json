@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d531c88e04f567cb",
+        "id": "9ec21589deac457f",
         "type": "tabs",
         "children": [
           {
-            "id": "429c733e75fa1622",
+            "id": "8f23a3a358be3117",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compose/Understanding side effects.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "af662a2b6b5e1fb2",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/Understanding side effects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/Understanding side effects.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "compose/Understanding side effects.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,17 +148,22 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "429c733e75fa1622",
+  "active": "8f23a3a358be3117",
   "lastOpenFiles": [
-    "compose/Understanding side effects.md",
-    "weatherAppProject/mvi-main-document.md",
-    "weatherAppProject/mvi-main-document.rar",
-    "compose/Recompostion.md",
-    "compose/Compose compiler.md",
-    "compose/What is Compose.md",
-    "compose/everything about recompostion.md",
-    "compose/Important knowledge from compose.md",
+    "What is composition tree.md",
     "Untitled.md",
+    "performance-issue/Reason of performance issue.md",
+    "performance-issue/Pasted image 20240305155712.png",
+    "performance-issue/Pasted image 20240305155117.png",
+    "performance-issue/Pasted image 20240305154126.png",
+    "performance-issue/Pasted image 20240305154037.png",
+    "performance-issue/Pasted image 20240305151442.png",
+    "performance-issue/Pasted image 20240304152802.png",
+    "performance-issue/Pasted image 20240304152647.png",
+    "performance-issue/Pasted image 20240304140320.png",
+    "performance-issue/Identifying Indicators of Performance Issues.md",
+    "performance-issue/Functional Approach.md",
+    "performance-issue",
     "coroutine-flow/flow/BasicFlowKonwlodge.md",
     "coroutine-flow/flow/Flow_question_answer.md",
     "coroutine-flow/flow/TerminalOperator.md",
@@ -188,8 +184,11 @@
     "coroutine-flow/CoroutineMostQuestion.md",
     "coroutine-flow/BasicDescription.md",
     "coroutine-flow/CoroutineBuilderExplanation.md",
+    "coroutine-flow/CoroutineContext.md",
     "coroutine-flow",
     "New folder",
+    "all_studing/android/architecture/domainLayer.md",
+    "compose/Important knowledge from compose.md",
     "all_studing/kotlin/coroutine",
     "all_studing/kotlin/anotation",
     "all_studing/kotlin",
@@ -197,14 +196,6 @@
     "all_studing/atomatic-kotlin",
     "Screenshot (386).png",
     "Screenshot (385).png",
-    "Screenshot (384).png",
-    "Pasted image 20240229192556.png",
-    "Pasted image 20240229192345.png",
-    "compose/Pasted image 20240217205918.png",
-    "compose/Pasted image 20240217205931.png",
-    "compose/Pasted image 20240216204007.png",
-    "compose/Pasted image 20240216184404.png",
-    "compose/Pasted image 20240216183520.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
