@@ -62,6 +62,9 @@ We could divide effect handlers in two categories:
 If you’d want to only run the effect once when entering the composition and dispose it when leaving you could pass a constant as the key: DisposableEffect(true) or DisposableEffect(Unit).
 Note that DisposableEffect always requires at least one key.
 
+DisposableEffect is a Composable function that executes a side effect when its parent Composable is first rendered, and disposes of the effect when the Composable is removed from the UI hierarchy. This function is useful for managing resources that need to be cleaned up when a Composable is no longer in use, such as event listeners or animations.
+
+
 **SideEffect:**
 
 Another side effect of the composition. This one is a bit special since it’s like a “fire on this composition or forget”. If the composition fails for any reason, it is discarded. If you are a bit familiar with the internals of the Compose runtime, note that it’s an effect not stored
@@ -75,6 +78,12 @@ SideEffect is a Composable function that allows us to execute a side effect when
 SideEffect is used to publish compose state to non-compose code. The SideEffect is triggered on every recomposition and it is not a coroutine scope, so suspend functions cannot be used within it.
 We can understand SideEffect as an effect handler meant to publish updates to some external state not managed by the compose State system to keep it always on sync.
 
+**SideEffect is basically, a kind of LaunchedEffect. It launches in every recomposition and saves us from creating a state for LaunchedEffect.**
+
+
+SideEffect is a Composable function that allows us to execute a side effect when its parent Composable is recomposed. A side effect is an operation that does not affect the UI directly, such as logging, analytics, or updating the external state. This function is useful for executing operations that do not depend on the Composable’s state or props.
+
+When a Composable is recomposed, all the code inside the Composable function is executed again, including any side effects. However, the UI will only be updated with the changes that have been made to the state or props of the Composable.
 
 **LaunchedEffect:**
 
@@ -91,4 +100,9 @@ Remember that it’s also cancelled every time it needs to be relaunched. Launch
 **Running suspend functions in composable lifecycle scope.**
 LaunchedEffect is one of the most used side effects. As the name suggests, it launches when composition starts for the first time and can call suspend functions. Moreover, we can relaunch it with giving a key parameter(It relaunches when given key changes).
 
+**What’s the logic behind the key parameter?**
+The key parameter in LaunchedEffect is used to identify the LaunchedEffect instance and prevent it from being recomposed unnecessarily.
 
+When a Composable is recomposed, Jetpack Compose determines if it needs to be redrawn. If a Composable’s state or props have changed, or if a Composable has called invalidate, Jetpack Compose will redraw the Composable. Redrawing a Composable can be an expensive operation, especially if the Composable contains long-running operations or side effects that don't need to be re-executed every time the Composable is recomposed.
+
+By providing a key parameter to LaunchedEffect, we can specify a value that uniquely identifies the LaunchedEffect instance. If the value of the key parameter changes, Jetpack Compose will consider the LaunchedEffect instance as a new instance, and will execute the side effect again. If the value of the key parameter remains the same, Jetpack Compose will skip the execution of the side effect and reuse the previous result, preventing unnecessary recompositions.
