@@ -87,3 +87,8 @@ This is the suspending variant for loading the initial state of a Composable, as
 
 Not much to say. The effect runs once when entering then once again every time the key varies, since our effect depends on its value. It’ll get cancelled when leaving the composition.
 Remember that it’s also cancelled every time it needs to be relaunched. LaunchedEffect requires at least one key.
+
+**Running suspend functions in composable lifecycle scope.**
+LaunchedEffect is one of the most used side effects. As the name suggests, it launches when composition starts for the first time and can call suspend functions. Moreover, we can relaunch it with giving a key parameter(It relaunches when given key changes).
+
+
