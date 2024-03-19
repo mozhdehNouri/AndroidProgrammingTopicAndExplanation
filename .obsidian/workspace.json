@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e80456c62dabeb06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "General.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "room-database/SQL Concepts.md",
+                "file": "General.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "room-database/SQL Concepts.md",
+                "file": "General.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "room-database/SQL Concepts.md"
+                "file": "General.md"
               }
             }
           },
@@ -169,10 +181,11 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "152aec32a0c4eeca",
+  "active": "e80456c62dabeb06",
   "lastOpenFiles": [
-    "compose/Effects from Google explain.md",
     "room-database/SQL Concepts.md",
+    "General.md",
+    "compose/Effects from Google explain.md",
     "room-database",
     "compose/SideEffect from compose book.md",
     "compose/RememberObserver in compose.md",
@@ -208,7 +221,6 @@
     "coroutine-flow/flow/ComposeFlow.md",
     "coroutine-flow/flow",
     "coroutine-flow/New folder",
-    "coroutine-flow/SuspendFunction.md",
     "coroutine-flow",
     "New folder",
     "all_studing/kotlin/coroutine",
