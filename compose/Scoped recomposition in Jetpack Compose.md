@@ -125,3 +125,11 @@ In Compose, any state that is read by a composable function should be backed by 
  - collect*AsState
 Basically, anything that implements the State<T> interface (including MutableState<T>) or the StateObject interface (which the built-in implementations of MutableState actually do as well.
 The primary reason for using snapshot state objects to hold your state, or at least the first one you’ll probably come across when learning Compose, is so that your composables will automatically update when that state changes. Another reason that is just as important but not discussed as often is so that changes to composable state from different threads (for example, from LaunchedEffects) are appropriately isolated and can be performed in a safe manner, without race conditions. It turns out both these reasons are related.
+
+**The “snapshot”**
+Compose defines a type called Snapshot and a bunch of APIs for working with them. A Snapshot is a lot like a save point in a video game: it represents the state of your entire program at a single point in history.
+مطالعه این 
+https://dev.to/zachklipp/introduction-to-the-compose-snapshot-system-19cn
+
+مقالات این 
+https://dev.to/zachklipp
