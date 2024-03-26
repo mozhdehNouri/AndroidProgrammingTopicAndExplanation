@@ -72,3 +72,23 @@ Compose uses inlining for a similar optimization. Because the body of inline com
 }
 ```
 If you wrap the Text in the original code snippet in a Column and add trace statements, you’ll see that the invalidated scope is still the entire button content lambda, not just the Column content lambda.
+
+**Recomposition Scope:**
+
+In order to understand how Compose is able to optimize recompositions, it is important to take into account the scopes of the composable functions that we are using in our examples.
+Compose keeps track of these composable scopes under-the-hood and divides a Composable function into these smaller units for more efficient recompositions. It then tries its best to only recompose the scopes that are reading the values that can change. In order to wrap our heads around what this means, let's use this lens and look at both our examples again. This time, we'll take into account the scopes that are available for the Compose runtime to do its book-keeping.
+![[Pasted image 20240326141941.png]]
+
+We see that there's a couple lambda scopes at play in the first example i.e the scope of the MyComponent function and the scope of CustomText function. Furthermore, CustomText is in the lambda scope of the MyComponent function. When the value of the the counter changes, we previously noticed that both these scopes were being reinvoked and here's why -
+
+CustomText is recomposed because its text parameter changed as it includes the counter value. This makes sense and is probably what you want anyway.
+MyComponent is recomposed because its lambda scope captures the counter state object and a smaller lambda scope wasn't available for any recomposition optimizations to kick in.
+Now you might wonder what I meant when I said "a smaller lambda scope wasn't available". Hopefully the next example will make this clear!
+![[Pasted image 20240326142037.png]]
+What does a donut have to do with all this?
+Let's get to why you opened this article in the first place - what do donuts have to do with all this? I'm about to say something that is going to blow your mind. Composable functions can be thought to be made up of donuts that are internally made up of smaller donuts 🍩. At least that's the metaphor the Compose team has been using to describe the optimizations related to recompositions. The composable function itself can be though to represent the donut, whereas its scope is the donut hole. Whenever possible, the Compose runtime skips running the "donut" if its not reading the value that changed (assuming its input didn't change either) and will only run the "donut-hole" (i.e its scope, assuming that's where the value is being read).
+
+Let's visualize the composables in example 2 with this lens and see how they are being recomposed. Anything with the chequered pattern represents that it was recomposed.
+![[Pasted image 20240326142325.png]]
+![[Pasted image 20240326142357.png]]
+**![[Pasted image 20240326142405.png]]
