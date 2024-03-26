@@ -92,3 +92,36 @@ Let's visualize the composables in example 2 with this lens and see how they are
 ![[Pasted image 20240326142325.png]]
 ![[Pasted image 20240326142357.png]]
 **![[Pasted image 20240326142405.png]]
+
+
+**remember: Keeps a value over time**
+
+remember is a composable function that "memoizes" the value returned from the function (lambda) you pass to it then returns that value, allowing you to create state that persists across recompositions. "Recomposition" means when a composable function is called multiple times to update the UI.
+
+The first time a composable runs that calls remember, it executes the lambda to get the value. It then stores (memoizes) that value in the composition. The next time that composable is recomposed, the call to remember will see that there was a value stored from the last call and just return that. You can remember any type of value – primitives, your own classes, anything. One of the things you can remember is the MutableState type, but there’s nothing special about it.
+
+Note that you only need to use remember inside composable functions (and the compiler will complain if you try to use it anywhere else). Outside of composables there are other ways to store state. For example, if you're writing a class, you'll probably put your state in properties in that class.
+
+
+**Snapshot state: Observation**
+Readers familiar with Compose might point out that widgets in Compose aren’t classes, they’re functions, and none of this looks very Compose-y at all. They would be right, but this highlights a great design feature of Compose: the state management infrastructure is completely decoupled from the rest of the “composable” concepts. For example, you could, theoretically, use snapshot state with classic Android Views.
+
+
+
+
+**Snapshot state: Thread safety**
+Another advantage of using snapshot state is that it makes it much easier and safer to reason about mutable state across threads. If seeing “mutable state” and “thread” in the same sentence sets off alarm bells, you’ve got good instincts. Mutating state across threads is so hard to do well, and the cause of so many hard-to-reproduce bugs, that many programming languages forbid it.
+Compose’s snapshot state mechanism is revolutionary for UI programming in a way because it allows you to work with mutable state in a safe way, across multiple threads, without race conditions. It does this by allowing glue code to control when changes made by one thread are seen by other threads. While not as clear a win as implicit observation, this feature will allow Compose to add parallelism to its execution in the future, without affecting the correctness of code (as long as that code follows the documented best practices, at least).
+
+
+**State in Compose**
+In Compose, any state that is read by a composable function should be backed by a special state object returned by functions like these:
+
+- mutableStateOf/MutableState
+- mutableStateListOf/SnapshotStateList
+- mutableStateMapOf/SnapshotStateMap
+- derivedStateOf
+- rememberUpdatedState
+ - collect*AsState
+Basically, anything that implements the State<T> interface (including MutableState<T>) or the StateObject interface (which the built-in implementations of MutableState actually do as well.
+The primary reason for using snapshot state objects to hold your state, or at least the first one you’ll probably come across when learning Compose, is so that your composables will automatically update when that state changes. Another reason that is just as important but not discussed as often is so that changes to composable state from different threads (for example, from LaunchedEffects) are appropriately isolated and can be performed in a safe manner, without race conditions. It turns out both these reasons are related.
