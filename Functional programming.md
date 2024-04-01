@@ -20,4 +20,5 @@ the opposit of total function is a partial functions which means that for certai
 we look at the abstraction of functions but we also want to try and make sure our functions are correct that for every input there is an output.
 other aspect of a function is what we call a function that dosen't have side effects.
 
-something like map function is part of the standard library whi
+something like map function is part of the standard library which means it basically comes as part of it and you can just use it all time- all impelemention is exist.
+one of the aspects people that do functional programing or generally you want to try and the idea od immutablity that i dont change  things as i work with them because if i changing things if i am changing values its becomes harder to test.it is more error pron and all of those horrible 
