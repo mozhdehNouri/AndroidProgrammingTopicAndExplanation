@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2aa9b274c33f5e06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional programming.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional programming.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functional programming.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -156,9 +169,17 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "3b9828c2f078e48d",
+  "active": "2aa9b274c33f5e06",
   "lastOpenFiles": [
     "Functional programming.md",
+    "conflict-files-obsidian-git.md",
+    "compose/Scoped recomposition in Jetpack Compose.md",
+    "Pasted image 20240326142405.png",
+    "Pasted image 20240326142357.png",
+    "Pasted image 20240326142341.png",
+    "Pasted image 20240326142325.png",
+    "Pasted image 20240326142037.png",
+    "Pasted image 20240326141941.png",
     "compose/Effects from Google explain.md",
     "room-database/SQL Concepts.md",
     "General.md",
@@ -174,10 +195,6 @@
     "performance-issue/Pasted image 20240305155117.png",
     "performance-issue/Pasted image 20240305154126.png",
     "performance-issue/Pasted image 20240305154037.png",
-    "performance-issue/Pasted image 20240305151442.png",
-    "performance-issue/Pasted image 20240304152802.png",
-    "performance-issue/Pasted image 20240304152647.png",
-    "performance-issue/Pasted image 20240304140320.png",
     "performance-issue/Identifying Indicators of Performance Issues.md",
     "performance-issue/Functional Approach.md",
     "performance-issue",
@@ -192,8 +209,6 @@
     "coroutine-flow/flow/FlowOn.md",
     "coroutine-flow/flow/FlowBuilder.md",
     "coroutine-flow/flow/FlowLifecycleOperatot.md",
-    "coroutine-flow/flow/ConflateOperator.md",
-    "coroutine-flow/flow/BufferOperator.md",
     "coroutine-flow/flow",
     "coroutine-flow/New folder",
     "coroutine-flow",
@@ -202,8 +217,6 @@
     "all_studing/kotlin/anotation",
     "all_studing/kotlin",
     "all_studing/common",
-    "Screenshot (386).png",
-    "Screenshot (385).png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
