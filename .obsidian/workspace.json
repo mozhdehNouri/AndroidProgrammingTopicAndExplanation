@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Functional programming.md",
+                "file": "General.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "03ca8ba937a678f0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.11"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "General.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "General.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "General.md"
               }
             }
           },
@@ -167,7 +156,7 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "03ca8ba937a678f0",
+  "active": "3b9828c2f078e48d",
   "lastOpenFiles": [
     "Functional programming.md",
     "conflict-files-obsidian-git.md",
