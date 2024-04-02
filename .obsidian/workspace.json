@@ -20,14 +20,12 @@
             }
           },
           {
-            "id": "2aa9b274c33f5e06",
+            "id": "03ca8ba937a678f0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.5.11"
               }
             }
           }
@@ -169,7 +167,7 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "2aa9b274c33f5e06",
+  "active": "03ca8ba937a678f0",
   "lastOpenFiles": [
     "Functional programming.md",
     "conflict-files-obsidian-git.md",
