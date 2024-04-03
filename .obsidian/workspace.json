@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "786808f9a3b207cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Functional Approach for performance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional programming.md",
+                "file": "Functional Approach for performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional programming.md",
+                "file": "Functional Approach for performance.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functional programming.md"
+                "file": "Functional Approach for performance.md"
               }
             }
           },
@@ -156,10 +169,14 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "9943303171071ed4",
+  "active": "786808f9a3b207cf",
   "lastOpenFiles": [
-    "General.md",
+    "Pasted image 20240403112228.png",
+    "Pasted image 20240403110245.png",
+    "Pasted image 20240403110133.png",
     "Functional programming.md",
+    "Functional Approach for performance.md",
+    "General.md",
     "conflict-files-obsidian-git.md",
     "compose/Scoped recomposition in Jetpack Compose.md",
     "Pasted image 20240326142405.png",
@@ -180,8 +197,6 @@
     "performance-issue/Reason of performance issue.md",
     "performance-issue/Pasted image 20240305155712.png",
     "performance-issue/Pasted image 20240305155117.png",
-    "performance-issue/Pasted image 20240305154126.png",
-    "performance-issue/Pasted image 20240305154037.png",
     "performance-issue/Identifying Indicators of Performance Issues.md",
     "performance-issue/Functional Approach.md",
     "performance-issue",
@@ -194,8 +209,6 @@
     "coroutine-flow/flow/SharedFlow.md",
     "coroutine-flow/flow/IntermediateOperator.md",
     "coroutine-flow/flow/FlowOn.md",
-    "coroutine-flow/flow/FlowBuilder.md",
-    "coroutine-flow/flow/FlowLifecycleOperatot.md",
     "coroutine-flow/flow",
     "coroutine-flow/New folder",
     "coroutine-flow",
