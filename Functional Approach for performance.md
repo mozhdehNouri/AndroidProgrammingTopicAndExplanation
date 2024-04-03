@@ -97,3 +97,65 @@ Iterable<T>.mapTo(destination: C, transform: (T) -> R): C {
 }
 
 ```
+Let's imagine a case when we need to apply several filter conditions to a list:
+```kotlin
+students
+ .filter(::ageMoreThan20)
+ .filter(::firstNameStartsWithE)
+ .filter(::theLengthOfSecondNameMoreThan5)
+```
+In this case, we have to invoke the filter function tree times. This decreases the readability of code and can lead to performance issues because each filter function is a loop under the hood. To deal with this problem, you can use a composition of functions.
+
+**Function composition**
+To solve the problem described in the previous section, we can just create a new method like this:
+```kotlin
+fun predicate(student: Student)
+ = ageMoreThan20(student)
+ && firstNameStartsWithE(student)
+ && theLengthOfSecondNameMoreThan5(student)
+students.filter(::predicate)
+```
+or
+```kotlin
+students.filter(fun(student: Student)
+ = ageMoreThan20(student)
+ && firstNameStartsWithE(student)
+ && theLengthOfSecondNameMoreThan5(student))
+```
+Function composition is the combining of two or more functions to create a new function. It's a powerful approach for reusing functions. Function composition can be applied in different cases; for instance, to combine several invocations of the map function. Instead of this
+```kotlin
+return prices
+ .map(::discount)
+ .map(::tax)
+ .map(::aid)
+ .sum()
+
+```
+You can write something like this:
+```kotlin
+return prices
+ .map(::aid + ::tax + ::discount)
+ .sum()
+```
+
+Function composition isn't implemented in the standard Kotlin library. But we can create our own functions; for instance, for combining predicates, you can use this function:
+```kotlin
+inline infix fun <P> ((P) -> Boolean).and(crossinline predicate: (P) ->
+Boolean): (P) -> Boolean {
+ return { p: P -> this(p) && predicate(p) }
+}
+```
+And for combining functions that are invoked in a sequence, you can use a function such as:
+```kotlin
+inline operator fun <P1, R1, R2> ((R1) -> R2).plus(crossinline f: (P1) ->
+R1): (P1) -> R2 {
+ return { p1: P1 -> this(f(p1)) }
+}
+```
+
+**Lambdas**:
+
+In Kotlin, a lambda is a function that is decelerated without an identifier and the fun keyword, but with a certain type. Under the hood, a lambda is an object that has the **Function<out R>** type:
+package kotlin
+public interface Function<out R>
+
