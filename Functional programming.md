@@ -42,3 +42,7 @@ infix fun String.sameAs(s:String) = s==this
 ```
 so any extention function with single paramter or any function with a single argument  paramter basically be used called in infix notation.  
 
+
+
+
+
