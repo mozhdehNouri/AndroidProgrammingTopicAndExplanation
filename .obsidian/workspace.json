@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b43e0e33df3165b4",
+        "id": "19c7a3407054ad61",
         "type": "tabs",
         "children": [
           {
-            "id": "9943303171071ed4",
+            "id": "fe486e7f3e2d7d7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "786808f9a3b207cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Functional Approach for performance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional Approach for performance.md",
+                "file": "Functional programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional Approach for performance.md",
+                "file": "Functional programming.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functional Approach for performance.md"
+                "file": "Functional programming.md"
               }
             }
           },
@@ -169,13 +156,13 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "786808f9a3b207cf",
+  "active": "fe486e7f3e2d7d7e",
   "lastOpenFiles": [
+    "Functional programming.md",
+    "Functional Approach for performance.md",
     "Pasted image 20240403112228.png",
     "Pasted image 20240403110245.png",
     "Pasted image 20240403110133.png",
-    "Functional programming.md",
-    "Functional Approach for performance.md",
     "General.md",
     "conflict-files-obsidian-git.md",
     "compose/Scoped recomposition in Jetpack Compose.md",
@@ -196,7 +183,6 @@
     "What is composition tree.md",
     "performance-issue/Reason of performance issue.md",
     "performance-issue/Pasted image 20240305155712.png",
-    "performance-issue/Pasted image 20240305155117.png",
     "performance-issue/Identifying Indicators of Performance Issues.md",
     "performance-issue/Functional Approach.md",
     "performance-issue",
