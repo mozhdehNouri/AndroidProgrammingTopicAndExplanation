@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Functional Approach for performance.md",
+                "file": "Functional programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional Approach for performance.md",
+                "file": "Functional programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional Approach for performance.md",
+                "file": "Functional programming.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functional Approach for performance.md"
+                "file": "Functional programming.md"
               }
             }
           },
@@ -171,8 +171,8 @@
   },
   "active": "750061fe2739ca77",
   "lastOpenFiles": [
-    "Functional programming.md",
     "Functional Approach for performance.md",
+    "Functional programming.md",
     "Pasted image 20240403112228.png",
     "Pasted image 20240403110245.png",
     "Pasted image 20240403110133.png",
