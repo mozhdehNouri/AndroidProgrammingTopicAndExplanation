@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ba12b41dc266e842",
+        "id": "8ba1f41aa862098d",
         "type": "tabs",
         "children": [
           {
-            "id": "a0b840881c4d51e3",
+            "id": "20245bdc15576244",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "recomposescope",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,11 +61,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 341.5067367553711
   },
   "right": {
     "id": "af662a2b6b5e1fb2",
@@ -148,8 +149,10 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "a0b840881c4d51e3",
+  "active": "20245bdc15576244",
   "lastOpenFiles": [
+    "compose/Understanding side effects.md",
+    "compose/RememberObserver in compose.md",
     "conflict-files-obsidian-git.md",
     "Functional programming.md",
     "Data structure.md",
@@ -170,8 +173,6 @@
     "room-database/SQL Concepts.md",
     "room-database",
     "compose/SideEffect from compose book.md",
-    "compose/RememberObserver in compose.md",
-    "compose/Understanding side effects.md",
     "Untitled 1.md",
     "compose/State and Recomposition.md",
     "What is composition tree.md",
