@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "19c7a3407054ad61",
+        "id": "07697f0b409dc4b7",
         "type": "tabs",
         "children": [
           {
-            "id": "fe486e7f3e2d7d7e",
+            "id": "3c83d1a749987c42",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Functional programming.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functional programming.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Functional programming.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,9 +148,14 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "fe486e7f3e2d7d7e",
+  "active": "3c83d1a749987c42",
   "lastOpenFiles": [
     "Functional programming.md",
+    "Data structure.md",
+    "Pasted image 20240406104935.png",
+    "Pasted image 20240406102644.png",
+    "Pasted image 20240406102531.png",
+    "Pasted image 20240406102251.png",
     "Functional Approach for performance.md",
     "Pasted image 20240403112228.png",
     "Pasted image 20240403110245.png",
@@ -169,9 +166,6 @@
     "Pasted image 20240326142405.png",
     "Pasted image 20240326142357.png",
     "Pasted image 20240326142341.png",
-    "Pasted image 20240326142325.png",
-    "Pasted image 20240326142037.png",
-    "Pasted image 20240326141941.png",
     "compose/Effects from Google explain.md",
     "room-database/SQL Concepts.md",
     "room-database",
@@ -182,7 +176,6 @@
     "compose/State and Recomposition.md",
     "What is composition tree.md",
     "performance-issue/Reason of performance issue.md",
-    "performance-issue/Pasted image 20240305155712.png",
     "performance-issue/Identifying Indicators of Performance Issues.md",
     "performance-issue/Functional Approach.md",
     "performance-issue",
@@ -194,7 +187,6 @@
     "coroutine-flow/flow/StateFlow.md",
     "coroutine-flow/flow/SharedFlow.md",
     "coroutine-flow/flow/IntermediateOperator.md",
-    "coroutine-flow/flow/FlowOn.md",
     "coroutine-flow/flow",
     "coroutine-flow/New folder",
     "coroutine-flow",
