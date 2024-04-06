@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "07697f0b409dc4b7",
+        "id": "ba12b41dc266e842",
         "type": "tabs",
         "children": [
           {
-            "id": "3c83d1a749987c42",
+            "id": "a0b840881c4d51e3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -148,8 +148,9 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "3c83d1a749987c42",
+  "active": "a0b840881c4d51e3",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Functional programming.md",
     "Data structure.md",
     "Pasted image 20240406104935.png",
@@ -161,7 +162,6 @@
     "Pasted image 20240403110245.png",
     "Pasted image 20240403110133.png",
     "General.md",
-    "conflict-files-obsidian-git.md",
     "compose/Scoped recomposition in Jetpack Compose.md",
     "Pasted image 20240326142405.png",
     "Pasted image 20240326142357.png",
