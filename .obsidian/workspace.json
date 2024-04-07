@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data structure.md",
+                "file": "Functional Approach for performance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data structure.md",
+                "file": "Functional Approach for performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data structure.md",
+                "file": "Functional Approach for performance.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data structure.md"
+                "file": "Functional Approach for performance.md"
               }
             }
           },
@@ -158,11 +158,11 @@
   },
   "active": "182571139a13a129",
   "lastOpenFiles": [
+    "Data structure.md",
     "compose/Understanding side effects.md",
     "compose/RememberObserver in compose.md",
     "conflict-files-obsidian-git.md",
     "Functional programming.md",
-    "Data structure.md",
     "Pasted image 20240406104935.png",
     "Pasted image 20240406102644.png",
     "Pasted image 20240406102531.png",
