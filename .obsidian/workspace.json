@@ -156,8 +156,9 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "182571139a13a129",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
+    "okio.md",
     "Pasted image 20240412205934.png",
     "Pasted image 20240412205854.png",
     "Pasted image 20240412205643.png",
@@ -176,7 +177,6 @@
     "Functional programming.md",
     "Pasted image 20240406104935.png",
     "Pasted image 20240406102644.png",
-    "Pasted image 20240406102531.png",
     "General.md",
     "compose/Scoped recomposition in Jetpack Compose.md",
     "compose/Effects from Google explain.md",
