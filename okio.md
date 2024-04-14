@@ -119,6 +119,32 @@ So, while OkHttp focuses on networking tasks, it relies on Okio for efficient I/
 
 [Nerding Out On Okio](https://www.youtube.com/watch?v=Du7YXPAV1M8): The story of the Okio APIs, their design and tradeoffs, as well as implementation notes with animated marbles diagrams.
 
+another article:
+ Retrofit, OkHttp, Moshi, Dagger (even though it’s maintained by Google now, it was created by Square). There’s one more thing that’s common for all these libs besides the company that created them. All of them use Okio under the hood.
+
+Okio is a library that simplifies and simultaneously enriches the usage of InputStream and OutputStream classes from the standard java.io package. I used it a couple of times when writing custom OkHttp interceptors, but I’ve never really understood how does it work under the hood. 
+
+
+Source, Sink, Buffer:
+The two Okio interfaces you’ll see all over the library’s API are Source and Sink. let me tell you that the Source is something you can read data from (like an InputStream) and the Sink is where you push the data (like the OutputStream).
+
+If you’ve ever worked with java.io streams, you probably wrapped them in Buffered{Input,Output}Stream. The main reason is that you very rarely need to read the data byte-by-byte and reading the data in chunks of few kilobytes at a time is much more performant. 
+If you’ve ever worked with java.io streams, you probably wrapped them in Buffered{Input,Output}Stream. The main reason is that you very rarely need to read the data byte-by-byte and reading the data in chunks of few kilobytes at a time is much more performant. This observation probably guided Okio’s design, because all the implementations of Source and Sink either delegate the calls to some other Sources or Sinks, or use Buffers under the hood.
+
+what is that mean of under text:
+This sentence explains that when working with Java's input and output streams (java.io), it's common practice to wrap them in BufferedInputStream or BufferedOutputStream. This wrapping is done because reading data byte-by-byte directly from streams is inefficient, so it's more performant to read data in larger chunks, such as a few kilobytes at a time.
+
+The observation made here likely influenced the design of Okio. In Okio, all implementations of Source and Sink either delegate their calls to other sources or sinks, or they use buffers internally. This approach ensures that data is processed in larger, more efficient chunks, aligning with the performance improvements gained from using buffered streams in Java's I/O streams.
+
+The way people commonly improve performance with Java's input and output streams is by using buffers. Instead of reading one byte at a time, which can be slow, they read a chunk of data at once. This strategy is also what influenced the design of Okio.
+
+In Okio, whenever you work with Source and Sink, which are like streams for reading from and writing to data sources, these operations are handled efficiently. They either pass the work to other sources or sinks, or they use buffers internally to manage data. This method ensures that data is processed in larger, more efficient chunks, similar to how buffered streams operate in Java's I/O streams. Essentially, it's a way to ensure Okio operates efficiently, benefiting from the same performance improvements seen with buffered streams in Java.
+
+
+
+
+
 https://www.baeldung.com/java-io-vs-nio
 
 [Okio](https://square.github.io/okio/)
+https://medium.com/@jerzy.chalupski/a-closer-look-at-the-okio-library-90336e37261
