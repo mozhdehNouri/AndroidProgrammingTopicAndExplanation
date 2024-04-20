@@ -40,3 +40,48 @@ The composable function itself can be though to represent the donut, whereas its
 
 ![[Pasted image 20240420122710.png]]
 
+
+another example:
+
+```kotlin
+
+@Composable
+fun MyComponent() {
+    val counter by remember { mutableStateOf(0) }
+
+    LogCompositions("JetpackCompose.app", "MyComposable function")
+
++   val readingCounter = counter
++   CustomButton(onClick = { counter++ }) {
+        LogCompositions("JetpackCompose.app", "CustomButton scope")
+        CustomText(
+            text = "Counter: $counter",
+            modifier = Modifier
+                .clickable {
+                    counter++
+                },
+        )
+    }
+}
+```
+
+```kotlin
+@Composable
+fun CustomButton(
+    onClick: () -> Unit,
+    content: @Composable () -> Unit
+) {
+    LogCompositions("JetpackCompose.app", "CustomButton function")
+    Button(onClick = onClick, modifier = Modifier.padding(16.dp)) {
+        LogCompositions("JetpackCompose.app", "Button function")
+        content()
+    }
+}
+```
+
+output:
+first we have all log when composable enter composition and then in every recomposition we have this:
+
+ LogCompositions("JetpackCompose.app", "MyComposable function")
+    LogCompositions("JetpackCompose.app", "CustomButton scope")
+       LogCompositions("JetpackCompose.app", "Custom Text")
