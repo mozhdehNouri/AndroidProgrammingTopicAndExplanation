@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "55f10e65e245ebb3",
+        "id": "98dac696575b0256",
         "type": "tabs",
         "children": [
           {
-            "id": "989c2a32e02775d7",
+            "id": "ebca95ac4ee2e41b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "okio.md",
+                "file": "compose/donut-hole skipping in Jetpack Compose.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "okio.md",
+                "file": "compose/donut-hole skipping in Jetpack Compose.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "okio.md",
+                "file": "compose/donut-hole skipping in Jetpack Compose.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "okio.md"
+                "file": "compose/donut-hole skipping in Jetpack Compose.md"
               }
             }
           },
@@ -156,10 +156,12 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "989c2a32e02775d7",
+  "active": "ebca95ac4ee2e41b",
   "lastOpenFiles": [
-    "BuildSpeed.md",
+    "Pasted image 20240420104414.png",
+    "compose/donut-hole skipping in Jetpack Compose.md",
     "okio.md",
+    "BuildSpeed.md",
     "Pasted image 20240412205934.png",
     "Pasted image 20240412205854.png",
     "Pasted image 20240412205643.png",
@@ -194,8 +196,6 @@
     "coroutine-flow/flow/Flow_question_answer.md",
     "coroutine-flow/flow/TerminalOperator.md",
     "coroutine-flow/flow/AsLiveDataOpertor.md",
-    "coroutine-flow/flow/HotFlowAndHotFlows.md",
-    "coroutine-flow/flow/StateFlow.md",
     "coroutine-flow/flow",
     "coroutine-flow/New folder",
     "coroutine-flow",
