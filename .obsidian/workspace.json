@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "98dac696575b0256",
+        "id": "a4f76af814eff9da",
         "type": "tabs",
         "children": [
           {
-            "id": "ebca95ac4ee2e41b",
+            "id": "7e46a5697e770445",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compose/donut-hole skipping in Jetpack Compose.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/donut-hole skipping in Jetpack Compose.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/donut-hole skipping in Jetpack Compose.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "compose/donut-hole skipping in Jetpack Compose.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,22 +148,23 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "ebca95ac4ee2e41b",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
+    "functional_programming/functional_Programming_Concept.md",
+    "functional_programming",
+    "compose/donut-hole skipping in Jetpack Compose.md",
     "Pasted image 20240420122710.png",
     "Pasted image 20240420122700.png",
     "Pasted image 20240420122645.png",
     "Pasted image 20240420122628.png",
     "Pasted image 20240420121911.png",
     "Pasted image 20240420104414.png",
-    "compose/donut-hole skipping in Jetpack Compose.md",
     "okio.md",
     "BuildSpeed.md",
     "Pasted image 20240412205934.png",
     "Pasted image 20240412205854.png",
     "Pasted image 20240412205643.png",
     "Pasted image 20240412205614.png",
-    "Pasted image 20240412205522.png",
     "BuildSpeed 1.md",
     "Functional Approach for performance.md",
     "Data structure.md",
@@ -203,7 +196,6 @@
     "all_studing/kotlin/coroutine",
     "all_studing/kotlin/anotation",
     "all_studing/kotlin",
-    "all_studing/common",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
