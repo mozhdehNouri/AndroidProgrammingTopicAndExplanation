@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "649b0872f389858a",
+        "id": "6445a9088146e8dd",
         "type": "tabs",
         "children": [
           {
-            "id": "d69ab60bb42b86a2",
+            "id": "5669158984c50cc0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -148,8 +148,11 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c07d257c419d4346",
+  "active": "5669158984c50cc0",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "What is composition tree.md",
+    "Configuration Changes.md",
     "ft_for_presentation/functional_Programming_Concept.md",
     "ft_for_presentation",
     "compose/What is Compose.md",
@@ -174,9 +177,6 @@
     "compose/Compose compiler.md",
     "Functional programming.md",
     "functional_programming/functional_Programming_Concept.md",
-    "Functional Approach for performance.md",
-    "performance-issue/Reason of performance issue.md",
-    "performance-issue/Identifying Indicators of Performance Issues.md",
     "functional_programming",
     "Pasted image 20240420122710.png",
     "Pasted image 20240420122700.png",
