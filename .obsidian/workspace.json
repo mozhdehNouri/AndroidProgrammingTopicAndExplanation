@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6445a9088146e8dd",
+        "id": "faa38264d964b930",
         "type": "tabs",
         "children": [
           {
-            "id": "5669158984c50cc0",
+            "id": "d4a4c8fff97cc087",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "refactor/arch/Layers in android.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "archi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "refactor/arch/Layers in android.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "refactor/arch/Layers in android.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "refactor/arch/Layers in android.md"
+              }
             }
           },
           {
@@ -148,8 +157,23 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "5669158984c50cc0",
+  "active": "c4bfe2465a5ec5f8",
   "lastOpenFiles": [
+    "all_studing/cleanCodeSummery.md",
+    "refactor/arch/Layers in android.md",
+    "all_studing/android/architecture/domain Layer.md",
+    "all_studing/android/architecture/data Layer.md",
+    "all_studing/android/architecture/mvi and udf/compareArch.md",
+    "compose/State and Recomposition.md",
+    "compose/Understanding side effects.md",
+    "refactor/arch/Clean Arch.md",
+    "Data structure.md",
+    "weatherAppProject/uilayers.md",
+    "weatherAppProject/domain-layer.md",
+    "weatherAppProject/dataLayer.md",
+    "refactor/arch",
+    "Untitled.md",
+    "refactor",
     "Untitled 1.md",
     "What is composition tree.md",
     "Configuration Changes.md",
@@ -157,26 +181,13 @@
     "ft_for_presentation",
     "compose/What is Compose.md",
     "compose/ViewModel in Compose.md",
-    "compose/Understanding side effects.md",
     "compose/UDF in compose.md",
-    "compose/State and Recomposition.md",
     "compose/Slot Api.md",
     "compose/Side Effect.md",
     "compose/Scoped recomposition in Jetpack Compose.md",
     "compose/Modifier.md",
     "compose/IntrinsicSize.md",
     "compose/Important knowledge from compose.md",
-    "compose/everything about recompostion.md",
-    "compose/Effects from Google explain.md",
-    "compose/donut-hole skipping in Jetpack Compose.md",
-    "compose/Detecting Gestures in Compose.md",
-    "compose/Custom Layout.md",
-    "compose/Coroutine and LaunchedEffect.md",
-    "compose/Composition Local.md",
-    "compose/Compose Tips definition.md",
-    "compose/Compose compiler.md",
-    "Functional programming.md",
-    "functional_programming/functional_Programming_Concept.md",
     "functional_programming",
     "Pasted image 20240420122710.png",
     "Pasted image 20240420122700.png",
@@ -194,8 +205,6 @@
     "coroutine-flow/New folder",
     "coroutine-flow",
     "New folder",
-    "all_studing/kotlin/coroutine",
-    "all_studing/kotlin/anotation",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
