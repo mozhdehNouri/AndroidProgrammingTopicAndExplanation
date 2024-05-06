@@ -35,9 +35,7 @@ into different files and components so that each part can be responsible for a s
 Mvi is focuses on single Source of truth principle, which means that all data is stored in one
 central place and updates to that data are reflected throughout the app.
 
-another things that mvi is focus on it is immutability it means when we have a new state we get copy
-of current state and change the update feild and then produce new state and evey time we have a
-update we have a new state.
+another things that mvi is focus on it is immutability it means when we have a new state we get copy of current state and change the update feild and then produce new state and evey time we have a update we have a new state.
 
 or we can say Immutable states means that once a state has been updated, it cannot be changed or
 modified.
@@ -259,12 +257,8 @@ second:
 
 **Gabor’s Summation:**
 
-- The core argument Gabor makes is that the MVI structure is overly complicated for the realities of
-  Android development. It was created as a response to JavaScript’s limitations, which Android
-  development does not share.
-- Gabor questions the benefit of MVI’s complexity when MVVM can handle state changes in a more
-  straightforward and granular way. The type-safety of Kotlin and Java makes many of MVI’s
-  strategies redundant or unnecessary.
+- The core argument Gabor makes is that the MVI structure is overly complicated for the realities of Android development. It was created as a response to JavaScript’s limitations, which Android development does not share.
+- Gabor questions the benefit of MVI’s complexity when MVVM can handle state changes in a more straightforward and granular way. The type-safety of Kotlin and Java makes many of MVI’s strategies redundant or unnecessary.
 
 **Conclusion:**  
 Gabor seemingly prefers MVVM because it fits the type-safe ecosystem of Android development better
@@ -295,8 +289,7 @@ that there is a unidirectional data flow, as follows:
 3. **View**: The View takes the Model and renders the UI. Since the Model represents the complete
    state, any change to the Model necessarily means that the entire View could be re-rendered.
 
-This pattern of MVI is influenced by Redux in that it also employs a unidirectional data flow and
-the use of immutable state objects that are modified by functions called ‘reducers.’
+This pattern of MVI is influenced by Redux in that it also employs a unidirectional data flow and the use of immutable state objects that are modified by functions called ‘reducers.’
 
 ### Redux:
 

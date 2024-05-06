@@ -58,3 +58,6 @@ class ErrorInterceptor  : Interceptor {
 }
 ```
 
+1. getting request by **chain.request()**
+2. getting response return from server with **chain.proceed(request)**
+3.  Now, we can check for the response code and perform an action.

@@ -15,7 +15,7 @@ Used to get the result that is not in the other result set.
 SELECT columns_names FROM table1 EXCEPT SELECT column_name FROM table2
 ```
 
-Join
+**Join**
 Used to combind the result from two or more tables based on the common column value between them.
 
 Types :
