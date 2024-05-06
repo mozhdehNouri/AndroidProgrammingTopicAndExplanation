@@ -1,8 +1,4 @@
-UDF stands for Unidirectional Data Flow, which is a design pattern where data has a single flow
-direction. It’s not a complete architecture by itself; rather, it’s an aspect or pattern that many
-architectures aim to follow because it can make the system more predictable and easier to
-understand. UDF has been a concept in functional programming for a long time, and it’s not exclusive
-to Android or any specific technology.
+UDF stands for Unidirectional Data Flow, which is a design pattern where data has a single flow direction. It’s not a complete architecture by itself; rather, it’s an aspect or pattern that many architectures aim to follow because it can make the system more predictable and easier to understand. UDF has been a concept in functional programming for a long time, and it’s not exclusive to Android or any specific technology.
 
 MVI, which stands for Model-View-Intent, is a specific architectural approach that incorporates UDF
 as one of its core principles. MVI aligns well with reactive and functional programming paradigms.
@@ -43,8 +39,7 @@ their scope and role in application architecture:
 
 - UDF is a pattern that can be applied within different architectural patterns, not an architecture
   in itself.
-- It defines how data should move through the system: data has a single direction of flow, which
-  typically goes from the model, to the view, and then through user actions that trigger changes to
+- It defines how data should move through the system: data has a single direction of flow, which   typically goes from the model, to the view, and then through user actions that trigger changes to
   the model.
 - Its principle is to ensure that each part of the system (usually components or layers) influences
   the next part in a single direction, preventing circular dependencies and making the data flow
@@ -59,8 +54,7 @@ their scope and role in application architecture:
   Intent (translates user actions into state changes).
 - It’s mainly used in reactive programming where the whole architecture relies on streams of data
   and state changes, enhancing maintainability and testability of the software.
-- MVI structures the flow of data and logic around discrete intentions that describe how the state
-  should change in response to user interactions.
+- MVI structures the flow of data and logic around discrete intentions that describe how the state should change in response to user interactions.
 
 In summary, UDF is an overarching concept that can be applied in various architectures to guide the
 flow of data. MVI is an architectural design pattern that incorporates UDF as a way to structure
@@ -124,8 +118,7 @@ Following this pattern when using Jetpack Compose provides several advantages:
 
 - ### Unidirectional data flow in Jetpack Compose
 
-  Composables work based on state and events. For example, a`TextField`is only updated when
-  its`value`parameter is updated and it exposes an`onValueChange`callback—an event that requests the
+  Composables work based on state and events. For example, a`TextField`is only updated when   its`value`parameter is updated and it exposes an`onValueChange`callback—an event that requests the
   value to be changed to a new one. Compose defines the`State`object as a value holder, and changes
   to the state value trigger a recomposition. You can hold the state in
   a`remember { mutableStateOf(value) }`or a`rememberSaveable { mutableStateOf(value)`depending on
@@ -365,8 +358,7 @@ Yes, it's true that MVI can be used in combination with other architecture patte
 is often referred to as a hybrid architecture, where you take the best parts of different patterns
 and combine them to create a custom solution that fits the specific needs of your app.
 
-In the case of MVVM + MVI, you might use the MVVM pattern for the overall structure of the app, but
-incorporate MVI principles for managing the state and interactions within the view model.
+In the case of MVVM + MVI, you might use the MVVM pattern for the overall structure of the app, but incorporate MVI principles for managing the state and interactions within the view model.
 
 However, it's important to remember that while this hybrid approach can be effective, it also comes
 with some trade-offs.
