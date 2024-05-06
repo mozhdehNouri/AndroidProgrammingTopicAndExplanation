@@ -72,8 +72,6 @@ note: MVP or MVVM. In these patterns, the model typically refers to a collection
 - The MVI structure is overly complicated for the realities of Android development. It was created as a response to JavaScript’s limitations, which Android development does not share.
 - MVI’s complexity when MVVM can handle state changes in a more straightforward and granular way. The type-safety of Kotlin and Java makes many of MVI’s strategies redundant or unnecessary.
 
-
-
 ### Redux:
 
 Redux is a predictable state container for JavaScript apps, most commonly used with libraries like React, although it’s not limited to any particular library or framework. Redux was created to solve the problem of state management in large web applications.
@@ -98,11 +96,37 @@ data class SuccessState(feed: List<Post>): State
 data class FailureState(errorMessage: String): State
 ```
 
+```kotlin
+sealed class Action
+class LoadFeed: Action
+data class LoadFeedSuccess(feed: List<Post>): Action
+data class LoadFeedFailure(errorMessage: String): Action
+```
+
+```kotlin
+fun reduce(currentState: State, action: Action): State {
+    return when(action) {
+       is LoadFeed -> LoadingState
+       is LoadFeedSuccess -> SuccessState(action.feed)
+       is LoadFeedFailure -> FailureState(action.errorMessage)
+    }
+}
+```
+
+```kotlin
+fun runSideEffects(currentState: State, action: Action, store: Store){
+   when(action){
+      is LoadFeed -> {
+         repository.loadFeed()
+           .subscribe(
+            feed -> store.dispatch(LoadFeedSuccess(feed), 
+            error -> store.dispatch(LoadFeedFailure(error.message)
+          )
+       }
+   }
+}
+```
 
 
-
-
-
-
-Recources:
-babylon.orbit:orbit
+Resource:
+*babylon.orbit:orbit*
