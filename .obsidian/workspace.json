@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2a1db6fa38ff5e4d",
+            "id": "ab0349b8fd53d0a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/arch/UDF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bcb2315d72a3e177",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "all_studing/android/architecture/mvi and udf/compareArch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f83d8b366d7b623",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "all_studing/android/architecture/mvi and udf/UDF.md",
+                "file": "refactor/dependency injection/Hilt.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5067367553711
+    "width": 341.5067367553711,
+    "collapsed": true
   },
   "right": {
     "id": "af662a2b6b5e1fb2",
@@ -109,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/arch/UDF.md",
+                "file": "refactor/dependency injection/Hilt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/arch/UDF.md",
+                "file": "refactor/dependency injection/Hilt.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/arch/UDF.md"
+                "file": "refactor/dependency injection/Hilt.md"
               }
             }
           },
@@ -185,20 +162,20 @@
     "type": "floating",
     "children": [
       {
-        "id": "52311a5f0cbe1870",
+        "id": "1dc833bd53843661",
         "type": "window",
         "children": [
           {
-            "id": "02561a6036d649cf",
+            "id": "c7648aa4ebd10500",
             "type": "tabs",
             "children": [
               {
-                "id": "f0c922d13a95825f",
+                "id": "fc69899532af3e39",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "all_studing/android/architecture/mvi and udf/MVI.md",
+                    "file": "all_studing/android/dependency injection/hilt-dependecy-injection.md",
                     "mode": "source",
                     "source": false
                   }
@@ -208,20 +185,23 @@
           }
         ],
         "direction": "vertical",
-        "x": 743,
-        "y": 10,
-        "width": 769,
+        "x": 371,
+        "y": 25,
+        "width": 605,
         "height": 605,
         "maximize": true,
         "zoom": 0
       }
     ]
   },
-  "active": "2a1db6fa38ff5e4d",
+  "active": "ab0349b8fd53d0a9",
   "lastOpenFiles": [
+    "all_studing/android/dependency injection/hilt-dependecy-injection.md",
+    "refactor/dependency injection/Hilt.md",
+    "weatherAppProject/hilt.md",
+    "refactor/arch/UDF.md",
     "refactor/arch/MVI.md",
     "all_studing/android/architecture/mvi and udf/MVI.md",
-    "refactor/arch/UDF.md",
     "refactor/arch/MVVM and MVP Short Concept.md",
     "refactor/arch/What is Archi.md",
     "all_studing/android/architecture/mvi and udf/compareArch.md",
@@ -244,10 +224,7 @@
     "Untitled 1.md",
     "What is composition tree.md",
     "Configuration Changes.md",
-    "ft_for_presentation/functional_Programming_Concept.md",
     "ft_for_presentation",
-    "compose/What is Compose.md",
-    "compose/ViewModel in Compose.md",
     "functional_programming",
     "Pasted image 20240420122710.png",
     "Pasted image 20240420122700.png",
