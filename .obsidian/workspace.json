@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d26d0c93d0ebda10",
+        "id": "ef8419d5f0a5a772",
         "type": "tabs",
         "children": [
           {
-            "id": "232a8c2caed6f858",
+            "id": "2d7d582ef0737396",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "all_studing/android/BestPracticeAndroidDevelopment.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "all_studing/android/BestPracticeAndroidDevelopment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "all_studing/android/BestPracticeAndroidDevelopment.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "all_studing/android/BestPracticeAndroidDevelopment.md"
+                "file": "ft_for_presentation/functional_Programming_Concept.md"
               }
             }
           },
@@ -156,9 +150,17 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "232a8c2caed6f858",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
+    "all_studing/android/question/When only onDestroy is called for an activity without onPause() and onStop().md",
+    "refactor/additional concepts/When only onDestroy is called for an activity without onPause() and onStop().md",
+    "all_studing/android/Material2.md",
     "all_studing/android/ApplicationLifecycle.md",
+    "all_studing/android/SharePrefrence Vs DataStore.md",
+    "refactor/additional concepts/SharePrefrence Vs DataStore.md",
+    "all_studing/android/SolidPrinciple.md",
+    "all_studing/android/functionRefrence.md",
+    "all_studing/android/BestPracticeAndroidDevelopment.md",
     "Configuration Changes.md",
     "Data structure.md",
     "refactor/additional concepts/Data structure.md",
@@ -178,15 +180,7 @@
     "refactor/compose",
     "BuildSpeed.md",
     "Untitled 1.md",
-    "Untitled.md",
-    "Test.md",
-    "refactor/test/Test.md",
     "refactor/test",
-    "weatherAppProject/tips.md",
-    "weatherAppProject/Theme.md",
-    "weatherAppProject/networkig.md",
-    "coroutine-flow/BasicDescription.md",
-    "all_studing/androidRoadMapLearning.md",
     "refactor/Modular",
     "refactor/arch",
     "refactor",
