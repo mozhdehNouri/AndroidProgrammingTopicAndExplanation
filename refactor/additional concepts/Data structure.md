@@ -20,7 +20,6 @@ An array stores multiple items of the same type in one fixed-size sequence. It's
 A linked list contains a group of nodes that represent a sequence. Each node, in turn, contains a link to the next node, as well as stored data. There are also doubly-linked lists, in which each node contains a link to the previous node in addition to the next:
 ![[Pasted image 20240406102251.png]]
 
-
 **Stacks**
 A stack is a data structure that's built on the last in, first out (LIFO) principle and allows you only to insert or delete an item at the top of the stack:
 ![[Pasted image 20240406102531.png]]
@@ -50,21 +49,17 @@ A set is a data structure that stores unrepeated values without any particular o
 A map is a data structure that stores data in the form of key/value pairs. The map data  structure is also known as an associative array. This is an extremely powerful data  structure that provides you fast access to a value associated with a unique key.
 
 **Hash tables**
-
 A hash table is built on a map data structure but uses a hash function to compute an index of items into an array of values. Since data in this data structure is stored in an associative manner, you can access a desired value very fast
 ![[Pasted image 20240406104935.png]]
 
 **Tries**:
-A trie data structure stores data step by step. Tries can be extremely useful for implementing autocomplete. Unlike a binary search tree, the position of the node in the tree defines the key with which it is associated. Usually, a string is used as a key for this data
-structure. The Kotlin standard library and JDK don't contain an implementation of this data structure.
+A trie data structure stores data step by step. Tries can be extremely useful for implementing autocomplete. Unlike a binary search tree, the position of the node in the tree defines the key with which it is associated. Usually, a string is used as a key for this data structure. The Kotlin standard library and JDK don't contain an implementation of this data structure.
 
-
-Collections in **Kotlin**
+**Collections in Kotlin**
 Kotlin has both mutable and immutable collections. Having implicit control over whether collections can be edited is useful for writing clear and reliable code. It's important to understand that immutable collections in Kotlin are simply read-only, as the JVM doesn't
 see a difference between an immutable and mutable collection.
 
 **Sequences in Kotlin**
-
 Java 8 introduced lazy evaluation for collections using the Stream API. Kotlin has a similar feature called Sequence. The API of the Sequence class is similar to the API of the List class. But from the point of view of the return type, Sequence methods class can be
 classified into the following groups:
 

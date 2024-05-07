@@ -128,5 +128,9 @@ fun runSideEffects(currentState: State, action: Action, store: Store){
 ```
 
 
+
+
+It's important to know how to create an immutable object because immutability is the key concept of different architectures and frameworks. For instance, the concept of state from the Redux architecture is built on the immutability.Redux architecture and is based on unidirectional data flow. This architecture is very useful if your application contains a lot of components with a shared state that changes all the time and your components have to be updated whenever the state was changed.
+
 Resource:
 *babylon.orbit:orbit*

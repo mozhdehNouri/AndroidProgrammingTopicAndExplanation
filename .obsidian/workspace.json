@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c85f5f28ae18932b",
+        "id": "d26d0c93d0ebda10",
         "type": "tabs",
         "children": [
           {
-            "id": "08beb022d2add555",
+            "id": "232a8c2caed6f858",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is composition tree.md",
+                "file": "all_studing/android/BestPracticeAndroidDevelopment.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "What is composition tree.md",
+                "file": "all_studing/android/BestPracticeAndroidDevelopment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "What is composition tree.md",
+                "file": "all_studing/android/BestPracticeAndroidDevelopment.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "What is composition tree.md"
+                "file": "all_studing/android/BestPracticeAndroidDevelopment.md"
               }
             }
           },
@@ -156,12 +156,23 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "08beb022d2add555",
+  "active": "232a8c2caed6f858",
   "lastOpenFiles": [
+    "all_studing/android/ApplicationLifecycle.md",
+    "Configuration Changes.md",
+    "Data structure.md",
+    "refactor/additional concepts/Data structure.md",
+    "compositionLocal2.md",
+    "refactor/additional concepts/Configuration Changes.md",
+    "refactor/functional programming/Functional Programming.md",
+    "Functional programming.md",
+    "functional_programming/functional_Programming_Concept.md",
+    "Functional Approach for performance.md",
+    "refactor/arch/MVI.md",
+    "What is composition tree.md",
     "General.md",
     "refactor/functional programming",
     "refactor/additional concepts/Different between Seald class and data class.md",
-    "What is composition tree.md",
     "Deep Dive into Rememeber.md",
     "refactor/compose/Deep Dive into Rememeber.md",
     "refactor/compose",
@@ -176,17 +187,7 @@
     "weatherAppProject/networkig.md",
     "coroutine-flow/BasicDescription.md",
     "all_studing/androidRoadMapLearning.md",
-    "refactor/Modular/Modular.md",
-    "all_studing/android/modular/Modular.md",
-    "all_studing/android/modular/ModularApprochForAndroidDevelopers.md",
-    "all_studing/android/modular/ManageDependenciesInModular.md",
     "refactor/Modular",
-    "refactor/dependency injection/Hilt.md",
-    "all_studing/android/dependency injection/hilt-dependecy-injection.md",
-    "weatherAppProject/hilt.md",
-    "refactor/arch/UDF.md",
-    "refactor/arch/MVI.md",
-    "all_studing/android/architecture/mvi and udf/MVI.md",
     "refactor/arch",
     "refactor",
     "ft_for_presentation",
