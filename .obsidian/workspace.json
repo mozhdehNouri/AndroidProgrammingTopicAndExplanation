@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5ec20cda1cfd5d1b",
+        "id": "3faaaf74f6feca16",
         "type": "tabs",
         "children": [
           {
-            "id": "870b65bd1b0627cd",
+            "id": "3472d0896aa774a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/compose/Compose In General.md",
+                "file": "all_studing/android/Compose/compose-tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/compose/Compose In General.md",
+                "file": "all_studing/android/Compose/compose-tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/compose/Compose In General.md",
+                "file": "all_studing/android/Compose/compose-tips.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/compose/Compose In General.md"
+                "file": "all_studing/android/Compose/compose-tips.md"
               }
             }
           },
@@ -156,20 +156,25 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "870b65bd1b0627cd",
+  "active": "3472d0896aa774a9",
   "lastOpenFiles": [
+    "all_studing/android/Compose/ThinkingInCompose.md",
+    "all_studing/android/Compose/StateFlowOrRemember.md",
+    "all_studing/android/Compose/uiState.md",
+    "all_studing/android/Compose/Semantics.md",
+    "all_studing/android/Compose/composeintgrationLibarary.md",
+    "all_studing/android/Compose/StateFlowOrComposeState.md",
+    "all_studing/android/Compose/ComposeItemDefinition.md",
+    "all_studing/android/Compose/compose-tips.md",
+    "refactor/compose/Compose In General.md",
     "all_studing/android/Compose/PositinalMemoized.md",
     "all_studing/android/Compose/Navigation.md",
     "all_studing/android/Compose/Long-Immutable.md",
     "all_studing/android/Compose/Material3.md",
-    "refactor/compose/Compose In General.md",
-    "all_studing/android/Compose/composeintgrationLibarary.md",
-    "all_studing/android/Compose/compose-tips.md",
     "compose/Compose Tips definition.md",
     "refactor/compose/Compose Tips definition.md",
     "compose/Compose compiler.md",
     "refactor/compose/State And Rememeber/State In compose.md",
-    "all_studing/android/Compose/uiState.md",
     "all_studing/android/Compose/composeInDepth.md",
     "all_studing/android/Compose/State/State in compose.md",
     "all_studing/android/Compose/State/MutableState.md",
@@ -182,11 +187,6 @@
     "refactor/compose/Theme",
     "weatherAppProject/networkig.md",
     "ft_for_presentation/functional_Programming_Concept.md",
-    "all_studing/android/question/When only onDestroy is called for an activity without onPause() and onStop().md",
-    "refactor/additional concepts/When only onDestroy is called for an activity without onPause() and onStop().md",
-    "all_studing/android/Material2.md",
-    "all_studing/android/ApplicationLifecycle.md",
-    "all_studing/android/SharePrefrence Vs DataStore.md",
     "refactor/functional programming",
     "refactor/compose",
     "refactor/test",

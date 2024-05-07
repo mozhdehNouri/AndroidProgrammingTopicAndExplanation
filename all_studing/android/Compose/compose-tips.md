@@ -168,12 +168,8 @@ screen, the previous Composables are destroyed and along with them, the scroll s
 
 @Immutable annotion in compose android
 
-- `Immutable`can be used to mark a class that produces immutable instances. In short, a class that
-  has all public fields declared as`val`.
-- This is a promise to the compose compiler that
-  ***once the object is constructed, the properties inside it won't change at runtime***.
-- Immutable is used by a composition that enables composition optimizations that can be performed
-  based on the assumption that values read from the type will not change.
+- `Immutable`can be used to mark a class that produces immutable instances. In short, a class that  has all public fields declared as`val`. This is a promise to the compose compiler that ***once the object is constructed, the properties inside it won't change at runtime***.
+- Immutable is used by a composition that enables composition optimizations that can be performed based on the assumption that values read from the type will not change.
 
 So, when you use the "@Immutable" sticker on a class in your computer program, it tells the computer
 that the things inside that class (we call them properties) won't change after they're created. This
@@ -184,7 +180,7 @@ In Compose, when you use the `@Immutable` sticker on a class, it's like telling 
 
 Similarly, when Compose knows that the data in a class won't change (thanks to `@Immutable`), it can build your app's user interface more efficiently. It can be confident that the data it's using to create the interface won't suddenly change, so it can make your app run faster and work better.
 
-[Promise compose compiler and imply when you&#x27;ll change 🤞](https://blog.shreyaspatil.dev/promise-compose-compiler-and-imply-when-youll-change)     read this article for improve composable perforamce
+[Promise compose compiler and imply when you&#x27;ll change 🤞](https://blog.shreyaspatil.dev/promise-compose-compiler-and-imply-when-youll-change)     read this article for improve composable perforance
 
 ---
 
