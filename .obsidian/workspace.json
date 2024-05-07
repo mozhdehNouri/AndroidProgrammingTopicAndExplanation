@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3faaaf74f6feca16",
+        "id": "1ade4037011c1b3f",
         "type": "tabs",
         "children": [
           {
-            "id": "3472d0896aa774a9",
+            "id": "6595931afb680155",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "all_studing/android/Compose/compose-tips.md",
+                "file": "coroutine-flow/flow/AsLiveDataOpertor.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5067367553711
+    "width": 270.5042724609375
   },
   "right": {
     "id": "af662a2b6b5e1fb2",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "all_studing/android/Compose/compose-tips.md",
+                "file": "coroutine-flow/flow/AsLiveDataOpertor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "all_studing/android/Compose/compose-tips.md",
+                "file": "coroutine-flow/flow/AsLiveDataOpertor.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "all_studing/android/Compose/compose-tips.md"
+                "file": "coroutine-flow/flow/AsLiveDataOpertor.md"
               }
             }
           },
@@ -156,37 +156,37 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "3472d0896aa774a9",
+  "active": "6595931afb680155",
   "lastOpenFiles": [
+    "all_studing/kotlin/Generic.md",
+    "coroutine-flow/flow/AsLiveDataOpertor.md",
+    "coroutine-flow/flow/ComposeFlow.md",
+    "all_studing/atomatic-kotlin/Composition.md",
+    "refactor/additional concepts/JvmStatic.md",
+    "all_studing/kotlin/anotation/JvmStatic.md",
+    "refactor/JvmStatic.md",
+    "all_studing/kotlin/anotation/JvmOverloads.md",
+    "refactor/additional concepts/JvmOverloads.md",
+    "all_studing/kotlin/CompanionObject Vs Object.md",
+    "refactor/additional concepts/CompanionObject Vs Object.md",
+    "all_studing/kotlin/Remove Duplicate Form Array.md",
+    "refactor/additional concepts/Remove Duplicate Form Array.md",
+    "all_studing/kotlin/inlineFunction.md",
+    "all_studing/kotlin/Lateinit and Lazy.md",
+    "all_studing/kotlin/InitBlocking.md",
+    "all_studing/kotlin/Infix.md",
+    "refactor/additional concepts/Infix.md",
+    "all_studing/kotlin/Const.md",
+    "refactor/additional concepts/Const.md",
+    "all_studing/common/CommonInforamtion.md",
+    "refactor/additional concepts/SaveStateHandle.md",
+    "refactor/additional concepts/kapt.use.worker.api  in Gradle.md",
+    "refactor/additional concepts/CoreLibraryDesugaringEnabled.md",
+    "refactor/additional concepts/Which one Moshi JSON or Kotshi.md",
     "all_studing/android/Compose/ThinkingInCompose.md",
-    "all_studing/android/Compose/StateFlowOrRemember.md",
-    "all_studing/android/Compose/uiState.md",
-    "all_studing/android/Compose/Semantics.md",
-    "all_studing/android/Compose/composeintgrationLibarary.md",
-    "all_studing/android/Compose/StateFlowOrComposeState.md",
-    "all_studing/android/Compose/ComposeItemDefinition.md",
-    "all_studing/android/Compose/compose-tips.md",
-    "refactor/compose/Compose In General.md",
-    "all_studing/android/Compose/PositinalMemoized.md",
-    "all_studing/android/Compose/Navigation.md",
-    "all_studing/android/Compose/Long-Immutable.md",
-    "all_studing/android/Compose/Material3.md",
-    "compose/Compose Tips definition.md",
-    "refactor/compose/Compose Tips definition.md",
-    "compose/Compose compiler.md",
-    "refactor/compose/State And Rememeber/State In compose.md",
-    "all_studing/android/Compose/composeInDepth.md",
-    "all_studing/android/Compose/State/State in compose.md",
-    "all_studing/android/Compose/State/MutableState.md",
-    "refactor/compose/Theme/Material 3 Color.md",
-    "weatherAppProject/tips.md",
-    "refactor/compose/State And Rememeber/Deep Dive into Rememeber.md",
     "refactor/compose/State And Rememeber",
     "refactor/compose/New folder",
-    "weatherAppProject/Theme.md",
     "refactor/compose/Theme",
-    "weatherAppProject/networkig.md",
-    "ft_for_presentation/functional_Programming_Concept.md",
     "refactor/functional programming",
     "refactor/compose",
     "refactor/test",

@@ -1,7 +1,6 @@
-##### asLiveData() is a terimanl operator:
+##### asLiveData() is a terminal operator:
 
-look at this example :
-
+Look at this example :
 ```kt
 flowOne.onStart {
 
@@ -11,7 +10,6 @@ flowOne.onStart {
 // do something
 }.launchIn(viewModelScope)
 ```
-
 or
 
 ```kt
