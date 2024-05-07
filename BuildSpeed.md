@@ -91,6 +91,7 @@ I’m also planning to spend some time experimenting with Gradle tasks to find a
 
 
 5 Modules
+
 Obviously, build time depends on the amount of code. If you reduce amount of code by half then the build should also be roughly two times faster. If instead of 3 modules project is split in 5, then build time should be approximately 40% faster.
 
 It is almost true.

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "55e9d82101da99b7",
+        "id": "d609e545cac76098",
         "type": "tabs",
         "children": [
           {
-            "id": "ab0349b8fd53d0a9",
+            "id": "9053cc0c27676ea0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/dependency injection/Hilt.md",
+                "file": "refactor/Modular/Modular.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/dependency injection/Hilt.md",
+                "file": "BuildSpeed.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/dependency injection/Hilt.md",
+                "file": "BuildSpeed.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/dependency injection/Hilt.md"
+                "file": "BuildSpeed.md"
               }
             }
           },
@@ -162,20 +162,20 @@
     "type": "floating",
     "children": [
       {
-        "id": "1dc833bd53843661",
+        "id": "fa5066bb83222625",
         "type": "window",
         "children": [
           {
-            "id": "c7648aa4ebd10500",
+            "id": "b0cc0482594d47de",
             "type": "tabs",
             "children": [
               {
-                "id": "fc69899532af3e39",
+                "id": "23e17604e8bbe931",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "all_studing/android/dependency injection/hilt-dependecy-injection.md",
+                    "file": "BuildSpeed.md",
                     "mode": "source",
                     "source": false
                   }
@@ -185,8 +185,8 @@
           }
         ],
         "direction": "vertical",
-        "x": 371,
-        "y": 25,
+        "x": 83,
+        "y": 18,
         "width": 605,
         "height": 605,
         "maximize": true,
@@ -194,10 +194,16 @@
       }
     ]
   },
-  "active": "ab0349b8fd53d0a9",
+  "active": "23e17604e8bbe931",
   "lastOpenFiles": [
-    "all_studing/android/dependency injection/hilt-dependecy-injection.md",
+    "refactor/Modular/Modular.md",
+    "BuildSpeed.md",
+    "all_studing/android/modular/Modular.md",
+    "all_studing/android/modular/ModularApprochForAndroidDevelopers.md",
+    "all_studing/android/modular/ManageDependenciesInModular.md",
+    "refactor/Modular",
     "refactor/dependency injection/Hilt.md",
+    "all_studing/android/dependency injection/hilt-dependecy-injection.md",
     "weatherAppProject/hilt.md",
     "refactor/arch/UDF.md",
     "refactor/arch/MVI.md",
@@ -217,13 +223,8 @@
     "compose/Understanding side effects.md",
     "Data structure.md",
     "weatherAppProject/uilayers.md",
-    "weatherAppProject/domain-layer.md",
     "refactor/arch",
-    "Untitled.md",
     "refactor",
-    "Untitled 1.md",
-    "What is composition tree.md",
-    "Configuration Changes.md",
     "ft_for_presentation",
     "functional_programming",
     "Pasted image 20240420122710.png",
@@ -241,7 +242,6 @@
     "coroutine-flow/flow",
     "coroutine-flow/New folder",
     "coroutine-flow",
-    "New folder",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
