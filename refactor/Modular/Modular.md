@@ -213,13 +213,9 @@ With introduction of modules that problem is automagically resolved. Building a 
 **Conclusion**
 
 First and most important, the hypothesis was correct, modularizing project can significantly speed up build process, but not for all configurations.
-
 Second, if splitting is done in a wrong way, then build time will be drastically increased, because Gradle build both, release and debug version of library modules.
-
 Third, working in test-driven way is much easier for a project with multiple modules, because building a small library module is way faster then the whole project.
-
 Forth, doing many things in parallel slows down the build. So having more powerful hardware is a good idea.
-
 Below you can find results of all experiments described in this article:
 
 ![[Pasted image 20240412205934.png]]

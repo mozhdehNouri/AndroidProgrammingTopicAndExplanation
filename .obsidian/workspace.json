@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d609e545cac76098",
+        "id": "c85f5f28ae18932b",
         "type": "tabs",
         "children": [
           {
-            "id": "9053cc0c27676ea0",
+            "id": "08beb022d2add555",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/Modular/Modular.md",
+                "file": "What is composition tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5067367553711,
-    "collapsed": true
+    "width": 341.5067367553711
   },
   "right": {
     "id": "af662a2b6b5e1fb2",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BuildSpeed.md",
+                "file": "What is composition tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BuildSpeed.md",
+                "file": "What is composition tree.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BuildSpeed.md"
+                "file": "What is composition tree.md"
               }
             }
           },
@@ -157,47 +156,27 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "floating": {
-    "id": "e5a05392ff4463b3",
-    "type": "floating",
-    "children": [
-      {
-        "id": "fa5066bb83222625",
-        "type": "window",
-        "children": [
-          {
-            "id": "b0cc0482594d47de",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "23e17604e8bbe931",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "BuildSpeed.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 83,
-        "y": 18,
-        "width": 605,
-        "height": 605,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "23e17604e8bbe931",
+  "active": "08beb022d2add555",
   "lastOpenFiles": [
-    "refactor/Modular/Modular.md",
+    "General.md",
+    "refactor/functional programming",
+    "refactor/additional concepts/Different between Seald class and data class.md",
+    "What is composition tree.md",
+    "Deep Dive into Rememeber.md",
+    "refactor/compose/Deep Dive into Rememeber.md",
+    "refactor/compose",
     "BuildSpeed.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Test.md",
+    "refactor/test/Test.md",
+    "refactor/test",
+    "weatherAppProject/tips.md",
+    "weatherAppProject/Theme.md",
+    "weatherAppProject/networkig.md",
+    "coroutine-flow/BasicDescription.md",
+    "all_studing/androidRoadMapLearning.md",
+    "refactor/Modular/Modular.md",
     "all_studing/android/modular/Modular.md",
     "all_studing/android/modular/ModularApprochForAndroidDevelopers.md",
     "all_studing/android/modular/ManageDependenciesInModular.md",
@@ -208,21 +187,6 @@
     "refactor/arch/UDF.md",
     "refactor/arch/MVI.md",
     "all_studing/android/architecture/mvi and udf/MVI.md",
-    "refactor/arch/MVVM and MVP Short Concept.md",
-    "refactor/arch/What is Archi.md",
-    "all_studing/android/architecture/mvi and udf/compareArch.md",
-    "all_studing/android/architecture/mvi and udf/UDF.md",
-    "refactor/arch/Clean Arch.md",
-    "deepDiveintoRememeber.md",
-    "weatherAppProject/dataLayer.md",
-    "refactor/arch/Layers in android.md",
-    "all_studing/cleanCodeSummery.md",
-    "all_studing/android/architecture/domain Layer.md",
-    "all_studing/android/architecture/data Layer.md",
-    "compose/State and Recomposition.md",
-    "compose/Understanding side effects.md",
-    "Data structure.md",
-    "weatherAppProject/uilayers.md",
     "refactor/arch",
     "refactor",
     "ft_for_presentation",
@@ -239,9 +203,6 @@
     "Pasted image 20240412205614.png",
     "room-database",
     "performance-issue",
-    "coroutine-flow/flow",
-    "coroutine-flow/New folder",
-    "coroutine-flow",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

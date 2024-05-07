@@ -1,11 +1,5 @@
 Remember :
-
-
-
-that’s because the state counter is not remembered, what actually happens is that the counter does increase in value, so the state changes of the counter and whenever the state changes in a Composable that Composable (for our case its CounterScreen) will recompose (Recompose in Jetpack Compose means the phone automatically updates the screen to show changes in an app without the programmer doing it manually) and since it will recompose and our state is not remembered it will show the initial value of the counter which is 0, so the counter is always initialized with 0 whenever we hit the Increase Button, it will increase the counter from 0 to 1 but since the Composable is recomposed and our state is not remembered it will immediately be set to 0 again
-
-
-
+That’s because the state counter is not remembered, what actually happens is that the counter does increase in value, so the state changes of the counter and whenever the state changes in a Composable that Composable (for our case its CounterScreen) will recompose (Recompose in Jetpack Compose means the phone automatically updates the screen to show changes in an app without the programmer doing it manually) and since it will recompose and our state is not remembered it will show the initial value of the counter which is 0, so the counter is always initialized with 0 whenever we hit the Increase Button, it will increase the counter from 0 to 1 but since the Composable is recomposed and our state is not remembered it will immediately be set to 0 again
 ```kt
 /**
  * Remember the value produced by [calculation]. [calculation] will only be evaluated during the composition.
@@ -16,22 +10,18 @@ inline fun <T> remember(crossinline calculation: @DisallowComposableCalls () -> 
     currentComposer.cache(false, calculation)
 ```
 
-
-
 its also a generic type parameter <T> that allows the function to work with different primitive types such as String, Int, custom data classes and even complex types like Composeable functions.
 
-`@DisallowComposableCalls` is an annotation used to indicate that the lambda `calculation` should not contain calls to other composables, meaning if for example that notation was not there so we can call composables there like so :
+`@DisallowComposableCalls` is an annotation used to indicate that the lambda `calculation` should not contain calls to other composables, meaning if for example that notation was not there so we can call composables there like so:
 
-```kt
-
-  var counter by remember {
+```kotlin
+     var counter by remember {
         Text(text = "abc")
     }
-```
-
-this would lead to unexpected behavior and potentially cause infinite recomposition loops, so the `@DisallowComposableCalls` is there to ensure that no composable will be invoked inside the calculation lambda.
-
-this remember function returns a :
+    ```
+    
+This would lead to unexpected behavior and potentially cause infinite recomposition loops, so the `@DisallowComposableCalls` is there to ensure that no composable will be invoked inside the calculation lambda.
+This remember function returns a :
 
 ```kt
 currentComposer.cache(false, calculation)
@@ -40,8 +30,6 @@ currentComposer.cache(false, calculation)
 which is responsible for caching the value produced by the `calculation` lambda. Let's break down what happens in this line:
 
 `currentComposer` refers to the current Composer instance, which is an internal object used by the Compose framework for managing the composition and recomposition process.
-
-
 
 ```kt
 val currentComposer: Composer
@@ -60,30 +48,13 @@ val currentComposer: Composer
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // read about blog this person
 
 https://medium.com/@joseph.1hach/everything-you-need-to-know-about-remember-in-android-jetpack-compose-3fb14356365
-
-
 
 follow this persion 
 
 [Youssef Hachicha](https://medium.com/@joseph.1hach?source=user_profile-------------------------------------)
 
-
-
 question and answer in compose:
-
 https://slack-chats.kotlinlang.org/t/505732/quick-question-what-is-readonlycomposable

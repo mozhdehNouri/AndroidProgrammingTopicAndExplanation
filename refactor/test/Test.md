@@ -1,10 +1,7 @@
-### Test
 
 - `main`: Contains your app code.
 - `androidTest`: Contains tests known as instrumented tests.
 - `test`: Contains tests known as local tests.
-
-
 
 ###### Local tests (test source set)
 
@@ -26,7 +23,6 @@ android {
     }
 }
 ```
-
 - **@Test:** This annotation is used to mark a method as a test case. The `@Test` annotation tells the Java compiler to run the method as a test case when the class is compiled.
 - **@Before:** This annotation is used to mark a method as a setup method. The `@Before` annotation tells the Java compiler to run the method before each test case in the class. This is useful for setting up the test environment before each test case is run.
 - **@After:** This annotation is used to mark a method as a tear-down method. The `@After` annotation tells the Java compiler to run the method after each test case in the class. This is useful for cleaning up the test environment after each test case is run.
@@ -58,19 +54,13 @@ Note that the “**Arrange, Act, Assert” (AAA)** testing mnemonic is a simila
     }
 ```
 
-
-
 # Test Doubles
 
 The solution to this is that when you’re testing the repository, *don’t use the real networking or database code*, but to instead use a test double. A test double is a version of a class crafted specifically for testing. It is meant to replace the real version of a class in tests. It’s similar to how a stunt double is an actor who specializes in stunts, and replaces the real actor for dangerous actions.
 
-
-
 Sure! When you're testing your code, especially something like a repository that interacts with the network or a database, you don't want to actually use the real networking or database components. Instead, you create what's called a "test double."
 
 Think of it like this: just as a stunt double replaces the real actor for dangerous scenes in a movie, a test double replaces the real class in your tests. It's a version of the class that's specifically designed for testing purposes. So, when you're testing your repository, you'll use this test double instead of the actual networking or database code. This helps isolate your tests and ensures they only focus on the specific functionality you're testing, without worrying about the complexities or potential issues of the real components.
-
-
 
 Here are some types of test doubles:
 
@@ -81,7 +71,6 @@ A test double that has a “working” implementation of the class, but it’s i
 ## **Mock**
 
 A test double that tracks which of its methods were called. It then passes or fails a test depending on whether it’s methods were called correctly. When you mock an object it creates an empty implementation of that class.
-
 
 
 # Naming Convention
@@ -101,7 +90,6 @@ The name of the test should help you understand what the test does. The naming c
 Unit testing is a software testing technique used to verify the correctness of individual units or components of a software system. A unit refers to the smallest testable part of an application, such as a method, function, or class. The purpose of unit testing is to isolate each unit of code and test it in isolation to ensure that it behaves as expected.
 
 
-
 **The main objectives of unit testing are**:
 
 - **Validation**: Aims to validate that each unit of code performs as intended. It checks whether the unit produces the expected output given a specific input.
@@ -109,13 +97,7 @@ Unit testing is a software testing technique used to verify the correctness of 
 - **Code quality**: Promotes good coding practices and code quality. It encourages developers to write modular, reusable, and maintainable code, as units are easier to test when they have clear boundaries and well-defined inputs and outputs.
 - **Regression testing**: Act as a safety net when making changes to the codebase. By running unit tests after modifications, developers can ensure that the existing functionality remains intact and unaffected by the changes.
 
-
-
 Unit testing follows the principles of the “Arrange, Act, Assert” (AAA) pattern. In this pattern, developers set up the necessary preconditions (Arrange), perform the action being tested (Act), and finally, verify the expected behavior or outcome (Assert).
-
-
-
-
 
 ### Common Challenges in Unit Testing For Android
 
@@ -127,14 +109,10 @@ While unit testing in Android offers numerous benefits, developers may encounter
 
 Tools like Mockito’s **when().thenReturn()** and **verify()** can help simulate asynchronous behavior and ensure proper testing of these operations.
 
-
-
 - **Legacy code and tight coupling**: Legacy codebases or codes with high coupling can present challenges in unit testing. Tight coupling makes it difficult to isolate individual units for testing, as changes in one unit may affect others. Refactoring and introducing dependency injection can help mitigate this challenge and make code more testable.
 - **Resource access and configuration**: Android applications often rely on resources like strings, dimensions, or drawable. Accessing these resources directly in unit tests can be problematic, as they require a proper Android context. Libraries like AndroidX Test can provide utilities to create a test-specific application context and access resources during unit testing.
 - **Time-consuming test execution**: As the size and complexity of an Android application grow, the number of unit tests can also increase significantly. Running a large number of tests can consume substantial time and resources, affecting the development workflow. Leveraging tools like Gradle’s build caching and running tests in parallel can help optimize test execution time.
 - **Test maintenance**: Maintaining unit tests can be challenging, especially when the application undergoes frequent changes or refactorings. Tests may need to be updated or modified to reflect the changes in the codebase. Regular refactoring and ensuring tests have clear and concise assertions can make test maintenance more manageable.
-
-
 
 ### Best Practices For Unit Testing in Android
 
@@ -150,12 +128,6 @@ Unit testing in Android is essential for ensuring the quality and reliability of
 8. **Use parameterized tests**: Parameterized tests allow you to run the same test logic with different inputs and expected outputs. Use parameterized tests to minimize code duplication and cover multiple scenarios with a single test method.
 9. **Regularly update and maintain tests**: Keep your tests up to date with code changes and refactorings. Regularly review and maintain your tests to ensure they remain accurate and reflect the current behavior of your codebase. Refactor tests along with the production code to keep them clean, readable, and maintainable.
 10. **Integrate tests into the build process**: Incorporate unit tests into your build process to ensure they are executed automatically as part of your CI/CD pipeline or before code deployment. This helps catch issues early and ensures that tests are run consistently.
-
-
-
-
-
-
 
 Links:
 
