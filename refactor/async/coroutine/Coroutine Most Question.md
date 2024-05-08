@@ -1,5 +1,3 @@
-What is coroutine ? is it thread? is it a framework for managing threads?
-what are threads?
 
 Coroutines in the context of Android development (or Kotlin specifically)
 are a concurrency design pattern used to simplify asynchronous
@@ -40,10 +38,5 @@ can be managed independently. Threads are a way to provide application
 concurrency, potentially running different parts of a program in parallel
 on multi-core processors.
 
-So, to put it simply, coroutines can be thought of as a way to write
-asynchronous and non-blocking code in a sequential fashion, which uses
-threads underneath but abstracts away most of the complexity of managing
-them directly. They allow high concurrency without the high costs
-generally associated with threads.
 
 

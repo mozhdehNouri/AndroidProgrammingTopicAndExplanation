@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e87541404510079d",
+        "id": "6adfb4f75cd6569d",
         "type": "tabs",
         "children": [
           {
-            "id": "2d44c809fc289d75",
+            "id": "ecdfa15a8d7768ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "coroutine-flow/SuspendFunction.md",
+                "file": "coroutine-flow/flow/TerminalOperator.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coroutine-flow/SuspendFunction.md",
+                "file": "coroutine-flow/flow/TerminalOperator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "coroutine-flow/SuspendFunction.md",
+                "file": "coroutine-flow/flow/TerminalOperator.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "coroutine-flow/SuspendFunction.md"
+                "file": "coroutine-flow/flow/TerminalOperator.md"
               }
             }
           },
@@ -156,28 +156,37 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "2d44c809fc289d75",
+  "active": "ecdfa15a8d7768ef",
   "lastOpenFiles": [
-    "coroutine-flow/flow/BasicFlowKonwlodge.md",
+    "coroutine-flow/flow/SharedFlow.md",
+    "coroutine-flow/flow/StateFlow.md",
+    "coroutine-flow/flow/IntermediateOperator.md",
+    "refactor/async/flow/IntermediateOperator.md",
+    "coroutine-flow/flow/ConflateOperator.md",
+    "refactor/async/flow/ConflateOperator.md",
+    "coroutine-flow/flow/Compose Flow.md",
+    "refactor/async/flow/Compose Flow.md",
+    "coroutine-flow/flow/Flow question and answer.md",
+    "refactor/async/flow/Flow question and answer.md",
+    "coroutine-flow/flow/Buffer Operator.md",
+    "refactor/async/flow/Buffer Operator.md",
+    "coroutine-flow/flow/Basic Flow Konwlodge.md",
+    "refactor/async/flow/Basic Flow Konwlodge.md",
+    "coroutine-flow/CoroutineBuilderExplanation.md",
+    "coroutine-flow/Before know about the Coroutine.md",
+    "refactor/async/Before know about the Coroutine.md",
+    "refactor/async/coroutine/CoroutineContext.md",
+    "coroutine-flow/Coroutine Most Question.md",
+    "refactor/async/coroutine/Coroutine Most Question.md",
+    "coroutine-flow/SuspendFunction.md",
+    "refactor/async/coroutine/SuspendFunction.md",
     "all_studing/kotlin/coroutine/FlowInDepth-StateFlowAndSharedFlow.md",
     "refactor/async/flow/FlowInDepth-StateFlowAndSharedFlow.md",
     "all_studing/kotlin/coroutine/coroutine-simplefiy.md",
     "all_studing/kotlin/coroutine/Channel and Flow.md",
-    "refactor/async/flow/Channel and Flow.md",
-    "all_studing/kotlin/coroutine/CoroutineInDepth.md",
-    "all_studing/kotlin/coroutine/Coroutine.md",
-    "refactor/async/coroutine/Coroutine.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
-    "refactor/async/Untitled.md",
     "refactor/async",
-    "all_studing/kotlin/coroutine/coroutine-course.md",
-    "coroutine-flow/flow/AsLiveDataOpertor.md",
-    "performance-issue/Identifying Indicators of Performance Issues.md",
-    "performance-issue/Functional Approach.md",
-    "all_studing/android/Compose/State/CompositionLocal.md",
-    "refactor/compose/Side effects.md",
-    "all_studing/android/Compose/State/AdvanceStateAndSideEffect.md",
     "Pasted image 20240217205931.png",
     "Pasted image 20240217205918.png",
     "Pasted image 20240216204007.png",
@@ -188,15 +197,6 @@
     "Pasted image 20240216183313.png",
     "Pasted image 20240216183216.png",
     "Pasted image 20240215213100.png",
-    "compose/Effects from Google explain.md",
-    "compose/Coroutine and LaunchedEffect.md",
-    "compose/SideEffect from compose book.md",
-    "compose/Side effects.md",
-    "compose/Side Effect.md",
-    "compose/UDF in compose.md",
-    "compose/State and Recomposition.md",
-    "compose/Recompostion and Scoped recomposition.md",
-    "refactor/compose/Slot Api.md",
     "refactor/compose/State And Rememeber",
     "refactor/compose/New folder",
     "refactor/compose/Theme",
