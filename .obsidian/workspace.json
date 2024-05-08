@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "91f669a10071b681",
+        "id": "7bc26a35824aebae",
         "type": "tabs",
         "children": [
           {
-            "id": "d81d95eb7431fef1",
+            "id": "101595df592e7fce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compose/RememberObserver in compose.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/RememberObserver in compose.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/RememberObserver in compose.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "compose/RememberObserver in compose.md"
+                "file": "all_studing/android/Compose/State/CompositionLocal.md"
               }
             }
           },
@@ -156,34 +150,44 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "d81d95eb7431fef1",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
+    "refactor/compose/Side effects.md",
+    "all_studing/android/Compose/State/AdvanceStateAndSideEffect.md",
+    "Pasted image 20240217205931.png",
+    "Pasted image 20240217205918.png",
+    "Pasted image 20240216204007.png",
+    "Pasted image 20240216184404.png",
+    "Pasted image 20240216183520.png",
+    "Pasted image 20240216183440.png",
+    "Pasted image 20240216183406.png",
+    "Pasted image 20240216183313.png",
+    "Pasted image 20240216183216.png",
+    "Pasted image 20240215213100.png",
     "compose/Effects from Google explain.md",
+    "compose/Coroutine and LaunchedEffect.md",
+    "compose/SideEffect from compose book.md",
+    "compose/Side effects.md",
+    "compose/Side Effect.md",
+    "compose/UDF in compose.md",
+    "compose/State and Recomposition.md",
+    "compose/Recompostion and Scoped recomposition.md",
+    "refactor/compose/Slot Api.md",
+    "refactor/compose/ViewModel in Compose.md",
+    "refactor/compose/Recompostion and Scoped recomposition.md",
+    "compose/ViewModel in Compose.md",
+    "compose/Slot Api.md",
+    "compose/What is Compose.md",
+    "refactor/compose/ThinkingInCompose.md",
+    "refactor/compose/Donut-hole skipping in Jetpack Compose.md",
+    "refactor/compose/RememberObserver in compose.md",
+    "compose/Scoped recomposition in Jetpack Compose.md",
+    "compose/RememberObserver in compose.md",
     "compose/Modifier.md",
     "refactor/compose/Modifier.md",
     "compose/Modifier.align() in Row and Column and Box.md",
     "compose/Custom Layout.md",
     "compose/IntrinsicSize.md",
-    "refactor/compose/IntrinsicSize.md",
-    "compose/Important knowledge from compose.md",
-    "refactor/compose/ThinkingInCompose.md",
-    "refactor/compose/Compose Lifecycle.md",
-    "compose/Donut-hole skipping in Jetpack Compose.md",
-    "refactor/compose/Donut-hole skipping in Jetpack Compose.md",
-    "compose/Detecting Gestures in Compose.md",
-    "compose/everything about recompostion.md",
-    "What is composition tree.md",
-    "all_studing/android/Compose/State/CompositionLocal.md",
-    "compose/Composition Local.md",
-    "refactor/compose/Composition Local.md",
-    "compositionLocal2.md",
-    "all_studing/android/Compose/State/AdvanceStateAndSideEffect.md",
-    "all_studing/android/Compose/State/Eveything about Compose.md",
-    "refactor/compose/Compose In General.md",
-    "all_studing/android/Compose/Semantics.md",
-    "all_studing/android/Compose/compose-tips.md",
-    "all_studing/android/Compose/ThinkingInCompose.md",
-    "all_studing/atomatic-kotlin/Composition.md",
     "refactor/compose/State And Rememeber",
     "refactor/compose/New folder",
     "refactor/compose/Theme",
@@ -194,16 +198,6 @@
     "refactor/arch",
     "refactor",
     "ft_for_presentation",
-    "Pasted image 20240420122710.png",
-    "Pasted image 20240420122700.png",
-    "Pasted image 20240420122645.png",
-    "Pasted image 20240420122628.png",
-    "Pasted image 20240420121911.png",
-    "Pasted image 20240420104414.png",
-    "Pasted image 20240412205934.png",
-    "Pasted image 20240412205854.png",
-    "Pasted image 20240412205643.png",
-    "Pasted image 20240412205614.png",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

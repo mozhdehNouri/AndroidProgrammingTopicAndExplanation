@@ -1,40 +1,4 @@
-In each case, the coroutine was launched from within the onClick event handler of a Button composable. The reason for this is that while it is possible to launch a coroutine in this way from within the scope of an event handler, it is not safe to do so from within the scope of the parent composable. 
-
-@Composable
-fun Greeting(name: String) {
- val coroutineScope = rememberCoroutineScope()
- coroutineScope.launch() {
- performSlowTask()
- }
-}
-
-It is not possible to launch coroutines in this way when working within a composable because it can cause adverse side effects. In the context of Jetpack Compose, a side effect occurs when asynchronous code makes 
-changes to the state of a composable from a different scope without taking into consideration the lifecycle of that composable. The risk here is the potential for a coroutine to continue running after the composable exits, 
-a particular problem if the coroutine is still executing and making state changes the next time the composable runs.
-
-we need to launch our coroutines from within the body of either a LaunchedEffect or SideEffect composable. Unlike the above attempt to directly launch a coroutine from within the scope of a composable, these two composables are considered safe to launch coroutines because they are aware of the lifecycle of the parent composable.
-When a LaunchedEffect composable containing coroutine launch code is called, the coroutine will immediately launch and begin executing the asynchronous code. As soon as the parent composable completes, the LaunchedEffect instance and coroutine are destroyed. 
-
-The syntax for declaring a LaunchedEffect containing a coroutine is as follows:
-LaunchedEffect(key1, key2, ...) {
- coroutineScope.launch() {
- // async code here
- }
-}
-
-The key parameter values (of which there must be at least one) control the behavior of the coroutine through recompositions. As long as the values of any of the key parameters remain unchanged, LaunchedEffect will keep 
-the same coroutine running through multiple recompositions of the parent composable. If a key value changes, however, LaunchedEffect will cancel the current coroutine and launch a new one.
-
-----
-Compose Internal Book:
-
-A side-effect in Compose is a change to the state of the app that happens outside the scope of a composable function.
-
-a side effect is anything that escapes the control and scope of a function.side effects make functions non-deterministic, and therefore they make it hard for developers to reason about code.
-
-As we have described already, the problem on doing it right in the Composable function body is that we don’t have any control on when this effect runs, so it’ll run on every composition / recomposition, and will never get disposed, opening the door to potential leaks.
-
-Any composable enters the composition when materialized on screen, and finally leaves the composition when removed from the UI tree. Between both events, effects might run. Some effects can outlive the composable lifecycle, so you can span an effect across compositions.
+A side-effect in Compose is a change to the state of the app that happens outside the scope of a composable function. A side effect is anything that escapes the control and scope of a function.side effects make functions non-deterministic, and therefore they make it hard for developers to reason about code. As we have described already, the problem on doing it right in the Composable function body is that we don’t have any control on when this effect runs, so it’ll run on every composition / recomposition, and will never get disposed, opening the door to potential leaks. Any composable enters the composition when materialized on screen, and finally leaves the composition when removed from the UI tree. Between both events, effects might run. Some effects can outlive the composable lifecycle, so you can span an effect across compositions.
 
 We could divide effect handlers in two categories:
  - Non suspended effects: E.g: Run a side effect to initialize a callback when the Composable enters the composition, dispose it when it leaves.
@@ -96,13 +60,16 @@ This is the suspending variant for loading the initial state of a Composable, as
 • Cancels and relaunches the effect when key/s change/s.
 • Useful to span a job across recompositions.
 • Runs the effect on the applier dispatcher (Usually AndroidUiDispatcher.Main²¹) when entering
-
 The effect runs once when entering then once again every time the key varies,
 since our effect depends on its value. It’ll get cancelled when leaving the composition.
 Remember that it’s also cancelled every time it needs to be relaunched. LaunchedEffect requires at least one key.
 
+ **LaunchedEffect: run suspend functions in the scope of a composable:**
+To call suspend functions safely from inside a composable, use the [`LaunchedEffect`](https://developer.android.com/reference/kotlin/androidx/compose/runtime/package-summary#LaunchedEffect(kotlin.Any,kotlin.coroutines.SuspendFunction1)) composable. When `LaunchedEffect` enters the Composition, it launches a coroutine with the block of code passed as a parameter. The coroutine will be cancelled if `LaunchedEffect` leaves the composition. If `LaunchedEffect` is recomposed with different keys (see the [Restarting Effects](https://developer.android.com/jetpack/compose/side-effects#restarting-effects) section below), the existing coroutine will be cancelled and the new suspend function will be launched in a new coroutine.
 
-**currentRecomposeScope:**
+
+
+**CurrentRecomposeScope:**
 This is more an effect itself than an effect handler, but it’s interesting to cover.
 As an Android dev you might be familiar with the View system invalidate counterpart, which essentially enforces a new measuring, layout and drawing passes on your view. It was heavily used to create frame based animations using the Canvas, for example. So on every drawing tick you’d invalidate the view and therefore draw again based on some elapsed time. The currentRecomposeScope is an interface with a single purpose:
 ```kt
@@ -115,9 +82,7 @@ As an Android dev you might be familiar with the View system invalidate counterp
  }
 
 ```
-So by calling currentRecomposeScope.invalidate() it will invalidate composition locally enforces recomposition.
-It can be useful when using a source of truth that is not a compose State snapshot.
-
+So by calling currentRecomposeScope.invalidate() it will invalidate composition locally enforces recomposition. It can be useful when using a source of truth that is not a compose State snapshot.
 ```kt
 interface Presenter {
  fun loadUser(after: @Composable () -> Unit): User
@@ -130,8 +95,8 @@ interface Presenter {
  Text("The loaded user: ${user.name}")
  }
 ```
-**Suspended effects:**
 
+**Suspended effects:**
 **rememberCoroutineScope:**
 This call creates a CoroutineScope used to create jobs that can be thought as children of the composition.
 • Used to run suspended effects bound to the composition lifecycle.
@@ -144,6 +109,11 @@ This call creates a CoroutineScope used to create jobs that can be thought as ch
 The difference with LaunchedEffect is that LaunchedEffect is used for scoping jobs
 initiated by the composition, while rememberCoroutineScope is thought for scoping jobs initiated by a user interaction.
 
+### rememberCoroutineScope: obtain a composition-aware scope to launch a coroutine outside a composable
+
+As `LaunchedEffect` is a composable function, it can only be used inside other composable functions. In order to launch a coroutine outside of a composable, but scoped so that it will be automatically canceled once it leaves the composition, use [`rememberCoroutineScope`](https://developer.android.com/reference/kotlin/androidx/compose/runtime/package-summary#rememberCoroutineScope(kotlin.Function0)). Also use `rememberCoroutineScope` whenever you need to control the lifecycle of one or more coroutines manually, for example, cancelling an animation when a user event happens.
+
+`rememberCoroutineScope` is a composable function that returns a `CoroutineScope` bound to the point of the Composition where it's called. The scope will be cancelled when the call leaves the Composition.
 
 **produceState:**
 Use launchEffect internally and this build top on  LaunchedEffect.
@@ -163,7 +133,6 @@ Use launchEffect internally and this build top on  LaunchedEffect.
 You can provide a default value for the state, and also one or multiple keys.
 The only gotcha is that produceState allows to not pass any key, and in that case it will call LaunchedEffect with Unit as the key, making it span across compositions. Keep that in mind since the API surface does not make it explicit.
 
-
 **derivedStateOf:**
 derivedStateOf creates a new Compose state object you can observe that only updates as much as you need. In this way, it acts similarly to the Kotlin Flows distinctUntilChanged() operator. Caution: derivedStateOf is expensive, and you should only use it to avoid unnecessary recomposition when a result hasn't changed.
 This is where derivedStateOf comes in. Our state is changing more than we need our UI to update and so derivedStateOf can be used for this to reduce the number of recompositions.
@@ -176,26 +145,21 @@ val submitEnabled = remember {
 ```
 derivedStateOf helps to avoid unnecessary recompositions to achieve better performance.
 derivedStateOf{} is used when a compose state is derived from another compose state and the derived state is changing less frequently than the source state. derivedStateOf executes calculations block every time when internal state changes but the composable function will recompose only when the calculated value changes. This reduces the unnecessary recompositions making sure that composable should only recompose when it’s really required. To summarize, the following are important points.
-
 `derivedStateOf` is a function in Android Compose used to calculate derived state based on one or more observable state objects. It is beneficial when you want to update UI elements only when specific state changes occur without recomposing the entire composable function. You should use `derivedStateOf` when:
 
 1. Your UI depends on complex calculations or transformations of observable state objects.
-
 2. You want to avoid unnecessary recompositions when only specific parts of your state change.
-
 3. You need to optimize performance by preventing excessive recomposition.
 
 **snapshotFlow: convert Compose's State into Flows**
 
 Use snapshotFlow to convert State<T> objects into a cold Flow. snapshotFlow runs its block when collected and emits the result of the State objects read in it. When one of the State objects read inside the snapshotFlow block mutates, the Flow will emit the new value to its collector if the new value is not equal to the previous emitted value (this behavior is similar to that of Flow.distinctUntilChanged).
 
- ```kotlin
+```kotlin
  val listState = rememberLazyListState()
-
 LazyColumn(state = listState) {
     // ...
 }
-
 LaunchedEffect(listState) {
     snapshotFlow { listState.firstVisibleItemIndex }
         .map { index -> index > 0 }
@@ -205,28 +169,93 @@ LaunchedEffect(listState) {
             MyAnalyticsService.sendScrolledPastFirstItemEvent()
         }
 }
+
 ```
 
-one or important usecase for useing this is use powerful flow operator.
-
-
-
 **rememberUpdatedState:**
-
 rememberUpdatedState is used when we want to keep an updated reference to a variable in a long-running side-effect without having the side-effect to restart on recomposition
-
-
 remember is needed when you don't want to do some heavy calculation/operation when your composable is recomposed. On the other hand, sometimes your operation might change so you need to do calculations or update remembered values to make sure not to use obsolete values from the initial calculation.
-
-remember - allows you to remember state from previous recompose invocation and just this. So, if you for instance randomize color at initial run. The randomized color is going to be calculated only once and later reused whenever re-compose is necessary.
-
+remember - allows you to remember state from previous recompose invocation and just this. So, if you for instance randomize color at initial run. 
+The randomized color is going to be calculated only once and later reused whenever re-compose is necessary. 
 remember = store the value just in case recompose is called.
-
 Now, the second important thing is knowing when reCompose should actually be triggered and there the mutable states come to help.
-
 mutablestate = store the value and in case I update value trigger, recompose for all elements using this data.
 
+# SideEffect:
+`SideEffect` is used to publish compose state to non-compose code. The `SideEffect` is triggered on every recomposition and it is not a coroutine scope, so suspend functions cannot be used within it.
+
+
+## Restarting effects
+Some effects in Compose, like `LaunchedEffect`, `produceState`, or `DisposableEffect`, take a variable number of arguments, keys, that are used to cancel the running effect and start a new one with the new keys.
+
+
+Additional Information:
+What is diffrent between LaunchEffect and remeberCoroutineScope ?
+`launchEffect` and `rememberCoroutineScope` are both used for managing coroutines, but they serve different purposes.
+
+1. `launchEffect`: This is a composable function that allows you to launch a coroutine in response to a certain event or state change. When the event or state changes, the coroutine is executed and performs the specified task asynchronously. It is typically used for performing side effects such as fetching data from a network or performing a long-running computation. `launchEffect` is designed to be used directly within a composable function, allowing you to seamlessly integrate coroutines into your UI logic.
+2. `rememberCoroutineScope`: This is a function that provides a coroutine scope that can be remembered across recompositions of a composable function. It is used to ensure that coroutines launched within the scope are canceled appropriately when the composable is no longer active or recomposed. It's especially useful when dealing with coroutines that have a longer lifespan, such as handling user interactions or managing the lifecycle of a screen. By using `rememberCoroutineScope`, you can ensure that the coroutines are properly managed and canceled when needed.
 
 
 
 
+
+
+### derivedStateOf: convert one or multiple state objects into another state
+
+`derivedStateOf` is a function that allows you to compute a value based on other state values and automatically update that value when the dependencies change.
+`derivedStateOf` is a composable that can be used to derive new state based on the values of other state variables. It is useful when you need to compute a value that depends on other values, and you want to avoid recomputing the value unnecessarily.
+
+
+```kt
+@Composable
+fun MyComponent() {
+    var firstName by remember { mutableStateOf("") }
+    var lastName by remember { mutableStateOf("") }
+
+    val fullName = derivedStateOf {
+        "$firstName $lastName"
+    }
+
+    Text(text = "Full Name: $fullName")
+}
+```
+
+In the example, we declare a Composable function called `**MyComponent**` that has two mutable state variables called `**firstName**` and `**lastName**`. We then use `**derivedStateOf**` to create a new state variable called `**fullName**` , which concatenates the values of `**firstName**` and `**lastName**`. Whenever `**firstName**` or `**lastName**` changes, `**derivedStateOf**` recomposes the composable and updates `**fullName**`. Finally, we use the `**Text**` composable to display `**fullName**`. `**derivedStateOf**` is useful for computing derived state variables that depend on other state variables, without recomputing the derived state unnecessarily.
+
+```kt
+@Composable
+fun TodoList(highPriorityKeywords: List<String> = listOf("Review", "Unblock", "Compose")) {
+
+    val todoTasks = remember { mutableStateListOf<String>() }
+
+    // Calculate high priority tasks only when the todoTasks or highPriorityKeywords
+    // change, not on every recomposition
+    val highPriorityTasks by remember(highPriorityKeywords) {
+        derivedStateOf {
+            todoTasks.filter { task ->
+                highPriorityKeywords.any { keyword ->
+                    task.contains(keyword)
+                }
+            }
+        }
+    }
+
+    Box(Modifier.fillMaxSize()) {
+        LazyColumn {
+            items(highPriorityTasks) { /* ... */ }
+            items(todoTasks) { /* ... */ }
+        }
+        /* Rest of the UI where users can add elements to the list */
+    }
+}
+
+```
+
+### snapshotFlow: convert Compose's State into Flows
+
+`**snapshotFlow**` is a function that allows you to create a flow that emits the current value of a state object, and then emits any subsequent changes to that object. This can be useful for creating reactive UIs that respond to changes in state, without having to manually manage callbacks or listeners.
+
+
+
+Use [`snapshotFlow`](https://developer.android.com/reference/kotlin/androidx/compose/runtime/package-summary#snapshotFlow(kotlin.Function0)) to convert [`State<T>`](https://developer.android.com/reference/kotlin/androidx/compose/runtime/State) objects into a cold Flow.
