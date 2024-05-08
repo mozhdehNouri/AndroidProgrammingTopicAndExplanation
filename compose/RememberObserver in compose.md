@@ -2,7 +2,6 @@
 ```kotlin
 interface RememberObserver
 ```
-
 Objects implementing this interface are notified when they are initially used in a composition and when they are no longer being used.
 
 **remember**
@@ -12,7 +11,6 @@ remember's lifecycle is scoped to Composable its in, when the Composable it's in
 ViewModel is suitable as presentation layer to hold data from data layer while remember is preferred with generally with Ui related class but it's not always the case since LaunchedEffect and DisposableEffect uses remember under the hood and these functions can be used to call analytics, doing for measurements, calculations, sorting, calling an api request and more non-ui related utilities as well.
 
 DisposableEffect uses onForgotten to call dispose function.
-
 
 **Compeleted definition:**
 In simpler terms, a RememberObserver is like a notification system for objects used in Jetpack Compose. When an object is used in a composition, it gets "remembered". And when it's no longer needed, it gets "forgotten".
