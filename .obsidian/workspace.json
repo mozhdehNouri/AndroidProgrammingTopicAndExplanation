@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "6adfb4f75cd6569d",
+        "id": "50a92cc6b8296c25",
         "type": "tabs",
         "children": [
           {
-            "id": "ecdfa15a8d7768ef",
+            "id": "8e4053e4447cb86e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "coroutine-flow/flow/TerminalOperator.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coroutine-flow/flow/TerminalOperator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "coroutine-flow/flow/TerminalOperator.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "coroutine-flow/flow/TerminalOperator.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,10 +148,20 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "ecdfa15a8d7768ef",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
+    "refactor/async/flow/Hot Flow and Cold Flow Usage.md",
+    "refactor/async/flow/FlowOn.md",
+    "refactor/async/flow/FlowBuilder.md",
+    "refactor/async/flow/Flow Lifecycle Operator.md",
+    "coroutine-flow/flow/Flow Lifecycle Operator.md",
+    "coroutine-flow/flow/FlowBuilder.md",
+    "coroutine-flow/flow/Hot Flow and Cold Flow Usage.md",
+    "coroutine-flow/flow/FlowOn.md",
     "coroutine-flow/flow/SharedFlow.md",
     "coroutine-flow/flow/StateFlow.md",
+    "coroutine-flow/flow/TerminalOperator.md",
+    "refactor/async/flow/TerminalOperator.md",
     "coroutine-flow/flow/IntermediateOperator.md",
     "refactor/async/flow/IntermediateOperator.md",
     "coroutine-flow/flow/ConflateOperator.md",
@@ -174,16 +176,6 @@
     "refactor/async/flow/Basic Flow Konwlodge.md",
     "coroutine-flow/CoroutineBuilderExplanation.md",
     "coroutine-flow/Before know about the Coroutine.md",
-    "refactor/async/Before know about the Coroutine.md",
-    "refactor/async/coroutine/CoroutineContext.md",
-    "coroutine-flow/Coroutine Most Question.md",
-    "refactor/async/coroutine/Coroutine Most Question.md",
-    "coroutine-flow/SuspendFunction.md",
-    "refactor/async/coroutine/SuspendFunction.md",
-    "all_studing/kotlin/coroutine/FlowInDepth-StateFlowAndSharedFlow.md",
-    "refactor/async/flow/FlowInDepth-StateFlowAndSharedFlow.md",
-    "all_studing/kotlin/coroutine/coroutine-simplefiy.md",
-    "all_studing/kotlin/coroutine/Channel and Flow.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",

@@ -1,29 +1,14 @@
-StateFlow and ShareFlow
-
-Actully StateFlow and ShareFlow use instead of LiveData.
-
-Advantages: Exposing Flows instead of LiveData in ViewModels.
-
-- A single type of observable data holder throughout your architecture
-
-- ViewModels are decoupled from Android Dependencies
-
-- Simplified testing.
-
-- More flow operators.
 
 Why we need Use SharedFlow and StateFlow ? why we can not exposing regular
 flow?
 
-1 - Flow producer continues to run when the app is in background.
+1.  Flow producer continues to run when the app is in background.
 
 For instance:
-
 ```kt
 // ViewModel class
 val currentStockFlow: Flow<Stock>
 ```
-
 ```kt
 // Activity class
 lifeCycleScope.launch {
@@ -32,13 +17,9 @@ lifeCycleScope.launch {
   }
 }
 ```
-
-when application to background the collecing not stope and keep emiting
-items.
-
-We can handle this problem with start and stop Job in onStop and onStart
+When application to background the collecing not stope and keep emiting
+items. We can handle this problem with start and stop Job in onStop and onStart
 override function.
-
 ```kt
 var job: Job? = null
 
@@ -53,11 +34,7 @@ override onStop (){
 }
 ```
 
-In above code, we need a lot of boilerplate.
-
-repeatOnLifecycle() helps us to avoid boilerplate code, and this comes
-with androidx-lifecycle-runtime-ktx library.
-
+In above code, we need a lot of boilerplate. repeatOnLifecycle() helps us to avoid boilerplate code, and this comes with androidx-lifecycle-runtime-ktx library.
 ```kt
 // activity class
 override onCreate (){
@@ -68,11 +45,9 @@ override onCreate (){
       }
     }
   }
-}
-```
+}```
 
 In fragment we can use like this:
-
 ```kt
 viewLifecycleOwner.lifecycleScope.launch {
   viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -84,7 +59,6 @@ viewLifecycleOwner.lifecycleScope.launch {
 ```
 
 or we can use like this:
-
 ```kt
 lifecycleScope.launch {
   viewModel.currentStockFlow.flowWithLifecycle(
@@ -95,16 +69,11 @@ lifecycleScope.launch {
   }
 }
 ```
-
 With above code we can fix the first and second flow issue.
-
 2 - Activity receives emissions and renders UI when it is in the
 background.
-
 3 - Multiple collectors create multiple flows.
-
 For instance:
-
 ```kt
 // activity class 
 lifeCycleScope.launch {
@@ -121,28 +90,17 @@ lifeCycleScope.launch {
 above code create multiple flows.
 
 4 - Configuration change re-starts the flow
-
 When configuration change happen onCompletion call and flow get cancel and
-restart.
-
-Issue number 3 and 4 we can not fix it.
+restart. Issue number 3 and 4 we can not fix it.
 
 How we can fix this :
-
-the flows create with flow builder are cold flow by default and for fix
+The flows create with flow builder are cold flow by default and for fix
 for issue number 3 and 4 for we need to convert cold Flow to holtFlow.
-
 What is different between ColdFlow and HotFlow:
 
 ColdFlow:
-
-- become active on collection : It means only if somebody starts to
-  collect then flow starts to emit values.
-
+- become active on collection : It means only if somebody starts to collect then flow starts to emit values.
 - become inactive on cancellation of the collecting coroutine.
-
-  For instance:
-
   ```kt
   val flowOne =flow{
       println("emit 1")
@@ -171,9 +129,7 @@ ColdFlow:
   delay(1500)
   job.joinAndCancel()
   ```
-
   Output is:
-
 ```kt
 emit 1
 item collect 1
@@ -181,9 +137,7 @@ emit 2
 item collect 2
 onCompletion is call
 ```
-
-- emit individual emissions to every collector:
-
+- Emit individual emissions to every collector:
 ```kt
 suspend fun flow() = coroutineScope {
   val flowOne = flow {
@@ -216,7 +170,6 @@ suspend fun flow() = coroutineScope {
 ```
 
 Output is :
-
 ```kt
 emit 1
 emit 1
@@ -232,28 +185,19 @@ emit 3
 startItem emit 3 collect 1
 ```
 
-code in the flow builder run for every collector.
-every collector gets its own stream of values and each collector is
-independ of another collector.
+code in the flow builder run for every collector. every collector gets its own stream of values and each collector is independ of another collector.
 
-HotFlows:
-
+**HotFlows:**
 Unlike ColdFlows , HotFlows start emiting value without calling any
 collector. hot flows can get lost if no current active collector.
 
-in hot flows we can lost data.
-
+In hot flows we can lost data.
 - Are active regardless of whether there are collectors.
-
 - Stay active even when there is no more collector.
-
 - Emissions are shared between all collectors.
 
 **Two important reasons we use hotFlows is disability coldFlow or regular
 flow to do this two things.**
 
-**1 - Coniguration changes in cold flow get canceled during configuration
-change and restart**
-
-**2 - Multiple collectors create multiple flows.** or we can say
-independent of each other.
+**1 - Coniguration changes in cold flow get canceled during configuration change and restart**
+**2 - Multiple collectors create multiple flows.** or we can say independent of each other.

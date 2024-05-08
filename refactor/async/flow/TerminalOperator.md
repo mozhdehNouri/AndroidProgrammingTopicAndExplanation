@@ -270,21 +270,9 @@ flowOne.collect{
 ```kt
 flowOne.launchIn(scope)
 ```
-What is different between launchIn() and collect()? launchIn is a regular function not suspend function and it is not suspend
-the flow untli is come
-
-now you can take look at LaunchAndCollect.kt to have better understanding
-of different
-
-all terminal operators are suspend function except one and this **is launchIn()**
-
+What is different between launchIn() and collect()? launchIn is a regular function not suspend function and it is not suspend the flow untli is come. Now you can take look at LaunchAndCollect.kt to have better understanding of different. All terminal operators are suspend function except one and this **is launchIn()**
 ```kt
 fun <T> Flow<T>.launchIn(scope: CoroutineScope): Job
 ```
-
-as you can see launchIn can not provide a lambda to perform your operation and you can pass a scope
-to it .
-
-launcIn is not suspend function it means it can suspend the operation
-but collect function is a suspend function and can suspend the operation without blocking. but it is
-true?? i have research about it.
+as you can see launchIn can not provide a lambda to perform your operation and you can pass a scope to it . launcIn is not suspend function it means it can suspend the operation
+but collect function is a suspend function and can suspend the operation without blocking. but it is true?? i have research about it.
