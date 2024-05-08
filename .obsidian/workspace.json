@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7bc26a35824aebae",
+        "id": "e87541404510079d",
         "type": "tabs",
         "children": [
           {
-            "id": "101595df592e7fce",
+            "id": "2d44c809fc289d75",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "coroutine-flow/SuspendFunction.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "coroutine-flow/SuspendFunction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "coroutine-flow/SuspendFunction.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "all_studing/android/Compose/State/CompositionLocal.md"
+                "file": "coroutine-flow/SuspendFunction.md"
               }
             }
           },
@@ -150,8 +156,26 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c07d257c419d4346",
+  "active": "2d44c809fc289d75",
   "lastOpenFiles": [
+    "coroutine-flow/flow/BasicFlowKonwlodge.md",
+    "all_studing/kotlin/coroutine/FlowInDepth-StateFlowAndSharedFlow.md",
+    "refactor/async/flow/FlowInDepth-StateFlowAndSharedFlow.md",
+    "all_studing/kotlin/coroutine/coroutine-simplefiy.md",
+    "all_studing/kotlin/coroutine/Channel and Flow.md",
+    "refactor/async/flow/Channel and Flow.md",
+    "all_studing/kotlin/coroutine/CoroutineInDepth.md",
+    "all_studing/kotlin/coroutine/Coroutine.md",
+    "refactor/async/coroutine/Coroutine.md",
+    "refactor/async/flow",
+    "refactor/async/coroutine",
+    "refactor/async/Untitled.md",
+    "refactor/async",
+    "all_studing/kotlin/coroutine/coroutine-course.md",
+    "coroutine-flow/flow/AsLiveDataOpertor.md",
+    "performance-issue/Identifying Indicators of Performance Issues.md",
+    "performance-issue/Functional Approach.md",
+    "all_studing/android/Compose/State/CompositionLocal.md",
     "refactor/compose/Side effects.md",
     "all_studing/android/Compose/State/AdvanceStateAndSideEffect.md",
     "Pasted image 20240217205931.png",
@@ -173,21 +197,6 @@
     "compose/State and Recomposition.md",
     "compose/Recompostion and Scoped recomposition.md",
     "refactor/compose/Slot Api.md",
-    "refactor/compose/ViewModel in Compose.md",
-    "refactor/compose/Recompostion and Scoped recomposition.md",
-    "compose/ViewModel in Compose.md",
-    "compose/Slot Api.md",
-    "compose/What is Compose.md",
-    "refactor/compose/ThinkingInCompose.md",
-    "refactor/compose/Donut-hole skipping in Jetpack Compose.md",
-    "refactor/compose/RememberObserver in compose.md",
-    "compose/Scoped recomposition in Jetpack Compose.md",
-    "compose/RememberObserver in compose.md",
-    "compose/Modifier.md",
-    "refactor/compose/Modifier.md",
-    "compose/Modifier.align() in Row and Column and Box.md",
-    "compose/Custom Layout.md",
-    "compose/IntrinsicSize.md",
     "refactor/compose/State And Rememeber",
     "refactor/compose/New folder",
     "refactor/compose/Theme",
@@ -195,9 +204,6 @@
     "refactor/compose",
     "refactor/test",
     "refactor/Modular",
-    "refactor/arch",
-    "refactor",
-    "ft_for_presentation",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

@@ -2,14 +2,11 @@
 
 **befor deep dive into flow you should konw briefly about channel in coroutine:**
 
-a channel is a way for two coroutines to communicate with each other. It provides a mechanism for sending and receiving data between coroutines, allowing them to coordinate and synchronize their actions.
-
+A channel is a way for two coroutines to communicate with each other. It provides a mechanism for sending and receiving data between coroutines, allowing them to coordinate and synchronize their actions.
 A channel can be thought of as a pipeline between two coroutines, where one coroutine puts data into the pipeline and the other coroutine takes data out of the pipeline. The data can be of any type, including custom classes or data structures.
-
 Overall, channels in Kotlin Coroutine provide a powerful and flexible mechanism for communication and synchronization between coroutines, making it easier to write efficient, high-performance concurrent code.
 
 ##### example :
-
 ```kt
 fun main() = runBlocking {
     val channel = Channel<Int>()
@@ -32,16 +29,8 @@ fun main() = runBlocking {
 }
 ```
 
-output :
-
-```kt
-
-```
-
 **explain :** In this example, we create a channel of integers and launch two coroutines. one to produce integers and send them to the channel, and one to consume integers from the channel.
-
 The producer coroutine uses a `for` loop to produce the integers 1 to 5, sending each integer to the channel using the `send` method. After sending all the integers, it calls the `close` method on the channel to indicate that no more data will be sent.
-
 The consumer coroutine uses a `for` loop to consume integers from the channel, printing each integer to the console using `println`. 
 
 ## Flow :
