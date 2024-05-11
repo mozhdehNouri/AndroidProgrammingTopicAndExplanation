@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "50a92cc6b8296c25",
+        "id": "6112cc46e9a31fc0",
         "type": "tabs",
         "children": [
           {
-            "id": "8e4053e4447cb86e",
+            "id": "ddc45347f7709903",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "refactor/compose/Modifier MAD Skill.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "refactor/compose/Modifier MAD Skill.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "refactor/compose/Modifier MAD Skill.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "refactor/compose/Modifier MAD Skill.md"
+              }
             }
           },
           {
@@ -148,8 +156,11 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c07d257c419d4346",
+  "active": "ddc45347f7709903",
   "lastOpenFiles": [
+    "refactor/compose/modifierMADSkill.md",
+    "refactor/compose/Modifier MAD Skill.md",
+    "refactor/test/Test.md",
     "refactor/async/flow/Hot Flow and Cold Flow Usage.md",
     "refactor/async/flow/FlowOn.md",
     "refactor/async/flow/FlowBuilder.md",
@@ -173,9 +184,6 @@
     "coroutine-flow/flow/Buffer Operator.md",
     "refactor/async/flow/Buffer Operator.md",
     "coroutine-flow/flow/Basic Flow Konwlodge.md",
-    "refactor/async/flow/Basic Flow Konwlodge.md",
-    "coroutine-flow/CoroutineBuilderExplanation.md",
-    "coroutine-flow/Before know about the Coroutine.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
