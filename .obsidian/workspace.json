@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0c1784f12d38057a",
+        "id": "fae5dbc4fc3a2e8d",
         "type": "tabs",
         "children": [
           {
-            "id": "6ef6c46015531ffb",
+            "id": "19754c5b100f7e2d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/compose/Material 3 Typograph apply.md",
+                "file": "refactor/compose/Theme/Material 3 Color.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/compose/Material 3 Typograph apply.md",
+                "file": "refactor/compose/Theme/Material 3 Color.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/compose/Material 3 Typograph apply.md",
+                "file": "refactor/compose/Theme/Material 3 Color.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/compose/Material 3 Typograph apply.md"
+                "file": "refactor/compose/Theme/Material 3 Color.md"
               }
             }
           },
@@ -156,16 +156,20 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "6ef6c46015531ffb",
+  "active": "19754c5b100f7e2d",
   "lastOpenFiles": [
+    "refactor/compose/Theme/Material 3 padding.md",
+    "Pasted image 20240511164330.png",
+    "Pasted image 20240511164255.png",
+    "Pasted image 20240511164126.png",
+    "Pasted image 20240511164122.png",
+    "refactor/compose/Theme/Material 3 Typograph apply.md",
+    "Pasted image 20240511163940.png",
+    "Pasted image 20240511163920.png",
+    "Pasted image 20240511163916.png",
+    "Pasted image 20240511163847.png",
+    "Pasted image 20240511163829.png",
     "Pasted image 20240511160120.png",
-    "Pasted image 20240511160035.png",
-    "Pasted image 20240511160010.png",
-    "Pasted image 20240511155935.png",
-    "Pasted image 20240511155927.png",
-    "Screenshot (335).png",
-    "Pasted image 20240511155718.png",
-    "refactor/compose/Material 3 Typograph apply.md",
     "refactor/arch/data Layer.md",
     "refactor/arch/MVI.md",
     "refactor/arch/MVVM and MVP Short Concept.md",
@@ -189,14 +193,9 @@
     "refactor/async/flow/TerminalOperator.md",
     "coroutine-flow/flow/IntermediateOperator.md",
     "refactor/async/flow/IntermediateOperator.md",
-    "coroutine-flow/flow/ConflateOperator.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
-    "Pasted image 20240217205931.png",
-    "Pasted image 20240217205918.png",
-    "Pasted image 20240216204007.png",
-    "Pasted image 20240216184404.png",
     "refactor/compose/State And Rememeber",
     "refactor/compose/New folder",
     "refactor/compose/Theme",

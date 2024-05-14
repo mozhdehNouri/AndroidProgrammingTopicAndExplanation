@@ -12,4 +12,20 @@ Top app bar using title style for the contact name, Aki Aro
 Top app bar using title style
 
 Title style stating ‘Top News’ above headlines
-![[Pasted image 20240511160120.png]]
+![[Pasted image 20240511160120.png]]![[Pasted image 20240511163829.png]]
+
+
+
+Body
+Body styles are used for longer passages of text in your app. 
+
+![[Pasted image 20240511163916.png]]
+
+![[Pasted image 20240511163920.png]]
+
+
+
+Label
+Label styles are smaller, utilitarian styles, used for things like the text inside components or for very small text in the content body, such as captions.
+![[Pasted image 20240511163940.png]]
+
