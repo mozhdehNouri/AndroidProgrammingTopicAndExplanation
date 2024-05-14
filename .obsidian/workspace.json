@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fae5dbc4fc3a2e8d",
+        "id": "9e84089560abcacb",
         "type": "tabs",
         "children": [
           {
-            "id": "19754c5b100f7e2d",
+            "id": "001e6c929d9d68e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/compose/Theme/Material 3 Color.md",
+                "file": "Sealed In kotlin.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/compose/Theme/Material 3 Color.md",
+                "file": "Sealed In kotlin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/compose/Theme/Material 3 Color.md",
+                "file": "Sealed In kotlin.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/compose/Theme/Material 3 Color.md"
+                "file": "Sealed In kotlin.md"
               }
             }
           },
@@ -156,8 +156,12 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "19754c5b100f7e2d",
+  "active": "001e6c929d9d68e9",
   "lastOpenFiles": [
+    "Sealed In kotlin.md",
+    "refactor/additional concepts/Sealed in android.md",
+    "Untitled.md",
+    "refactor/compose/Theme/Material 3 Color.md",
     "refactor/compose/Theme/Material 3 padding.md",
     "Pasted image 20240511164330.png",
     "Pasted image 20240511164255.png",
@@ -190,9 +194,6 @@
     "coroutine-flow/flow/SharedFlow.md",
     "coroutine-flow/flow/StateFlow.md",
     "coroutine-flow/flow/TerminalOperator.md",
-    "refactor/async/flow/TerminalOperator.md",
-    "coroutine-flow/flow/IntermediateOperator.md",
-    "refactor/async/flow/IntermediateOperator.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
