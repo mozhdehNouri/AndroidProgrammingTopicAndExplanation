@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9e84089560abcacb",
+        "id": "45b0998d5090eb3c",
         "type": "tabs",
         "children": [
           {
-            "id": "001e6c929d9d68e9",
+            "id": "c0fecaf6bd67895d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sealed In kotlin.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sealed In kotlin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sealed In kotlin.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sealed In kotlin.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,7 +148,7 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "001e6c929d9d68e9",
+  "active": "c0fecaf6bd67895d",
   "lastOpenFiles": [
     "Sealed In kotlin.md",
     "refactor/additional concepts/Sealed in android.md",
