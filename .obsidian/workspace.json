@@ -11,8 +11,12 @@
             "id": "c0fecaf6bd67895d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "refactor/additional concepts/Const.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "refactor/additional concepts/Const.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "refactor/additional concepts/Const.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "refactor/additional concepts/Const.md"
+              }
             }
           },
           {
@@ -130,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -150,9 +158,10 @@
   },
   "active": "c0fecaf6bd67895d",
   "lastOpenFiles": [
+    "Untitled.md",
+    "refactor/additional concepts/Const.md",
     "Sealed In kotlin.md",
     "refactor/additional concepts/Sealed in android.md",
-    "Untitled.md",
     "refactor/compose/Theme/Material 3 Color.md",
     "refactor/compose/Theme/Material 3 padding.md",
     "Pasted image 20240511164330.png",
@@ -185,7 +194,6 @@
     "coroutine-flow/flow/FlowOn.md",
     "coroutine-flow/flow/SharedFlow.md",
     "coroutine-flow/flow/StateFlow.md",
-    "coroutine-flow/flow/TerminalOperator.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
