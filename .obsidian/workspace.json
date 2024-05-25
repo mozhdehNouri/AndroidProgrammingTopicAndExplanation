@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e6237da2019d3250",
+        "id": "32b0743be3c9d2ec",
         "type": "tabs",
         "children": [
           {
-            "id": "48d67041bd35dc32",
+            "id": "2ce9c0635997cdf8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/additional concepts/Annotation Processing.md",
+                "file": "refactor/functional programming/FP for presentation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/additional concepts/Annotation Processing.md",
+                "file": "refactor/functional programming/FP for presentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/additional concepts/Annotation Processing.md",
+                "file": "refactor/functional programming/FP for presentation.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/additional concepts/Annotation Processing.md"
+                "file": "refactor/functional programming/FP for presentation.md"
               }
             }
           },
@@ -156,10 +156,11 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "48d67041bd35dc32",
+  "active": "2ce9c0635997cdf8",
   "lastOpenFiles": [
-    "refactor/additional concepts/Const.md",
+    "refactor/functional programming/FP for presentation.md",
     "refactor/additional concepts/Annotation Processing.md",
+    "refactor/additional concepts/Const.md",
     "Untitled.md",
     "Sealed In kotlin.md",
     "refactor/additional concepts/Sealed in android.md",
@@ -193,7 +194,6 @@
     "coroutine-flow/flow/FlowBuilder.md",
     "coroutine-flow/flow/Hot Flow and Cold Flow Usage.md",
     "coroutine-flow/flow/FlowOn.md",
-    "coroutine-flow/flow/SharedFlow.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
