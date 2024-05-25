@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/functional programming/FP for presentation.md",
+                "file": "refactor/functional programming/Diff between function and method.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/functional programming/FP for presentation.md",
+                "file": "refactor/functional programming/Diff between function and method.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/functional programming/FP for presentation.md",
+                "file": "refactor/functional programming/Diff between function and method.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/functional programming/FP for presentation.md"
+                "file": "refactor/functional programming/Diff between function and method.md"
               }
             }
           },
@@ -158,8 +158,10 @@
   },
   "active": "8a1e626e11e317b0",
   "lastOpenFiles": [
-    "refactor/functional programming/Functional Programming.md",
     "refactor/functional programming/FP for presentation.md",
+    "refactor/functional programming/Diff between function and method.md",
+    "1_9OCTlnrfdIvV6dsBv-ECow.webp",
+    "refactor/functional programming/Functional Programming.md",
     "performance-issue/Reason of performance issue.md",
     "performance-issue/Identifying Indicators of Performance Issues.md",
     "refactor/additional concepts/Annotation Processing.md",
@@ -179,7 +181,6 @@
     "Pasted image 20240511163916.png",
     "Pasted image 20240511163847.png",
     "Pasted image 20240511163829.png",
-    "Pasted image 20240511160120.png",
     "refactor/arch/data Layer.md",
     "refactor/arch/MVI.md",
     "refactor/arch/MVVM and MVP Short Concept.md",
@@ -193,7 +194,6 @@
     "refactor/async/flow/FlowOn.md",
     "refactor/async/flow/FlowBuilder.md",
     "refactor/async/flow/Flow Lifecycle Operator.md",
-    "coroutine-flow/flow/Flow Lifecycle Operator.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
