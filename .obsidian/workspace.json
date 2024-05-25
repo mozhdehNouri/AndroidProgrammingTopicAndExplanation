@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "32b0743be3c9d2ec",
+        "id": "af3daf442214c460",
         "type": "tabs",
         "children": [
           {
-            "id": "2ce9c0635997cdf8",
+            "id": "8a1e626e11e317b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -156,9 +156,12 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "2ce9c0635997cdf8",
+  "active": "8a1e626e11e317b0",
   "lastOpenFiles": [
+    "refactor/functional programming/Functional Programming.md",
     "refactor/functional programming/FP for presentation.md",
+    "performance-issue/Reason of performance issue.md",
+    "performance-issue/Identifying Indicators of Performance Issues.md",
     "refactor/additional concepts/Annotation Processing.md",
     "refactor/additional concepts/Const.md",
     "Untitled.md",
@@ -191,9 +194,6 @@
     "refactor/async/flow/FlowBuilder.md",
     "refactor/async/flow/Flow Lifecycle Operator.md",
     "coroutine-flow/flow/Flow Lifecycle Operator.md",
-    "coroutine-flow/flow/FlowBuilder.md",
-    "coroutine-flow/flow/Hot Flow and Cold Flow Usage.md",
-    "coroutine-flow/flow/FlowOn.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",

@@ -1,4 +1,2 @@
 
-What is FP 
-What is deferent between FP  and OOP 
-
+Like OOP Functional programming or FP is a way to organize your code.
