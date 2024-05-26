@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "e1600618fe7ffe2c",
+        "id": "ad3023913a03e1e8",
         "type": "tabs",
         "children": [
           {
-            "id": "809b0503b04ad2c1",
+            "id": "c687590cd4f48080",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "refactor/functional programming/FP for presentation Part 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "53a317a6f6231af7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "refactor/functional programming/FP for presentation Part 1.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/functional programming/FP for presentation Part 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/functional programming/FP for presentation Part 1.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "refactor/functional programming/FP for presentation Part 1.md"
-              }
+              "state": {}
             }
           },
           {
@@ -169,10 +148,15 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "53a317a6f6231af7",
+  "active": "c687590cd4f48080",
   "lastOpenFiles": [
-    "refactor/functional programming/FP for presentation Part 2.md",
+    "Code need to check/Case number one.md",
+    "Code need to check",
+    "Untitled.md",
+    "performance-issue/Untitled.canvas",
     "refactor/functional programming/FP for presentation Part 1.md",
+    "refactor/functional programming/FP for presentation Part 2.md",
+    "refactor/additional concepts/What is abstraction.md",
     "refactor/functional programming/Diff between function and method.md",
     "1_9OCTlnrfdIvV6dsBv-ECow.webp",
     "refactor/functional programming/Functional Programming.md",
@@ -180,7 +164,6 @@
     "performance-issue/Identifying Indicators of Performance Issues.md",
     "refactor/additional concepts/Annotation Processing.md",
     "refactor/additional concepts/Const.md",
-    "Untitled.md",
     "Sealed In kotlin.md",
     "refactor/additional concepts/Sealed in android.md",
     "refactor/compose/Theme/Material 3 Color.md",
@@ -205,8 +188,6 @@
     "refactor/compose/modifierMADSkill.md",
     "refactor/test/Test.md",
     "refactor/async/flow/Hot Flow and Cold Flow Usage.md",
-    "refactor/async/flow/FlowOn.md",
-    "refactor/async/flow/FlowBuilder.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
@@ -216,7 +197,6 @@
     "refactor/functional programming",
     "refactor/compose",
     "refactor/test",
-    "refactor/Modular",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

@@ -147,6 +147,37 @@ OOP is a familiar topic: everyone knows about abstraction, encapsulation, inheri
 - Element: The basic elements of functional programming are functions while the basic elements of OOP are objects and methods.
 - Use: Due to its lack of ambiguity, the level of fault tolerance in functional programming is extremely high, so you can achieve reliability approaching 99.9999%.
 
+In essence, OOP aims for abstraction and familiarity through objects and classes, while FP prioritizes simplicity, predictability, and scalability through functions:
+**both object-oriented programming (OOP) and functional programming (FP) use abstraction, but they do so in different ways and with different emphases.**
+
+**Abstraction in OOP:**
+In OOP, abstraction is achieved through objects and classes. Here’s how:
+
+Classes and Objects: A class defines a blueprint for objects, encapsulating data (attributes) and behavior (methods). For instance, a Car class might have attributes like color and model, and methods like drive() and brake().
+
+Encapsulation: This is a key aspect of abstraction in OOP. It means that the internal state of an object is hidden from the outside. You interact with an object through its public methods, without needing to know how these methods are implemented. This separation of interface and implementation makes the system easier to understand and use.
+
+Abstraction in FP:
+In FP, abstraction is achieved through functions and higher-order functions. Here’s how:
+
+Functions: A function in FP takes inputs (arguments) and produces an output, often without side effects (pure functions). The internal workings of a function are hidden from the user, similar to how a method’s implementation is hidden in OOP.
+Higher-order Functions: These are functions that take other functions as arguments or return them as results. This allows for powerful abstractions by enabling functions to be combined, modified, or reused in flexible ways.
+
+Key Differences:
+OOP Abstraction: Focuses on modeling real-world entities and their interactions. The main units of abstraction are objects and classes, which bundle state and behavior together. OOP often uses design patterns to solve common problems.
+
+FP Abstraction: Focuses on functions and their composition. The main units of abstraction are functions, which are combined to perform more complex tasks. FP emphasizes immutability and statelessness, leading to predictable and testable code.
+Why OOP is Often Associated More with Abstraction:
+
+The reason OOP is often more closely associated with the term "abstraction" in traditional software engineering discussions is due to its explicit use of modeling real-world concepts through classes and objects. This modeling process involves abstracting away details into these entities, making complex systems easier to manage by representing them with higher-level concepts.
+
+In summary, both OOP and FP use abstraction, but they do so in different ways. OOP abstracts through objects and classes, modeling real-world entities, while FP abstracts through functions, emphasizing composition and immutability. Both paradigms aim to simplify the complexity of software development, but they approach it from different angles.
+
+
+
+
+
+
 
 
 
