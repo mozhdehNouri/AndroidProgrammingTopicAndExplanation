@@ -116,7 +116,10 @@ above senteces is about:
 The passage is leading you to understand that while side effects are often seen as necessary in traditional programming, functional programming seeks to manage or minimize them. It is preparing you to learn how functional programming deals with these challenges in a different way, emphasizing purity and immutability, and using other mechanisms to handle tasks that typically involve side effects.
 Functional programming imposes rules on how you write your code. For example, it discourages changing variables and using certain kinds of error handling or input/output methods. Despite these restrictions, you can still create programs that do everything you need them to do. The constraints are on the methods you use, not on the capabilities or functions your programs can ultimately perform. In simpler terms: Functional programming changes the way you write code, but it doesn’t limit what your code can achieve.
 
+**Because of their modularity, pure functions are easier to test, reuse, parallelize, generalize, and reason about.** and  pure functions are much less prone to bugs.
 
+**Exactly what is a (pure) function?**
+You should be familiar with a lot of pure functions already. Consider the addition ( + ) operator, which resolves to the plus function on all integers. It takes an integer value and returns another integer value. For any two given integers, plus will always return the same integer value. 
 
 
 
