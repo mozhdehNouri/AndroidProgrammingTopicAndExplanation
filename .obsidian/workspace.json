@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "refactor/functional programming/FP for presentation Part 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "53a317a6f6231af7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "refactor/functional programming/FP for presentation Part 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,10 +169,11 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "809b0503b04ad2c1",
+  "active": "53a317a6f6231af7",
   "lastOpenFiles": [
-    "refactor/functional programming/Diff between function and method.md",
+    "refactor/functional programming/FP for presentation Part 2.md",
     "refactor/functional programming/FP for presentation Part 1.md",
+    "refactor/functional programming/Diff between function and method.md",
     "1_9OCTlnrfdIvV6dsBv-ECow.webp",
     "refactor/functional programming/Functional Programming.md",
     "performance-issue/Reason of performance issue.md",
@@ -193,7 +207,6 @@
     "refactor/async/flow/Hot Flow and Cold Flow Usage.md",
     "refactor/async/flow/FlowOn.md",
     "refactor/async/flow/FlowBuilder.md",
-    "refactor/async/flow/Flow Lifecycle Operator.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",

@@ -123,6 +123,29 @@ You should be familiar with a lot of pure functions already. Consider the additi
 
 
 
+Functional programming languages are categorized into two groups:
+Like OOP, functional programming languages support popular concepts such as Abstraction, Encapsulation, Inheritance, and Polymorphism.
+
+**Functional Programming – Advantages:**
+
+- Bugs-Free Code − Functional programming does not support state, so there are no side-effect results and we can write error-free codes.
+- Efficient Parallel Programming − Functional programming languages have NO Mutable state, so there are no state-change issues. One can program "Functions" to work parallel as "instructions". Such codes support easy reusability and testability.
+- Efficiency − Functional programs consist of independent units that can run concurrently. As a result, such programs are more efficient.
+- Supports Nested Functions − Functional programming supports Nested Functions.
+- Lazy Evaluation − Functional programming supports Lazy Functional Constructs like Lazy Lists, Lazy Maps, etc.
+As a downside, functional programming requires a large memory space. As it does not have state, you need to create new objects every time to perform actions. Functional Programming is used in situations where we have to perform lots of different operations on the same set of data.
+
+
+**The key difference between object-oriented programming and functional programming**
+In OOP, the fundamental basis is classes, instances of which can be stored in variables. In functional programming, however, there are no variables; there are functions and functions only.
+OOP is a familiar topic: everyone knows about abstraction, encapsulation, inheritance, polymorphism, and the concepts behind DRY and KISS. Most of the candidates, however, prefer to bypass design patterns and SOLID.
+
+- Data usage: Functional programming uses immutable data while OOP uses mutable data.
+- Programming model: Functional programming follows a declarative model while OOP follows an imperative model.
+- Support: Advocates for functional programming adhere to the ideology of pipelines, which conveys the ideas of state machines accurately enough. OOP (true OOP) has tight relations between class elements, which doesn't allow the code to be fully modular.
+- Execution: In functional programming vs. OOP, functions are atomic, and are isolated from the context as much as possible. As a result, you can reuse functions anywhere since they are not linked to modules.
+- Element: The basic elements of functional programming are functions while the basic elements of OOP are objects and methods.
+- Use: Due to its lack of ambiguity, the level of fault tolerance in functional programming is extremely high, so you can achieve reliability approaching 99.9999%.
 
 
 
@@ -132,6 +155,9 @@ You should be familiar with a lot of pure functions already. Consider the additi
 
 
 
+https://anywhere.epam.com/en/blog/javascript-functional-programming-vs-oop
+
+https://tutorialspoint.com/functional_programming/functional_programming_introduction.htm
 
 https://www.educba.com/functional-programming-vs-oop/?source=post_page-----82172e53a526--------------------------------
 
