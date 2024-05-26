@@ -84,13 +84,37 @@ mathematical slant, be prepared for words such as algebra, proofs, and laws.
 
 4- Category Theory: The book will introduce some concepts from category theory, a field of mathematics. Category theory helps explain and organize the structures and behaviors used in functional programming.
 
-5- Mathematical Terminology:
-
-Since this approach is mathematical, you will encounter terms like:
+5- Mathematical Terminology: Since this approach is mathematical, you will encounter terms like:
 Algebra: Refers to mathematical structures that are used to model and understand data and operations in programming.
 Proofs: Logical arguments that show why certain properties or behaviors hold true in your code.
 Laws: Rules that your code should follow to ensure it behaves correctly and predictably.
 
+**Goal of the Sentences:**
+- Prepare You for the Content:  The paragraph is setting the expectation that the book will involve mathematical concepts and terminology.
+- Emphasize the Type System: It highlights the importance of the type system in statically typed languages like Kotlin for this style of functional programming.
+- Introduce Category Theory: It introduces the idea that category theory will be part of the discussion, helping to explain the structures used in functional programming.
+- Alert to Mathematical Terms: It warns you that terms like algebra, proofs, and laws will be used, and understanding these will help you grasp the concepts better.
+
+**Why This Matters:**
+- Robust Code: By using the type system and mathematical principles, you can write code that is more reliable and easier to reason about.
+- Predictable Behavior: Following mathematical laws and proofs helps ensure your code behaves as expected.
+- Advanced Concepts: Understanding these concepts allows you to use powerful techniques from functional programming to solve complex problems more effectively.
+
+Functional programming (FP) is based on a simple premise with far-reaching implications: we construct our programs using only pure functions—in other words, functions with no side effects. What are side effects? A function has a side effect if it does something other than simply return a result. For example:
+- Modifying a variable beyond the scope of the block where the change occurs
+- Modifying a data structure in place
+- Setting a field on an object
+- Throwing an exception or halting with an error
+- Printing to the console or reading user input
+- Reading from or writing to a file
+- Drawing on the screen
+
+But consider what programming would be like without the ability to do these things or with significant restrictions on when and how these actions can occur. It may be difficult to imagine. How could we write useful programs? If we couldn’t reassign variables, how would
+we write simple programs like loops? What about working with data that changes or handling errors without throwing exceptions? How could we write programs that must perform IO, like drawing to the screen or reading from a file? The answer is that functional programming restricts how we write programs but not what our programs can express.
+
+above senteces is about:
+The passage is leading you to understand that while side effects are often seen as necessary in traditional programming, functional programming seeks to manage or minimize them. It is preparing you to learn how functional programming deals with these challenges in a different way, emphasizing purity and immutability, and using other mechanisms to handle tasks that typically involve side effects.
+Functional programming imposes rules on how you write your code. For example, it discourages changing variables and using certain kinds of error handling or input/output methods. Despite these restrictions, you can still create programs that do everything you need them to do. The constraints are on the methods you use, not on the capabilities or functions your programs can ultimately perform. In simpler terms: Functional programming changes the way you write code, but it doesn’t limit what your code can achieve.
 
 
 
