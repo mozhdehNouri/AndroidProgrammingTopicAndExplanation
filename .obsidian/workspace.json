@@ -11,8 +11,12 @@
             "id": "c687590cd4f48080",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "refactor/functional programming/FP for presentation Part 2.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "refactor/functional programming/FP for presentation Part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "refactor/functional programming/FP for presentation Part 2.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "refactor/functional programming/FP for presentation Part 2.md"
+              }
             }
           },
           {
@@ -150,11 +158,12 @@
   },
   "active": "c687590cd4f48080",
   "lastOpenFiles": [
+    "Screenshot (340).png",
+    "refactor/functional programming/FP for presentation Part 1.md",
     "Code need to check/Case number one.md",
     "Code need to check",
     "Untitled.md",
     "performance-issue/Untitled.canvas",
-    "refactor/functional programming/FP for presentation Part 1.md",
     "refactor/functional programming/FP for presentation Part 2.md",
     "refactor/additional concepts/What is abstraction.md",
     "refactor/functional programming/Diff between function and method.md",
@@ -187,7 +196,6 @@
     "refactor/compose/Modifier MAD Skill.md",
     "refactor/compose/modifierMADSkill.md",
     "refactor/test/Test.md",
-    "refactor/async/flow/Hot Flow and Cold Flow Usage.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
