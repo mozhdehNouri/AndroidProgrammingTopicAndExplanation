@@ -1,0 +1,120 @@
+
+Like OOP Functional programming or FP is a way to organize your code. FP can help make your code clear and understandable. Maintenance can be a lot easier with functional programming. And then finally you avoid repeatable code. And this follows that dry principle of don't repeat yourself, you don't want to repeat code or write code in different places that do the same thing.
+
+Any program consists of two main things data and behaviors. Data is usually an object or an array or something like that. Behaviors are functions now with object oriented programming, We saw that these two things were combined. With functional programming, these two things are separated.
+Data is completely separate from the behaviors which are the functions. These two things are not combined. Now, another way to say this is that data is manipulated by passing it through a series of functions. One function acts on a piece of data and then returns a new piece of data. That new piece of data is then passed into another function, and this continues until we achieve the desired effect.
+
+
+**Functional Programming**
+Functional programming is the form of programming that attempts to avoid changing state and mutable data. In a functional program, the output of a function should always be the same, given the same exact inputs to the function. This is because the outputs of a function in functional programming purely relies on arguments of the function, and there is no magic that is happening behind the scenes. This is called eliminating side effects in your code.
+**For example**, if you call function getSum() it calculates the sum of two inputs and returns the sum. Given the same inputs for x and y, we will always get the same output for sum.
+
+Functional programming provides the advantages like efficiency, lazy evaluation, nested functions, bug-free code, parallel programming. In simple language, functional programming is to write the function having statements to execute a particular task for the application. Each small function does its part and only its part. The function can be easily invoked and reused at any point. It also helps the code to be managed and the same thing or statements does not need to be written again and again. It allows for very modular and clean code that all works together in harmony.
+
+
+**What is OOP ?** 
+Object oriented programming is a programming paradigm in which you program using objects to represent things you are programming about (sometimes real world things). These objects could be data structures. The objects hold data about them in attributes. The attributes in the objects are manipulated through methods or functions that are given to the object.
+For instance, we might have a Person object that represents all of the data a person would have: weight, height, skin color, hair color, hair length, and so on. Those would be the attributes. Then the person object would also have things that it can do such as: pick box up, put box down, eat, sleep, etc. These would be the functions that play with the data the object stores.
+The main deal with OOP is the ability to encapsulate data from outsiders. Encapsulation is the ability to hide variables within the class from outside access — which makes it great for security reasons, along with leaky, unwanted or accidental usage. Most programmers using object oriented design say that it is a style of programming that allows you to model real world scenarios much simpler. This allows for a good transition from requirements to code that works like the customer or user wants it to.
+
+
+Comparison:
+Cons of functional programming…. it really takes a different mindset to approach your code from a functional standpoint. It’s easy to think in object oriented terms, because it is similar to how the object being modeled happens in the real world. Functional programming is all about data manipulation. Converting a real world scenario to just data can take some extra thinking.
+Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
+Both Functional programming and object-oriented programming uses a different method for storing and manipulating the data. In functional programming, data cannot be stored in objects and it can only be transformed by creating functions. In object-oriented programming, data is stored in objects. The object-oriented programming is widely used by the programmers and successful also.
+
+
+Functional programming is the programming technique that accentuates the functional factors required for creating and implementing programs. OOP or Object-Oriented Programs are conceptual programming techniques that use objects as the key. The programming model used in functional programming is declarative, while object-oriented programming uses the imperative programming model. In functional programs, variables and functions are the main elements of the code, while in object-oriented programs, objects and methods are the key elements.
+Functional programming provides advantages like efficiency, lazy evaluation, nested functions, bug-free code, and parallel programming. In simple language, functional programming is writing the function having statements to execute a particular task for the application. The function can be easily invoked and reused at any point. It also helps the code to be managed, and the same thing or statements does not need to write again and again.
+
+**Functional Programming based on different concepts:**
+
+High Order Functions (HOF)
+Pure functions
+Recursion
+Strict and Non-strict Evaluation
+Type systems
+Referential Transparency
+
+
+**OOP(Object-Oriented Programming):**
+Object-oriented programming is based on the main features that are:
+
+**Abstraction:** It helps in letting useful information or relevant data to a user, increasing the program’s efficiency and making things simple.
+**Inheritance:** It helps in inheriting the methods, functions, properties, and fields of a base class in the derived class.
+**Polymorphism:** It helps in doing one task in many ways with the help of overloading and overriding, also known as compile-time and run-time polymorphism.
+**Encapsulation:** It helps in hiding irrelevant data from a user and prevents the user from unauthorized access.
+
+
+**Below are the Top 8 Comparison Between Functional Programming and OOP:**
+
+- Functional programming performs many different operations for which the data is fixed. People use object-oriented programming to perform a few operations with common behavior and different variants.
+- Functional programming has a stateless programming model. Object-oriented programming has a stateful programming model.
+- In functional programming, a state does not exist. In object-oriented programming, the state exists.
+- In functional programming, a function is the direct manipulation unit. In object-oriented, an object is the direct manipulation unit.
+- Its functions in functional programming have no side effects, meaning it does not impact code running on multiple processors. In Object-oriented programming, its methods can have side effects and may affect processors.
+- In functional programming, the main focus of programming is what we are doing. In object-oriented programming, the main focus of programming is how we are doing.
+- Functional programming mainly supports abstraction over data and abstraction over behavior. Object-oriented programming mainly supports abstraction over data only.
+- Functional programming provides high performance in processing large data for applications. Object-oriented programming is not good for big data processing.
+- Functional programming does not support conditional statements. In Object-oriented programming, conditional statements like if-else statements and switch statements can be used.
+
+
+
+**First we can start from FP :**
+Most of us started programming using an imperative style of coding. What do we mean by this? It means we give the computer a set of in-structions or commands, one after the other. 
+As we do so, we are changing the system’s state with each step we take. We are naturally
+drawn to this approach because of its initial simplicity. On the other hand, as programs grow in size and become more complicated, this seeming simplicity will lead to the very opposite; complexity arises and takes the place of what we initially intended to do. The end result is code that is not maintainable, difficult to test, hard to reason about, and (possibly worst of all) full of bugs. The initial velocity that we could deliver features slows down substantially until even a simple enhancement to our program becomes a slow and laborious task.
+Functional programming is an alternative to the imperative style that addresses the problems just mentioned. 
+
+ we look at a simple example where a piece of imperative code with side effects (we’ll understand what that means shortly) is transformed into the functional style by a sequence of refactoring steps. The eradication of these side effects is one of the core concepts behind functional programming, so is one of the highlights of this chapter. We will under-stand the dangers these effects pose and see how to extract them from our code, bringing us back to the safe place of simplicity from which we departed when we initially set out on our journey.
+
+ In fact, many of the constructs we will build are not even available in Kotlin but only in third-party libraries such as Arrow (https://arrow-kt.io).
+
+
+keep in mind the mathematical nature of the functional programming we will learn. Many have written about functional programming, but the kind we describe in this book is a bit different. It relies heavily on the type system that statically typed languages such as Kotlin provide, often called typed functional programming. We will also mention category theory, a branch of mathematics that aligns itself very closely with this programming style. Due to this
+mathematical slant, be prepared for words such as algebra, proofs, and laws.
+
+**What is that mean of above sentences?**
+
+1- Mathematical Nature of Functional Programming: Functional programming has a strong basis in mathematics. This means it often uses concepts and methods from mathematics to solve problems and structure code.
+
+2-Different Kind of Functional Programming: There are many ways to approach functional programming, but this book focuses on a specific kind called "typed functional programming." This method heavily uses the type system of statically typed languages like Kotlin.
+
+3- Type System in Statically Typed Languages: In statically typed languages, the type of every variable and expression is known at compile time. This type information is used to catch errors early and enforce certain rules in your code.
+
+4- Category Theory: The book will introduce some concepts from category theory, a field of mathematics. Category theory helps explain and organize the structures and behaviors used in functional programming.
+
+5- Mathematical Terminology:
+
+Since this approach is mathematical, you will encounter terms like:
+Algebra: Refers to mathematical structures that are used to model and understand data and operations in programming.
+Proofs: Logical arguments that show why certain properties or behaviors hold true in your code.
+Laws: Rules that your code should follow to ensure it behaves correctly and predictably.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.educba.com/functional-programming-vs-oop/?source=post_page-----82172e53a526--------------------------------
+
+https://docs.google.com/presentation/d/19C10TZM1kT0AzEjqSfLZs1_HC3Ye0E9h6muVDikl4uo/edit#slide=id.p2
+https://medium.com/@shaistha24/functional-programming-vs-object-oriented-programming-oop-which-is-better-82172e53a526
+
+
+diffrent between FP and OOP:
+
+
+![[1_9OCTlnrfdIvV6dsBv-ECow.webp]]
+
+
