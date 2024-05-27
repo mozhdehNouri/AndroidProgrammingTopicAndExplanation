@@ -32,3 +32,50 @@ and above example give us an idea we want a function to be accurate do we want f
 the opposite of total function is a partial function that means for certin input there is not an output.
 
 
+functions with side effect
+
+this function is pure
+fun sum(x:Int,y:Int)=x+y 
+
+but if i write function in this way
+
+
+var x =0 
+
+fun sum(x:Int,y:Int):Int{
+z +=1
+return x+y
+
+}
+
+above example is not pure   and z is a side effect  write about side effect.
+and z increase when we call sum
+
+
+so why we must avoide side effect? because is becomes harder to test 
+we want to make them pure 
+you must always with same put have to have same output .
+when we have pure function then we enable this thing called referential  transparency.
+
+
+by funtional programming we can compose function with each other 
+
+
+![[Screenshot (346).png]]
+
+check extention function is part of functional programming?
+
+---
+instance at composition 
+
+
+
+output type of a function is input type another function
+
+
+
+
+ 
+we are are using functions as first-class primitives and trying to do many things with them
+
+talk about arrow library and use compose funtion ann
