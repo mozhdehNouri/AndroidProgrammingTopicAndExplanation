@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/functional programming/FP for presentation Part 2.md",
+                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/functional programming/FP for presentation Part 2.md",
+                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/functional programming/FP for presentation Part 2.md",
+                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/functional programming/FP for presentation Part 2.md"
+                "file": "refactor/functional programming/FP Part 3 hadi hariri.md"
               }
             }
           },
@@ -158,13 +158,14 @@
   },
   "active": "c687590cd4f48080",
   "lastOpenFiles": [
+    "refactor/functional programming/FP for presentation Part 2.md",
+    "refactor/functional programming/FP Part 3 hadi hariri.md",
     "Screenshot (340).png",
     "refactor/functional programming/FP for presentation Part 1.md",
     "Code need to check/Case number one.md",
     "Code need to check",
     "Untitled.md",
     "performance-issue/Untitled.canvas",
-    "refactor/functional programming/FP for presentation Part 2.md",
     "refactor/additional concepts/What is abstraction.md",
     "refactor/functional programming/Diff between function and method.md",
     "1_9OCTlnrfdIvV6dsBv-ECow.webp",
@@ -186,7 +187,6 @@
     "Pasted image 20240511163920.png",
     "Pasted image 20240511163916.png",
     "Pasted image 20240511163847.png",
-    "Pasted image 20240511163829.png",
     "refactor/arch/data Layer.md",
     "refactor/arch/MVI.md",
     "refactor/arch/MVVM and MVP Short Concept.md",
