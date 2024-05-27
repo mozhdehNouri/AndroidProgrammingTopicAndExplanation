@@ -127,3 +127,107 @@ thats where we can create a partial function application of that function and th
  fun divide(x,y)= x/y 
  above example is not total function and it is partial function because it is a lie
  for y equals 0 this dosen't return an integer.
+   
+ now if we wanna make it total function we must convert it like this 
+ ![[Screenshot (353).png]]
+
+because for every input it is always going to return valid type for example it always return my divide result 
+
+and in kotlin we can use of Result class  like this:
+
+![[Screenshot (354).png]]
+instead of if and else we can use like this :
+![[Screenshot (355).png]]
+
+
+we can chain our result we can use arrow library 
+![[Screenshot (356).png]]
+
+
+
+and we do not need to map our conditional.
+
+
+or another function in arrow is validate
+
+
+![[Screenshot (357).png]]
+
+----
+
+optimization in fp 
+
+function in functional programming like map is inline 
+
+So consider this example
+
+inline fun add (x:Int,y:Int) = x+y 
+above example we get a meesage with out inline this function can have better functionality but in this case
+
+inline fun add (p:(x:Int,y:Int)->Unit) {
+p(3,6)
+
+}
+in above example we can have better perforamnce because when we use a function in another function we can improve it by inline notation. and above exapmle going to inline  p:(x:Int,y:Int)->Unit  and p(3,6).
+
+
+
+look at this example:
+
+![[Screenshot (358).png]]
+
+in above example we can not use f like this because there is no f because of inline and f just some code exist. beacuse it inline f as well.
+
+so how should we fix this 
+
+use noInline and this is good when we have two input function.
+
+![[Screenshot (359).png]]
+
+
+now we can hold refrence of g 
+
+crossinline is for local returns and anonymous functions. and this inline provide some potimization.
+
+----
+another fp teknic is recursion beacuse recursion is really really easy to read.
+
+
+how we can create memoizeation in kotlin  
+what memoization dose? so for every value computes it stores it and then looks it up in the cache  and dosen't have to store that again.
+and we do not deal with performance penalty
+
+say example of fibonachi in hadi hariri example 
+
+
+![[Screenshot (361).png]]
+
+
+---
+another feature of fp is creating DSL
+
+higher order function able to me multi line and extention functions and infix funtions.
+
+**dsl is domain specific language is a language that is specific to a certain domain** 
+we can create dsl for expersive our code 
+for  exampel we can write something like this 
+
+
+![[Screenshot (362).png]]
+
+we can something like this 
+![[Screenshot (363).png]]
+
+so extention funtion is a function so we can improve it with extention function
+
+our higher order function can posted as higher order function.
+
+put the type and then . and ther the ()  now we have a exteion function on Transport class.
+
+![[Screenshot (364).png]]
+
+and this allows to me create dsl 
+
+and above example we didn't create an an object we just create transport but it allows me to start to create a more expressive way to do things in my code 
+
+check dsldone in hadi hariri course
