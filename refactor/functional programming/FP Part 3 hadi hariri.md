@@ -1,17 +1,12 @@
-
 FP is paradim that use with a serveral programming language so every launguage or every diffrent has  a diffrent explnation from fp
 
 Kotlin dose treat function as first class primitives which means that it is a functional language but kotlin is not really a functional programming language .
 
 why we should use functional programming? what benefits does it give us ?
 
-
-
-
 ![[Screenshot (342).png]]
 
 ![[Screenshot (343).png]]
-
 
 ![[Screenshot (345).png]]
 
@@ -25,12 +20,10 @@ fun sum(x:Int,y:Int)=x+y
 
 above function is if we provide this function give use a result if we provide the min and max value    /// check above example 
 
-
 fun somthing(x:Int, y:Int) = x/y  
 above function is honest ? no because for zero we can not have a integer result 
 and above example give us an idea we want a function to be accurate do we want function to be honest about what they are doing  and honest function we can referred to as total functions which means for any input provided there is a output that is going to be computed.
 the opposite of total function is a partial function that means for certin input there is not an output.
-
 
 functions with side effect
 
@@ -38,7 +31,6 @@ this function is pure
 fun sum(x:Int,y:Int)=x+y 
 
 but if i write function in this way
-
 
 var x =0 
 
@@ -51,31 +43,23 @@ return x+y
 above example is not pure   and z is a side effect  write about side effect.
 and z increase when we call sum
 
-
 so why we must avoide side effect? because is becomes harder to test 
 we want to make them pure 
 you must always with same put have to have same output .
 when we have pure function then we enable this thing called referential  transparency.
 
-
 by funtional programming we can compose function with each other 
-
 
 ![[Screenshot (346).png]]
 
 check extention function is part of functional programming?
 
 ---
+
 instance at composition 
-
-
 
 output type of a function is input type another function
 
-
-
-
- 
 we are are using functions as first-class primitives and trying to do many things with them
 
 talk about arrow library and use compose funtion and use example
@@ -90,10 +74,7 @@ when we have extention function with single paramter we can use infix prefix and
 
 ![[Screenshot (349).png]]
 
-
 the function like curried is in puscall and we do not have that concept in kotlin and kotlin is not fully functional programming.
-
-
 
 what is partially1 or what is partial function application
 
@@ -107,7 +88,6 @@ It's mean that if i don't pass an into y paramter t just going to default it to 
 but this is when i call some option or what it is going to do is going to actually invoke the function and  and compute the result and give it back to me.
 what is i instead of me wanting to compute the result what if what i want to do is just basically get back another function and then have that function hold on to it and use it in different places.
 imaging i have a function with two parameters i want to set one paramter  and get back another function and then use that other function with the first paramter set somewhere that is doing partial function application.![[Screenshot (352).png]]
-
 
 why this is useful ?
 if you take a look at OOP a lot of times and lot of patterns  that you maybe used to kind of do not make sense in the functional programming world.
@@ -127,7 +107,7 @@ thats where we can create a partial function application of that function and th
  fun divide(x,y)= x/y 
  above example is not total function and it is partial function because it is a lie
  for y equals 0 this dosen't return an integer.
-   
+
  now if we wanna make it total function we must convert it like this 
  ![[Screenshot (353).png]]
 
@@ -139,17 +119,12 @@ and in kotlin we can use of Result class  like this:
 instead of if and else we can use like this :
 ![[Screenshot (355).png]]
 
-
 we can chain our result we can use arrow library 
 ![[Screenshot (356).png]]
 
-
-
 and we do not need to map our conditional.
 
-
 or another function in arrow is validate
-
 
 ![[Screenshot (357).png]]
 
@@ -170,8 +145,6 @@ p(3,6)
 }
 in above example we can have better perforamnce because when we use a function in another function we can improve it by inline notation. and above exapmle going to inline  p:(x:Int,y:Int)->Unit  and p(3,6).
 
-
-
 look at this example:
 
 ![[Screenshot (358).png]]
@@ -184,14 +157,13 @@ use noInline and this is good when we have two input function.
 
 ![[Screenshot (359).png]]
 
-
 now we can hold refrence of g 
 
 crossinline is for local returns and anonymous functions. and this inline provide some potimization.
 
 ----
-another fp teknic is recursion beacuse recursion is really really easy to read.
 
+another fp teknic is recursion beacuse recursion is really really easy to read.
 
 how we can create memoizeation in kotlin  
 what memoization dose? so for every value computes it stores it and then looks it up in the cache  and dosen't have to store that again.
@@ -199,11 +171,10 @@ and we do not deal with performance penalty
 
 say example of fibonachi in hadi hariri example 
 
-
 ![[Screenshot (361).png]]
 
-
 ---
+
 another feature of fp is creating DSL
 
 higher order function able to me multi line and extention functions and infix funtions.
@@ -211,7 +182,6 @@ higher order function able to me multi line and extention functions and infix fu
 **dsl is domain specific language is a language that is specific to a certain domain** 
 we can create dsl for expersive our code 
 for  exampel we can write something like this 
-
 
 ![[Screenshot (362).png]]
 

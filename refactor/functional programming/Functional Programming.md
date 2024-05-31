@@ -1,6 +1,7 @@
 It's clear to everyone that Kotlin is an object-oriented programming language. And its large number of built-in features makes Kotlin open to different paradigms.  Particularly, Kotlin follows a functional style that brings a lot of new approaches that weren't available before for Java developers.
 Object-oriented programming is ideally suited for modeling domains and representing real-world objects. Functional programming can elegantly pack a lot of actions into a few lines of code. Moreover, the concepts of immutable objects and pure functions from functional programming make scaling a program in a multi-core environment much easier.
 Kotlin is a programming language that combines these approaches and lets you describe the behavior of objects flexibly.
+
 - Functional programming
 - Inspecting functional features
 
@@ -10,6 +11,7 @@ programs.
 ![[Pasted image 20240403110133.png]]
 
 Functional programming assumes that the software is constructed based on the following principles:
+
 - Pure functions
 - First-class functions
 - Higher-order functions
@@ -22,6 +24,7 @@ Functional programming assumes that the software is constructed based on the fol
 **Declarative versus imperative**
 If you write that code in an imperative style, it might look like this:
 This code describes the control flow in detail and contains a lot of statements.
+
 ```kotlin
 val numbers = listOf(1, 2, 3, 4, 5, 6, 7)
 val odds = ArrayList<Int>()
@@ -32,7 +35,9 @@ for (i in 0..numbers.lastIndex) {
  }
 }
 ```
+
 In declarative style:
+
 ```kotlin
 val numbers = listOf(1, 2, 3, 4, 5, 6, 7)
 val odds = numbers.filter { it % 2 != 0 }
@@ -44,11 +49,13 @@ This code is built on expressions. An expression is something that takes paramet
 A pure function doesn't have any side effects, like input/output operations, and doesn't depend on a variable that doesn't belong to a scope of this function. This means that the  return value of this function only depends on parameters that are passed to it.
 Pure functions allow you to write reliable and predictable
 code. 
+
 - Easy to test
 - Easy to move around
 - Easy to refactor or reorganize
 
 let's consider examples of impure functions. The following function is impure because its result depends not only on a parameter and The result also depends on a value that is returned by the random function. This function isn't pure because it isn't predictable and returns a different result all the time.
+
 ```kotlin
 fun impure1(value: Int) = Math.random() * value
 ```
@@ -62,7 +69,6 @@ fun getFullName() = "$firstName $secondName"
 // this function is pure 
 fun getFullName(firstName: String, secondName: String) = "$firstName
 $secondName"
-
 ```
 
 The getFullName method isn't a pure function because it depends on variables that don't belong to a scope of the getFullName method. 
@@ -91,6 +97,7 @@ Iterable<T>.mapTo(destination: C, transform: (T) -> R): C {
 ```
 
 Let's imagine a case when we need to apply several filter conditions to a list:
+
 ```kotlin
 students
  .filter(::ageMoreThan20)
@@ -102,6 +109,7 @@ In this case, we have to invoke the filter function tree times. This decreases t
 
 **Function composition**
 To solve the problem described in the previous section, we can just create a new method like this:
+
 ```kotlin
 fun predicate(student: Student)
  = ageMoreThan20(student)
@@ -109,7 +117,9 @@ fun predicate(student: Student)
  && theLengthOfSecondNameMoreThan5(student)
 students.filter(::predicate)
 ```
+
 or
+
 ```kotlin
 students.filter(fun(student: Student)
  = ageMoreThan20(student)
@@ -118,34 +128,39 @@ students.filter(fun(student: Student)
 ```
 
 Function composition is the combining of two or more functions to create a new function. It's a powerful approach for reusing functions. Function composition can be applied in different cases; for instance, to combine several invocations of the map function. Instead of this
+
 ```kotlin
 return prices
  .map(::discount)
  .map(::tax)
  .map(::aid)
  .sum()
-
 ```
+
 You can write something like this:
+
 ```kotlin
 return prices
  .map(::aid + ::tax + ::discount)
  .sum()
 ```
+
 Function composition isn't implemented in the standard Kotlin library. But we can create our own functions; for instance, for combining predicates, you can use this function:
+
 ```kotlin
 inline infix fun <P> ((P) -> Boolean).and(crossinline predicate: (P) ->
 Boolean): (P) -> Boolean {
  return { p: P -> this(p) && predicate(p) }
 }
 ```
+
 And for combining functions that are invoked in a sequence, you can use a function such as:
+
 ```kotlin
 inline operator fun <P1, R1, R2> ((R1) -> R2).plus(crossinline f: (P1) ->
 R1): (P1) -> R2 {
  return { p1: P1 -> this(f(p1)) }
 }
-
 ```
 
 **Lambdas**:
@@ -169,7 +184,6 @@ Arrow is a third-party library that contains popular abstractions, such as Optio
 **Integrations**
 For more information you can check the following link: https://arrowkt.io/docs/patterns/glossary/.
 
-
 **Immutability**
 In Kotlin, all classes and methods are final by default.
 If you want to inherit a class and override methods, you have to use the open keyword. For references, you can use the val keyword, but it doesn't guarantee immutability. The following example shows a case when the val keyword doesn't work:
@@ -188,8 +202,6 @@ In this example, the value property is read-only, but isn't immutable because th
 
 It's important to know how to create an immutable object because immutability is the key concept of different architectures and frameworks. For instance, the concept of state from the Redux architecture is built on the immutability.Redux architecture and is based on unidirectional data flow. This architecture is very useful if your application contains a lot of components with a shared state that changes all the time and your components have to be updated whenever the state was changed.
 
-
-
 Functional programming is a programming paradigm where programs are constructed by applying and composing functions. It emphasizes immutability, pure functions, and higher-order functions.
 
 1- Null Safety: Null references are controlled by the type system.
@@ -197,7 +209,6 @@ Functional programming is a programming paradigm where programs are constructed 
 3- First-Class Functions: Functions are treated as values that can be assigned to variables.
 4- Higher-Order Functions: You can pass functions as parameters or return them from other functions.
 5- Extension Functions: You can “add” new methods to existing classes without modifying their source code.
-
 
 **Functional programming : **
 Abstracting into functions and  using functions and using functions as first-class citizens 
@@ -262,3 +273,4 @@ Advantages of functional programming:
 4. Easier to reason about.
 5. Debugging usually takes less time.
 6. we can update code with less chance of breaking things.
+```
