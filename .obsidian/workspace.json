@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8b6408dd6c43045b",
+        "id": "a945be3c5df86431",
         "type": "tabs",
         "children": [
           {
-            "id": "66b34dbcbf9f519a",
+            "id": "22eb1eb3093b1a52",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/design patterns/Lazy patterns.md",
+                "file": "refactor/design patterns/Abstract Factory in Kotlin.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/design patterns/Lazy patterns.md",
+                "file": "refactor/design patterns/Abstract Factory in Kotlin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/design patterns/Lazy patterns.md",
+                "file": "refactor/design patterns/Abstract Factory in Kotlin.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/design patterns/Lazy patterns.md"
+                "file": "refactor/design patterns/Abstract Factory in Kotlin.md"
               }
             }
           },
@@ -156,8 +156,10 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "66b34dbcbf9f519a",
+  "active": "22eb1eb3093b1a52",
   "lastOpenFiles": [
+    "Untitled.md",
+    "refactor/design patterns/Abstract Factory in Kotlin.md",
     "refactor/design patterns/Lazy patterns.md",
     "refactor/additional concepts/JvmOverloads.md",
     "refactor/additional concepts/Immutable.md",
@@ -186,7 +188,6 @@
     "refactor/functional programming/FP for presentation Part 1.md",
     "Code need to check/Case number one.md",
     "Code need to check",
-    "Untitled.md",
     "performance-issue/Untitled.canvas",
     "refactor/additional concepts/What is abstraction.md",
     "refactor/functional programming/Diff between function and method.md",
@@ -196,7 +197,6 @@
     "refactor/additional concepts/Annotation Processing.md",
     "refactor/additional concepts/Const.md",
     "Sealed In kotlin.md",
-    "refactor/additional concepts/Sealed in android.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
