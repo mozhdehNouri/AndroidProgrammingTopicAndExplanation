@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/design patterns/Design pattern part 3.md",
+                "file": "refactor/design patterns/Builder pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/design patterns/Design pattern part 3.md",
+                "file": "refactor/design patterns/Builder pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/design patterns/Design pattern part 3.md",
+                "file": "refactor/design patterns/Builder pattern.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/design patterns/Design pattern part 3.md"
+                "file": "refactor/design patterns/Builder pattern.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "c687590cd4f48080",
   "lastOpenFiles": [
+    "refactor/design patterns/Design pattern part 3.md",
+    "refactor/design patterns/Builder pattern.md",
     "Screenshot (372).png",
     "Screenshot (371).png",
     "Screenshot (370).png",
@@ -165,7 +167,6 @@
     "Screenshot (368).png",
     "Screenshot (367).png",
     "refactor/design patterns/Design patterns in kotlin part 1.md",
-    "refactor/design patterns/Design pattern part 3.md",
     "refactor/design patterns/What is design patterns.md",
     "refactor/functional programming/FP Part 3 hadi hariri.md",
     "refactor/design patterns",
@@ -173,7 +174,6 @@
     "Screenshot (363).png",
     "Screenshot (362).png",
     "Screenshot (361).png",
-    "Screenshot (359).png",
     "refactor/functional programming/FP for presentation Part 2.md",
     "refactor/functional programming/FP for presentation Part 1.md",
     "Code need to check/Case number one.md",
