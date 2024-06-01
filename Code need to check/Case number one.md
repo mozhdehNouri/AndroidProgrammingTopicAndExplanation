@@ -1,5 +1,4 @@
-
-```kotlin 
+```kotlin
 suspend fun Api.stickerPack(
     id: String,
     onError: ErrorBlock = null,
