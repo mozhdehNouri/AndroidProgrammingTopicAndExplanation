@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
+                "file": "refactor/design patterns/Design pattern part 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
+                "file": "refactor/design patterns/Design pattern part 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
+                "file": "refactor/design patterns/Design pattern part 3.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/functional programming/FP Part 3 hadi hariri.md"
+                "file": "refactor/design patterns/Design pattern part 3.md"
               }
             }
           },
@@ -158,6 +158,11 @@
   },
   "active": "c687590cd4f48080",
   "lastOpenFiles": [
+    "refactor/design patterns/Design patterns in kotlin part 1.md",
+    "refactor/design patterns/Design pattern part 3.md",
+    "refactor/design patterns/What is design patterns.md",
+    "refactor/functional programming/FP Part 3 hadi hariri.md",
+    "refactor/design patterns",
     "Screenshot (364).png",
     "Screenshot (363).png",
     "Screenshot (362).png",
@@ -168,9 +173,7 @@
     "Screenshot (356).png",
     "Screenshot (355).png",
     "Screenshot (354).png",
-    "Screenshot (353).png",
     "refactor/functional programming/FP for presentation Part 2.md",
-    "refactor/functional programming/FP Part 3 hadi hariri.md",
     "refactor/functional programming/FP for presentation Part 1.md",
     "Code need to check/Case number one.md",
     "Code need to check",
@@ -194,8 +197,6 @@
     "refactor/arch/uiLayer.md",
     "refactor/arch/What is Archi.md",
     "refactor/arch/Layers in android.md",
-    "refactor/compose/Modifier MAD Skill.md",
-    "refactor/compose/modifierMADSkill.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
@@ -204,7 +205,6 @@
     "refactor/compose/Theme",
     "refactor/functional programming",
     "refactor/compose",
-    "refactor/test",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
