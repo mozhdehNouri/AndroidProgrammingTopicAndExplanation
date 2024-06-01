@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ad3023913a03e1e8",
+        "id": "882d63c312b6503e",
         "type": "tabs",
         "children": [
           {
-            "id": "c687590cd4f48080",
+            "id": "c7d7e41c6ac02e92",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/design patterns/Builder pattern.md",
+                "file": "refactor/design patterns/Singleton pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/design patterns/Builder pattern.md",
+                "file": "refactor/design patterns/Singleton pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/design patterns/Builder pattern.md",
+                "file": "refactor/design patterns/Singleton pattern.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/design patterns/Builder pattern.md"
+                "file": "refactor/design patterns/Singleton pattern.md"
               }
             }
           },
@@ -156,10 +156,15 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c687590cd4f48080",
+  "active": "c7d7e41c6ac02e92",
   "lastOpenFiles": [
-    "refactor/design patterns/Design pattern part 3.md",
+    "refactor/design patterns/Singleton pattern.md",
     "refactor/design patterns/Builder pattern.md",
+    "Screenshot (375).png",
+    "Screenshot (374) 1.png",
+    "Screenshot (374).png",
+    "Screenshot (373).png",
+    "refactor/design patterns/Design pattern part 3.md",
     "Screenshot (372).png",
     "Screenshot (371).png",
     "Screenshot (370).png",
@@ -170,10 +175,6 @@
     "refactor/design patterns/What is design patterns.md",
     "refactor/functional programming/FP Part 3 hadi hariri.md",
     "refactor/design patterns",
-    "Screenshot (364).png",
-    "Screenshot (363).png",
-    "Screenshot (362).png",
-    "Screenshot (361).png",
     "refactor/functional programming/FP for presentation Part 2.md",
     "refactor/functional programming/FP for presentation Part 1.md",
     "Code need to check/Case number one.md",
@@ -196,7 +197,6 @@
     "refactor/arch/MVI.md",
     "refactor/arch/MVVM and MVP Short Concept.md",
     "refactor/arch/uiLayer.md",
-    "refactor/arch/What is Archi.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
