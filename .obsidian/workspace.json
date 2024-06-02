@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/design patterns/Abstract Factory in Kotlin.md",
+                "file": "refactor/design patterns/design pattern part 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/design patterns/Abstract Factory in Kotlin.md",
+                "file": "refactor/design patterns/design pattern part 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/design patterns/Abstract Factory in Kotlin.md",
+                "file": "refactor/design patterns/design pattern part 4.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/design patterns/Abstract Factory in Kotlin.md"
+                "file": "refactor/design patterns/design pattern part 4.md"
               }
             }
           },
@@ -158,8 +158,19 @@
   },
   "active": "22eb1eb3093b1a52",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Screenshot (390).png",
+    "Screenshot (389).png",
+    "Screenshot (388).png",
+    "Screenshot (387).png",
+    "Screenshot (386) 1.png",
+    "Screenshot (383).png",
+    "Screenshot (381).png",
+    "Screenshot (380).png",
+    "Screenshot (379).png",
+    "Screenshot (378).png",
     "refactor/design patterns/Abstract Factory in Kotlin.md",
+    "refactor/design patterns/design pattern part 4.md",
+    "Untitled.md",
     "refactor/design patterns/Lazy patterns.md",
     "refactor/additional concepts/JvmOverloads.md",
     "refactor/additional concepts/Immutable.md",
@@ -170,16 +181,7 @@
     "refactor/design patterns/Singleton pattern.md",
     "refactor/design patterns/Builder pattern.md",
     "Screenshot (375).png",
-    "Screenshot (374) 1.png",
-    "Screenshot (374).png",
-    "Screenshot (373).png",
     "refactor/design patterns/Design pattern part 3.md",
-    "Screenshot (372).png",
-    "Screenshot (371).png",
-    "Screenshot (370).png",
-    "Screenshot (369).png",
-    "Screenshot (368).png",
-    "Screenshot (367).png",
     "refactor/design patterns/Design patterns in kotlin part 1.md",
     "refactor/design patterns/What is design patterns.md",
     "refactor/functional programming/FP Part 3 hadi hariri.md",
@@ -195,8 +197,6 @@
     "performance-issue/Reason of performance issue.md",
     "performance-issue/Identifying Indicators of Performance Issues.md",
     "refactor/additional concepts/Annotation Processing.md",
-    "refactor/additional concepts/Const.md",
-    "Sealed In kotlin.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
