@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a945be3c5df86431",
+        "id": "8701b0bfb9eb76b7",
         "type": "tabs",
         "children": [
           {
-            "id": "22eb1eb3093b1a52",
+            "id": "33391a2e2ab6d96d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "refactor/design patterns/design pattern part 4.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/design patterns/design pattern part 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/design patterns/design pattern part 4.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "refactor/design patterns/design pattern part 4.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,8 +148,9 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "22eb1eb3093b1a52",
+  "active": "33391a2e2ab6d96d",
   "lastOpenFiles": [
+    "refactor/design patterns/design pattern part 4.md",
     "Screenshot (390).png",
     "Screenshot (389).png",
     "Screenshot (388).png",
@@ -169,7 +162,6 @@
     "Screenshot (379).png",
     "Screenshot (378).png",
     "refactor/design patterns/Abstract Factory in Kotlin.md",
-    "refactor/design patterns/design pattern part 4.md",
     "Untitled.md",
     "refactor/design patterns/Lazy patterns.md",
     "refactor/additional concepts/JvmOverloads.md",
@@ -180,7 +172,6 @@
     "refactor/additional concepts/Composition.md",
     "refactor/design patterns/Singleton pattern.md",
     "refactor/design patterns/Builder pattern.md",
-    "Screenshot (375).png",
     "refactor/design patterns/Design pattern part 3.md",
     "refactor/design patterns/Design patterns in kotlin part 1.md",
     "refactor/design patterns/What is design patterns.md",
