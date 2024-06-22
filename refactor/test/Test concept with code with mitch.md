@@ -49,6 +49,38 @@ Simulate a person using your app
 For example if user clickbutton very fast or very slow if something happend you can know with this test.
 Run device or emulator 
 
- 
-What is Exactly Unit testing:
-Unit:
+ -----
+ Testing in android Phliph 
+
+TDD:
+- Main principle: Write the test case before the implementation the function (only for unit tests)
+-   -1  Write the function signature
+-    2- write the test cases for that function
+
+
+first think about the function signature and define the function signature but no content of that function yet. then second step is write the test case that should test the function and then testcase should always fail at first because we don't have any content in that function so the test case must fail of course and after that at the we finally implement the function in a way  that satisfies our  test cases.
+
+what makes a good test?
+1- Scope    how much of our actual code in our function that we want to test is covered by our single test case.
+2- Speed     speed is  pretty self-explanatory so it just means how fast our test case runs
+3- Fidelity     how close our test case in actually to a real scenario because that's what we want to verify in the end that our app works well in the real world.
+
+what important is we want to prevent so-call flaky tests those are tests that sometimes succeed and sometimes fail.  like random between 1 to 5 and you wanna say when it == 2 return true
+in some case it might fail and sometimes it might succssed.
+always make sure that your tests are independent and also that your test are not dependent on another test case.
+
+How many test cases should you write?
+
+
+![[Screenshot (408).png]]
+
+in TDD meaning of first create function signature is this:
+```kotlin
+
+    fun validationRegister(
+        userName:String,
+        password:String,
+        confirmPassword:String
+    ):Boolean {}
+    
+```
