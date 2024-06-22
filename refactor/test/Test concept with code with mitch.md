@@ -98,3 +98,13 @@ because the assertThat is string
 
 
 and after that we need the actual impelemanation base on our tests.
+
+
+when we have class and we must create an object form class we must do @Before and @After 
+
+![[Screenshot (410).png]]
+
+above example is bad practice because our two test not independent and both of them are depend on resourceComparer.
+and above example like faki test its mean our test sometimes succssed and somethimes fails.
+consider we have a global variable in our class and every time we run this two test case each of them return different value.
+
