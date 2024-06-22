@@ -84,3 +84,17 @@ in TDD meaning of first create function signature is this:
     ):Boolean {}
     
 ```
+
+step two is we must think about it when our condition get false and when get true
+![[Screenshot (409).png]]
+
+
+because our validate fun return boolean we can access to isTrue or false 
+assertThat(result).isFalse()
+
+in other case like this 
+ assertThat("result").contains()
+because the assertThat is string
+
+
+and after that we need the actual impelemanation base on our tests.
