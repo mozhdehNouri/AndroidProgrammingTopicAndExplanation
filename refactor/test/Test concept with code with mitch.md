@@ -108,3 +108,13 @@ above example is bad practice because our two test not independent and both of t
 and above example like faki test its mean our test sometimes succssed and somethimes fails.
 consider we have a global variable in our class and every time we run this two test case each of them return different value.
 
+
+
+
+----
+what is annotation 
+@SmallTest   // use for unit test 
+@MediumTest  //  use for instrument test
+@LargeTest    // use for ui tst
+
+but why we need these things to add 
