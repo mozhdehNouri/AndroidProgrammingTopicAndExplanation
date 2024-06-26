@@ -167,5 +167,18 @@ When: Search for a car                is action for the user
 Then: Results contain the car.     it is results  and this is list of cars for example.
 
 
+Testing types:
+Testing types divide two categories white box testing and black box testing.
+
+white box testing consist of unit test - integration test and ui tests.
+
+black box testing:
+this test is QA duty
+- Use case testing
+- Software performance testing
+- pressure testing
+- Stress testing
+- Manual testing
 
 
+JUnit  = Java unit 
