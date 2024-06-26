@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1f3b8d62bb0c8822",
+        "id": "defd55290717a867",
         "type": "tabs",
         "children": [
           {
-            "id": "1843f28b781e47e9",
+            "id": "1b7ecb674e8f4918",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
+                "file": "refactor/test/Test concept with code with mitch.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
+                "file": "refactor/test/Test concept with code with mitch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
+                "file": "refactor/test/Test concept with code with mitch.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/functional programming/FP Part 3 hadi hariri.md"
+                "file": "refactor/test/Test concept with code with mitch.md"
               }
             }
           },
@@ -156,8 +156,14 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "1843f28b781e47e9",
+  "active": "1b7ecb674e8f4918",
   "lastOpenFiles": [
+    "Pasted image 20240626113954.jpg",
+    "Pasted image 20240626113939.jpg",
+    "refactor/functional programming/Diff between function and method.md",
+    "refactor/functional programming/FP for presentation Part 1.md",
+    "refactor/functional programming/Functional Programming.md",
+    "refactor/functional programming/FP Part 3 hadi hariri.md",
     "refactor/test/Test concept with code with mitch.md",
     "Screenshot (410).png",
     "Screenshot (409).png",
@@ -169,7 +175,6 @@
     "Screenshot (388).png",
     "Screenshot (387).png",
     "Screenshot (386) 1.png",
-    "Screenshot (383).png",
     "refactor/design patterns/Abstract Factory in Kotlin.md",
     "Untitled.md",
     "refactor/design patterns/Lazy patterns.md",
@@ -184,16 +189,12 @@
     "refactor/design patterns/Design pattern part 3.md",
     "refactor/design patterns/Design patterns in kotlin part 1.md",
     "refactor/design patterns/What is design patterns.md",
-    "refactor/functional programming/FP Part 3 hadi hariri.md",
     "refactor/design patterns",
     "refactor/functional programming/FP for presentation Part 2.md",
-    "refactor/functional programming/FP for presentation Part 1.md",
     "Code need to check/Case number one.md",
     "Code need to check",
     "performance-issue/Untitled.canvas",
     "refactor/additional concepts/What is abstraction.md",
-    "refactor/functional programming/Diff between function and method.md",
-    "refactor/functional programming/Functional Programming.md",
     "performance-issue/Reason of performance issue.md",
     "performance-issue/Identifying Indicators of Performance Issues.md",
     "refactor/async/flow",

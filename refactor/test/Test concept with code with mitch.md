@@ -129,5 +129,43 @@ now we must create a Fake repopsitory in test package and impelement our interfa
 
 TDD 
 mobile app deal with a lot of constraints like battery or memory. and we want to make sure our app is responsive in all scenarios.
+diffrent type of testing like white and black box testing
+Test driven development 
+Behvior driven development.
+
+legacy code is a code without test.
+what is regression testing.
+
+What is TDD:
+Test-driven development is an approach for software development where you write test first, then use those tests to drive the design and development of your software application.
+in a simple way you write test first then you write actual implementation to makes this test pass and you try to improve the existing quality of your implementation and test.
+
+what is TDD cycle?
 
  
+![[Pasted image 20240626113954.jpg]]
+
+
+Red : think about what you want to develop 
+Green: think about how to make your test pass
+Refactor: think about how to improve your existing implementation.
+
+
+what is BDD: Behavior Driven Design
+- set of best practices to write great tests
+- focus on behavior(senario) not the implemenation
+- common language between business Analyst, Developer and Tester 
+- BDD comes from TDD
+- convert language into executable tests.
+- acceptance criteria in Given/When/ Then syntax.
+-
+Example:
+As a user i want to be able to search for cars that meet my criteria 
+
+Given: Cars service is initialized    like a requirement 
+When: Search for a car                is action for the user 
+Then: Results contain the car.     it is results  and this is list of cars for example.
+
+
+
+
