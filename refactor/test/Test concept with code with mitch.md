@@ -182,3 +182,11 @@ this test is QA duty
 
 
 JUnit  = Java unit 
+
+
+---
+check out this link
+https://testing.googleblog.com/
+https://stackoverflow.com/questions/4671923/what-is-the-purpose-of-smalltest-mediumtest-and-largetest-annotations-in-an/4671991#4671991
+https://www.youtube.com/watch?v=bIwlSgWW5Xk
+https://www.youtube.com/watch?v=4DzVnVJqlg4&list=PLk7v1Z2rk4hgYY9Dus2h0DxUus0VX_igd
