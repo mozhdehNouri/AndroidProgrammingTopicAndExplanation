@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/test/Test concept with code with mitch.md",
+                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/test/Test concept with code with mitch.md",
+                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/test/Test concept with code with mitch.md",
+                "file": "refactor/functional programming/FP Part 3 hadi hariri.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/test/Test concept with code with mitch.md"
+                "file": "refactor/functional programming/FP Part 3 hadi hariri.md"
               }
             }
           },
@@ -158,11 +158,11 @@
   },
   "active": "1843f28b781e47e9",
   "lastOpenFiles": [
+    "refactor/test/Test concept with code with mitch.md",
     "Screenshot (410).png",
     "Screenshot (409).png",
     "Screenshot (408).png",
     "Screenshot (407).png",
-    "refactor/test/Test concept with code with mitch.md",
     "refactor/design patterns/design pattern part 4.md",
     "Screenshot (390).png",
     "Screenshot (389).png",
@@ -170,7 +170,6 @@
     "Screenshot (387).png",
     "Screenshot (386) 1.png",
     "Screenshot (383).png",
-    "Screenshot (381).png",
     "refactor/design patterns/Abstract Factory in Kotlin.md",
     "Untitled.md",
     "refactor/design patterns/Lazy patterns.md",
