@@ -118,3 +118,9 @@ what is annotation
 @LargeTest    // use for ui tst
 
 but why we need these things to add 
+
+
+-----
+For writing testRepository we must create an interface and then our main shopping must impelement it 
+
+now we must create a Fake repopsitory in test package and impelement our interface too and this fake repository simulate our main repository.
