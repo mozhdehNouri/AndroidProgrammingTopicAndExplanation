@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "defd55290717a867",
+        "id": "74f72068f5fd4f3c",
         "type": "tabs",
         "children": [
           {
-            "id": "1b7ecb674e8f4918",
+            "id": "3b2c4297a8b51f24",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "performance-issue/Compose performance.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "performance-issue/Compose performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "performance-issue/Compose performance.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "performance-issue/Compose performance.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,8 +148,13 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "1b7ecb674e8f4918",
+  "active": "3b2c4297a8b51f24",
   "lastOpenFiles": [
+    "performance-issue/Compose performance.md",
+    "Screenshot (423).png",
+    "Screenshot (422).png",
+    "Screenshot (421).png",
+    "performance-issue/Untitled.canvas",
     "Screenshot (420).png",
     "Screenshot (419).png",
     "Screenshot (418).png",
@@ -165,12 +162,7 @@
     "Screenshot (416) 1.png",
     "Screenshot (416).png",
     "Screenshot (397).png",
-    "Screenshot (414).png",
-    "Screenshot (413).png",
-    "Screenshot (412).png",
     "refactor/test/Test concept with code with mitch.md",
-    "performance-issue/Compose performance.md",
-    "Pasted image 20240626113954.jpg",
     "refactor/functional programming/Diff between function and method.md",
     "refactor/functional programming/FP for presentation Part 1.md",
     "refactor/functional programming/Functional Programming.md",
@@ -194,7 +186,6 @@
     "refactor/functional programming/FP for presentation Part 2.md",
     "Code need to check/Case number one.md",
     "Code need to check",
-    "performance-issue/Untitled.canvas",
     "refactor/additional concepts/What is abstraction.md",
     "performance-issue/Reason of performance issue.md",
     "refactor/async/flow",

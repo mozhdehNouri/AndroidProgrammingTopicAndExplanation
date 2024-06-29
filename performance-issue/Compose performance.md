@@ -66,8 +66,28 @@ Bad  practice:
 Compose rule:
 when once a value has been read will not change after compotion compelete.
 you should never write a value that already read by composition. writing data that has already read we call backwards write.
-Backwards write: Writing to state you have already read.
+Backwards write: Writing to state you have already read. and may cause recompose in every fram.
+
+In the below example we write balance and after that we read it  in the call the text and this is backwards write.
+
+
+![[Screenshot (421).png]]
 
 
 
 
+![[Screenshot (422).png]]
+
+this is the better example:
+![[Screenshot (423).png]]
+
+is better to use calculation in viewModel.
+
+
+Use Baseline profiles : Speed up startup and hot paths.
+
+
+
+
+
+https://www.youtube.com/watch?v=EOQB8PTLkpY&list=PLWz5rJ2EKKc9Ty3Zl1hvMVUsXfkn93NRk
