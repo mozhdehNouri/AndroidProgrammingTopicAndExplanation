@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/test/Test concept with code with mitch.md",
+                "file": "performance-issue/Compose performance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/test/Test concept with code with mitch.md",
+                "file": "performance-issue/Compose performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/test/Test concept with code with mitch.md",
+                "file": "performance-issue/Compose performance.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/test/Test concept with code with mitch.md"
+                "file": "performance-issue/Compose performance.md"
               }
             }
           },
@@ -158,23 +158,24 @@
   },
   "active": "1b7ecb674e8f4918",
   "lastOpenFiles": [
+    "Screenshot (420).png",
+    "Screenshot (419).png",
+    "Screenshot (418).png",
+    "Screenshot (417).png",
+    "Screenshot (416) 1.png",
+    "Screenshot (416).png",
+    "Screenshot (397).png",
+    "Screenshot (414).png",
+    "Screenshot (413).png",
+    "Screenshot (412).png",
+    "refactor/test/Test concept with code with mitch.md",
+    "performance-issue/Compose performance.md",
     "Pasted image 20240626113954.jpg",
-    "Pasted image 20240626113939.jpg",
     "refactor/functional programming/Diff between function and method.md",
     "refactor/functional programming/FP for presentation Part 1.md",
     "refactor/functional programming/Functional Programming.md",
     "refactor/functional programming/FP Part 3 hadi hariri.md",
-    "refactor/test/Test concept with code with mitch.md",
-    "Screenshot (410).png",
-    "Screenshot (409).png",
-    "Screenshot (408).png",
-    "Screenshot (407).png",
     "refactor/design patterns/design pattern part 4.md",
-    "Screenshot (390).png",
-    "Screenshot (389).png",
-    "Screenshot (388).png",
-    "Screenshot (387).png",
-    "Screenshot (386) 1.png",
     "refactor/design patterns/Abstract Factory in Kotlin.md",
     "Untitled.md",
     "refactor/design patterns/Lazy patterns.md",
@@ -196,7 +197,6 @@
     "performance-issue/Untitled.canvas",
     "refactor/additional concepts/What is abstraction.md",
     "performance-issue/Reason of performance issue.md",
-    "performance-issue/Identifying Indicators of Performance Issues.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
