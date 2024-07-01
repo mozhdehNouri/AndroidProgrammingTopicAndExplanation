@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "74f72068f5fd4f3c",
+        "id": "d9d1789a43a5e0f1",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2c4297a8b51f24",
+            "id": "83815bd59386ff86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "refactor/networking/Ktor.md",
+                "file": "refactor/additional concepts/AppOpsManager.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refactor/networking/Ktor.md",
+                "file": "refactor/additional concepts/AppOpsManager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "refactor/networking/Ktor.md",
+                "file": "refactor/additional concepts/AppOpsManager.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refactor/networking/Ktor.md"
+                "file": "refactor/additional concepts/AppOpsManager.md"
               }
             }
           },
@@ -156,10 +156,11 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "3b2c4297a8b51f24",
+  "active": "83815bd59386ff86",
   "lastOpenFiles": [
-    "performance-issue/Compose performance.md",
+    "refactor/additional concepts/AppOpsManager.md",
     "refactor/networking/Ktor.md",
+    "performance-issue/Compose performance.md",
     "Screenshot (423).png",
     "Screenshot (422).png",
     "Screenshot (421).png",
@@ -196,7 +197,6 @@
     "Code need to check/Case number one.md",
     "Code need to check",
     "refactor/additional concepts/What is abstraction.md",
-    "performance-issue/Reason of performance issue.md",
     "refactor/async/flow",
     "refactor/async/coroutine",
     "refactor/async",
