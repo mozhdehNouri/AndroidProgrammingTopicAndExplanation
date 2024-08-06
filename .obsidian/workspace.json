@@ -42,9 +42,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5f2a21e6bcb56d46",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -181,7 +191,7 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "e862387a63f6f9fb",
+  "active": "5f2a21e6bcb56d46",
   "lastOpenFiles": [
     "My Mvi new document.md",
     "Context Reciver.md",
