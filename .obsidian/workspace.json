@@ -8,53 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "53afffd63c3ff969",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MVI new impl.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d0cd58867074abaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "My Mvi new document.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e862387a63f6f9fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Context Reciver.md",
+                "file": "compose-in-depth/Compose in depth part one - Composable functions.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "5f2a21e6bcb56d46",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Context Reciver.md",
+                "file": "compose-in-depth/Compose in depth part one - Composable functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Context Reciver.md",
+                "file": "compose-in-depth/Compose in depth part one - Composable functions.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Context Reciver.md"
+                "file": "compose-in-depth/Compose in depth part one - Composable functions.md"
               }
             }
           },
@@ -191,10 +156,15 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "5f2a21e6bcb56d46",
+  "active": "e862387a63f6f9fb",
   "lastOpenFiles": [
-    "My Mvi new document.md",
+    "Screenshot (6).png",
+    "Screenshot (5).png",
     "Context Reciver.md",
+    "compose-in-depth/Compose in depth part one - Composable functions.md",
+    "compose-in-depth",
+    "README.md",
+    "My Mvi new document.md",
     "MVI new impl.md",
     "refactor/additional concepts/AppOpsManager.md",
     "refactor/networking/Ktor.md",
@@ -209,7 +179,6 @@
     "Screenshot (417).png",
     "Screenshot (416) 1.png",
     "Screenshot (416).png",
-    "Screenshot (397).png",
     "refactor/test/Test concept with code with mitch.md",
     "refactor/functional programming/Diff between function and method.md",
     "refactor/functional programming/FP for presentation Part 1.md",
@@ -227,10 +196,7 @@
     "refactor/design patterns/Singleton pattern.md",
     "refactor/design patterns/Builder pattern.md",
     "refactor/design patterns/Design pattern part 3.md",
-    "refactor/design patterns/Design patterns in kotlin part 1.md",
-    "refactor/design patterns/What is design patterns.md",
     "refactor/design patterns",
-    "refactor/functional programming/FP for presentation Part 2.md",
     "Code need to check",
     "refactor/async/flow",
     "refactor/async/coroutine",
@@ -239,7 +205,6 @@
     "refactor/compose/New folder",
     "refactor/compose/Theme",
     "refactor/functional programming",
-    "refactor/compose",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
