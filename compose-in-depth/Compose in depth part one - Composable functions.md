@@ -115,4 +115,130 @@ However, side effects are needed to write stateful programs, so at some level we
 
 **Restartable**
 
+Unlike traditional functions, composable functions can be executed multiple times. This behavior is fundamental to how Compose updates the UI in response to changes.
 
+In a typical function call, the function executes once, and its result is used. However, a composable function can be re-executed whenever its inputs change. This process is called recomposition. The Compose runtime determines when and how often to recompose a function based on factors like state changes, user interactions, and system events.
+This characteristic distinguishes composable functions from standard functions and is essential for building dynamic and reactive user interfaces.
+
+![[Screenshot (7).png]]
+
+
+Here is how a Composable call tree could look:
+![[Screenshot (8).png]]
+
+Composables 4 and 5 are re-executed after their inputs change.
+
+Compose intelligently determines which parts of the UI need to be updated when data changes. This process, known as recomposition, involves re-executing only the necessary composable functions.
+
+To achieve this efficiency, the Compose compiler analyzes your code to identify which composable functions rely on specific pieces of state. These stateful composables are marked for potential recomposition. Composable functions that don't depend on any state are considered pure and don't require re-execution.
+
+
+Compose is selective about which nodes of the tree to restart in order to keep its in-memory representation always up to date. Composable functions are designed to be reactive and re-executed based on changes in the state they observe.
+The Compose compiler finds all Composable functions that read some state and generates the code required to teach the runtime how to restart them. Composables that don’t read state don’t need to be restarted, so there is no reason to teach the runtime how to do so.
+
+
+**Fast execution**
+We can think of Composable functions and the Composable function tree as a fast, declarative, and lightweight approach to build a description of the program that will be retained in memory and interpreted / materialized in a later stage.
+Composable functions don’t build and return UI. They simply emit data to build or update an inmemory structure. That makes them blazing fast, and allows the runtime to execute them multiple times without fear. Sometimes it happens very frequently, like for every frame of an animation. Developers must fulfill this expectation when writing code. Any cost heavy computation should be offloaded to coroutines and always wrapped into one of the lifecycle aware effect handlers.
+
+**Positional memoization**
+
+Function memoization is a technique where the result of a function call is cached based on its input values. This prevents redundant calculations and improves performance. However, it's only applicable to pure functions that always produce the same output for given inputs.
+Positional memoization is a specialized form of memoization tailored for composable functions. In Compose, it caches the output of a composable based on its position in the composition tree and its input parameters. This means that if a composable function is called with the same inputs in the same position within the tree during a recomposition, its previous output can be reused instead of recalculating it.
+
+Positional Memoization: Identifying Composable Instances
+
+In traditional function memoization, a function's identity is determined by its name, parameters, and return type. This information is used to create a unique key for caching the result. Compose introduces an additional factor: the function's position in the composition tree. Even if two composable functions have the same name, parameters, and return type, they are considered distinct if they appear in different places within the UI.
+![[Screenshot (9) 1.png]]
+
+However, assigning unique identities can be complex, especially when dealing with lists of composables generated from loops. In these cases, determining whether a composable from a previous iteration corresponds to a composable in the current iteration can be challenging.
+
+```kotlin
+
+ @Composable
+ fun TalksScreen(talks: List<Talk>) {
+ Column {
+ for (talk in talks) {
+ Talk(talk) } } }
+```
+
+In this case, Talk(talk) is called from the same position every time, but each talk represents a
+different item on the list, and therefore a different node on the tree. In cases like this, the Compose runtime relies on the order of calls to generate the unique id, and still be able to differentiate them.
+This works nicely when adding a new element to the end of the list, since the rest of the calls stay in the same position as before. But what if we added elements to the top, or somewhere in the middle? The runtime would recompose all the Talks below that point since they shifted their position, even if their inputs have not changed. This is highly inefficient (esp. for long lists), since those calls should have been skipped.
+To solve this, Compose provides the key Composable, so we can assign an explicit key to the call manually:
+
+
+```kotlin
+ @Composable
+ fun TalksScreen(talks: List<Talk>) {
+ Column {
+ for (talk in talks) {
+ key(talk.id) { // Unique key
+ Talk(talk) } }
+} }
+```
+
+In this example we are using the talk id (likely unique) as the key for each Talk, which will allow the runtime to preserve the identity of all the items on the list regardless of their position.
+Positional memoization allows the runtime to remember Composable functions by design. Any Composable function inferred as restartable by the Compose compiler should also be skippable, hence automatically remembered. Compose is built on top of this mechanism.
+
+**remember**
+Compose provides the remember composable function to cache the results of expensive calculations within a composable's scope. This is a form of positional memoization, where the cache key is derived from the composable's location and input parameters.
+
+The remember function is just a Composable function that knows how to read from and write to the in-memory structure that holds the state of the tree. It only exposes this “positional memoization” mechanism to the developer.
+In Compose, memoization is not application-wide. When something is memoized, it is done within the context of the Composable calling it. In the example from above, it would be FilteredImage. In practice, Compose will go to the in-memory structure and look for the value in the range of slots where the information for the enclosing Composable is stored. This makes it be more like a singleton within that scope. If the same Composable was called from a different parent, a new instance of the value would be returned.
+
+**Similarities with suspend functions**
+
+**In the Kotlin coroutine system, a Continuation is like a callback. It tells the program how to continue the execution.**
+
+```kotlin
+suspend fun publishTweet(tweet: Tweet): Post =
+```
+```kotlin
+fun publishTweet(tweet: Tweet, callback: Continuation<Post>): Unit
+```
+
+
+Composable Functions: A Different Color
+
+Composable functions represent a distinct category of functions, separate from traditional ones. This distinction is akin to the concept of "function coloring" introduced by Bob Nystrom.
+Just like asynchronous functions, composable functions have specific constraints and capabilities. They cannot be seamlessly integrated into regular program flow. Calling a composable function from a standard function requires a dedicated entry point like Composition.setContent.
+This separation is intentional. Composable functions are designed to describe UI elements and their composition, not to execute general program logic. They operate in a specialized domain, much like asynchronous functions operate in the realm of time-based operations.
+
+In Jetpack Compose, the case of Composable functions is equivalent. We cannot call Composable functions from standard functions transparently. If we want to do that, an integration point is required (e.g: Composition.setContent). Composable functions have a completely different goal than standard functions. They are not designed to write program logics, but to describe changes for a node tree.
+
+It might seem that I am tricking a bit here. One of the benefits of Composable functions is that you can declare UI using logics, actually. That means sometimes we need to call Composable functions from standard functions. For example:
+
+```kotlin
+ @Composable
+ fun SpeakerList(speakers: List<Speaker>) {
+ Column {
+ speakers.forEach {
+ Speaker(it) }}}
+```
+
+Composable Functions: A Distinct World (with Nuances)
+
+Composable functions in Jetpack Compose represent a unique category, distinct from standard functions. This separation aligns with the concept of "function coloring" described by Bob Nystrom.
+
+The Color Barrier: Why Restrictions Exist
+
+Similar to asynchronous functions, composable functions have limitations. You can't directly call them from standard functions without dedicated entry points like Composition.setContent. This restriction exists because composable functions serve a specific purpose: describing the structure and appearance of your UI.
+Standard functions handle general program logic and may not understand the nuances of UI composition. This clear separation simplifies reasoning about your UI code and avoids potential conflicts.
+
+Inline Functions: A Bridge Across Colors
+While composable functions typically operate in their own domain, inline functions offer a way to bridge the gap. When collection operators like forEach are declared as inline, they effectively "inline" the lambdas passed to them, merging them with the caller's code.
+The Speaker composable call is inlined within SpeakerList, creating a functionally equivalent scenario where both functions are composable. This allows for writing composable logic within your composable functions.
+
+
+**Composable function types**
+
+```kotlin
+ // This can be reused from any Composable tree
+ val textComposable: @Composable (String) -> Unit = {
+ Text(
+ text = it,
+ style = MaterialTheme.typography.subtitle1
+ )
+ }
+```
