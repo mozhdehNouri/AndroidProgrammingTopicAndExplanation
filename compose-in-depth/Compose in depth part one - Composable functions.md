@@ -242,3 +242,15 @@ The Speaker composable call is inlined within SpeakerList, creating a functional
  )
  }
 ```
+
+
+**Similarities with suspend functions**
+Kotlin suspend functions can only be called from other suspend functions, so they also require a calling context. This ensures that suspend functions can only be chained together, and gives the Kotlin compiler the chance to inject and forward a runtime environment across all the computation levels. This runtime is added to each suspend function as an extra parameter at the end of the parameters list: The Continuation. This paremeter is also implicit, so developers can remain agnostic of it. The Continuation is used to unlock some new powerful features in the language.
+In the Kotlin coroutine system, a Continuation is like a callback. It tells the program how to continue the execution.
+The Continuation carries all the information that the Kotlin runtime needs to suspend and resume execution from the different suspension points in our program. This makes suspend another good example of how requiring a calling context can serve as a means for carrying implicit information across the execution tree. Information that can be used at runtime to enable advanced language features.
+
+**The color of Composable functions**
+Composable functions have different limitations and capabilities than standard functions. They have a different type (more on this later), and model a very specific concern. This differentiation can be understood as a form of “function coloring”, since somehow they represent a separate category of functions.
+
+In Jetpack Compose, the case of Composable functions is equivalent. We cannot call Composable functions from standard functions transparently. If we want to do that, an integration point is required (e.g: Composition.setContent). Composable functions have a completely different goal than standard functions. They are not designed to write program logics, but to describe changes for a node tree.
+It might seem that I am tricking a bit here. One of the benefits of Composable functions is that you can declare UI using logics, actually. That means sometimes we need to call Composable functions from standard functions.

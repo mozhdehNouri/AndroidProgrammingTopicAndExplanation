@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "compose-in-depth/Compose in depth part one - Composable functions.md",
+                "file": "compose-in-depth/Compose in depth part 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose-in-depth/Compose in depth part one - Composable functions.md",
+                "file": "compose-in-depth/Compose in depth part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose-in-depth/Compose in depth part one - Composable functions.md",
+                "file": "compose-in-depth/Compose in depth part 2.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "compose-in-depth/Compose in depth part one - Composable functions.md"
+                "file": "compose-in-depth/Compose in depth part 2.md"
               }
             }
           },
@@ -158,6 +158,9 @@
   },
   "active": "e862387a63f6f9fb",
   "lastOpenFiles": [
+    "Screenshot (10).png",
+    "compose-in-depth/Compose in depth part one - Composable functions.md",
+    "compose-in-depth/Compose in depth part 2.md",
     "Screenshot (9) 1.png",
     "Screenshot (9).png",
     "Screenshot (8).png",
@@ -165,7 +168,6 @@
     "Screenshot (6).png",
     "Screenshot (5).png",
     "Context Reciver.md",
-    "compose-in-depth/Compose in depth part one - Composable functions.md",
     "compose-in-depth",
     "README.md",
     "My Mvi new document.md",
@@ -178,7 +180,6 @@
     "Screenshot (421).png",
     "performance-issue/Untitled.canvas",
     "Screenshot (420).png",
-    "Screenshot (419).png",
     "refactor/test/Test concept with code with mitch.md",
     "refactor/functional programming/Diff between function and method.md",
     "refactor/functional programming/FP for presentation Part 1.md",
@@ -195,7 +196,6 @@
     "refactor/additional concepts/Composition.md",
     "refactor/design patterns/Singleton pattern.md",
     "refactor/design patterns/Builder pattern.md",
-    "refactor/design patterns/Design pattern part 3.md",
     "refactor/design patterns",
     "Code need to check",
     "refactor/async/flow",
