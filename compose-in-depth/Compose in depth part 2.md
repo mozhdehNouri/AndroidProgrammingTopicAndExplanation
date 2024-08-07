@@ -26,4 +26,9 @@ Jetpack Compose relies a bit on code generation. In the world of Kotlin and the 
 
 3. Capabilities of Compiler Plugins:
   - Modifying Code: Unlike annotation processors, which can only add new code, compiler plugins can modify existing code. They can adjust the intermediate representation (IR) of the code before it’s converted into lower-level code that runs on different platforms. This flexibility allows Jetpack Compose to transform Composable functions as needed during runtime.
-4. 
+
+
+**Compose annotations**:
+
+The first thing we need to look at is how we annotate our code so the compiler can scan for the required elements and do its magic. Let’s start by learning about the Compose annotations available.
+
