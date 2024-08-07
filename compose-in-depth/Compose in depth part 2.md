@@ -103,7 +103,7 @@ The @DisallowComposableCalls annotation serves a specific purpose that extends b
     - If a composable function is invoked within a lambda that is meant to be executed conditionally or on a limited basis, allowing composables in such contexts could lead to performance issues or improper state management. The @DisallowComposableCalls annotation helps in avoiding these potential problems by explicitly disallowing composable calls in these scenarios.
 ```kotlin
 @Composable
-fun AA(a: @DisallowComposableCalls () -> Unit) {
+inline fun AA(a: @DisallowComposableCalls () -> Unit) {
     // `a` cannot call composables
 }
 
@@ -117,3 +117,29 @@ fun BB(modifier: Modifier = Modifier) {
 }
 
 ```
+
+**When to Use @DisallowComposableCalls:**
+The @DisallowComposableCalls annotation is primarily used in specific scenarios where:
+
+- Performance optimization: Preventing unnecessary slot table allocations is crucial.
+- Custom Compose libraries: You're building a custom component or library with specific constraints on composable usage.
+- 
+Typical use cases:
+
+- remember function: Ensures the calculation block is executed only once.
+- Custom state management solutions: Preventing unintended composable calls within state updates.
+- Performance-critical components: Optimizing rendering performance by avoiding unnecessary recompositions.
+
+Slot Table
+A slot table is a data structure used by Compose to manage the state of composable functions. It holds references to values that need to be preserved across recompositions. When a composable function is called, it creates slots in the slot table for its stateful elements.
+
+Recomposition
+Recomposition is the process of re-executing composable functions when the underlying data changes. This is how Compose updates the UI in response to state changes.
+
+@DisallowComposableCalls and Slot Table
+The @DisallowComposableCalls annotation is crucial for preventing unnecessary slot table allocations. When a composable function is called, it creates slots in the slot table for its stateful elements. If a lambda within a composable function contains composable calls, it might create additional slots, even if those composable calls are only executed once.
+
+By using @DisallowComposableCalls, we ensure that the lambda doesn't create any slots, as it's not expected to be called multiple times. This optimization is essential for performance, especially in scenarios where the lambda is called infrequently.
+
+**Inline Lambdas and Composability**
+Inline lambdas are special in that they can access the composable context of their enclosing function. This means that you can call composable functions within an inline lambda without explicitly marking it as @Composable. However, this behavior is not always desired, and the @DisallowComposableCalls annotation is used to restrict composable calls within specific lambdas.
