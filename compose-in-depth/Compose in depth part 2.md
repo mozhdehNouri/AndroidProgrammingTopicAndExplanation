@@ -31,4 +31,35 @@ Jetpack Compose relies a bit on code generation. In the world of Kotlin and the 
 **Compose annotations**:
 
 The first thing we need to look at is how we annotate our code so the compiler can scan for the required elements and do its magic. Let’s start by learning about the Compose annotations available.
+Annotations are essential for guiding the Compose compiler in understanding and optimizing UI code. They provide metadata about functions, declarations, and expressions, enabling static analysis, validation, and performance enhancements.
 
+Apart from that, Compose also provides other complementary annotations meant to unlock additional checks and diverse runtime optimizations or “shortcuts” under some certain circumstances. All the annotations available are provided by the Compose runtime library.
+
+note: All the Jetpack Compose annotations are provided by the Compose runtime, since it is both the compiler and the runtime the modules making good use of those.
+
+**@Composable:**
+
+A key difference between the Compose compiler and standard annotation processors is Compose's ability to fundamentally alter the annotated declaration or expression. Unlike annotation processors that generate additional code, Compose directly modifies the code itself using IR transforms. The @Composable annotation transforms the type of the element, enforcing strict rules to differentiate composable and non-composable code.
+This transformation grants composable functions several unique capabilities:
+
+- Memory: The ability to use remember and interact with the Composer/slot table.
+- Lifecycle: The capacity to manage effects that span recompositions.
+- Identity: A persistent identity within the composition tree, allowing for node emission and interaction with CompositionLocal values.
+
+The biggest difference between the Compose compiler and an annotation processor is that Compose effectively changes the declaration or expression that is annotated. Most annotation processors can’t do this, they have to produce additional / sibling declarations. That is why the Compose compiler uses IR transforms. The @Composable annotation actually changes the type of the thing, and the compiler plugin is used to enforce all kinds of rules in the frontend to ensure that Composable types aren’t treated the same as their non-composable-annotated equivalents.
+
+Changing the type of the declaration or expression via @Composable gives it a “memory”. That is the ability to call remember and utilize the Composer/slot table. It also gives it a lifecycle that effects launched within its body will be able to comply with. –E.g: spanning a job across recompositions.– Composable functions will also get assigned an identity that they will preserve, and will have a position in the resulting tree, meaning that they can emit nodes into the Composition and address CompositionLocals.
+
+
+Small recap: A Composable function represents mapping from data to a node that is emitted to the tree upon execution. This node can be a UI node, or a node of any other nature, depending on the library we are using to consume the Compose runtime. The Jetpack Compose runtime works with generic types of nodes not tied to any specific use case or semantics.
+
+**@ComposeCompilerApi**
+This annotation is used by Compose to flag some parts of it that are only meant to be used by the compiler, with the only purpose of informing potential users about this fact, and to let them know that it should be used with caution.
+In essence, the @ComposeCompilerApi annotation is a clear signal to developers that they should avoid using the annotated elements in their codebase to maintain code stability and avoid potential issues.
+
+
+**@InternalComposeApi**
+Some apis are flagged as internal in Compose since they are expected to vary internally even if the public api surface remains unchanged and frozen towards a stable release. This annotation has a wider scope than the language internal keyword, since it allows usage across modules, which is a concept that Kotlin does not support.
+
+
+**@DisallowComposableCalls**
