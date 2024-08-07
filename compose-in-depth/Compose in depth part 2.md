@@ -14,3 +14,16 @@ like the ones for desktop and web by JetBrains. That said, going over Compose UI
 
 
 **A Kotlin compiler plugin**
+Jetpack Compose relies a bit on code generation. In the world of Kotlin and the JVM, the usual way to go for this is annotation processors via kapt, but Jetpack Compose is different. The Compose compiler is actually a Kotlin compiler plugin instead.
+
+1. What’s Different About Jetpack Compose?
+   - Code Generation: Jetpack Compose needs to generate code during compilation, but instead of using annotation processors, it uses a Kotlin compiler plugin. This plugin is integrated directly into the Kotlin compilation process.
+
+2. Advantages of a Compiler Plugin:
+    - Integrated Compilation: Unlike kapt, which runs before compilation, the Compose compiler plugin works within the compilation process itself. This allows it to understand the code structure better and speeds up the compilation.
+    - Immediate Feedback: The plugin can provide diagnostics (error messages or warnings) right during the compilation process. However, these diagnostics won’t appear in the IDE (like IntelliJ IDEA) because the IDE isn't directly connected to the plugin. Instead, you’ll see feedback as soon as you compile your code.
+    - Enhanced Analysis: By working in the frontend phase of compilation, the plugin improves the speed and quality of static analysis (code checking).
+
+3. Capabilities of Compiler Plugins:
+  - Modifying Code: Unlike annotation processors, which can only add new code, compiler plugins can modify existing code. They can adjust the intermediate representation (IR) of the code before it’s converted into lower-level code that runs on different platforms. This flexibility allows Jetpack Compose to transform Composable functions as needed during runtime.
+4. 
