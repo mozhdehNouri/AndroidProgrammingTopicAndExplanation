@@ -63,3 +63,57 @@ Some apis are flagged as internal in Compose since they are expected to vary int
 
 
 **@DisallowComposableCalls**
+
+The @DisallowComposableCalls annotation in Jetpack Compose is used to prevent composable functions from being invoked inside certain lambdas or functions. This is particularly useful for ensuring that certain inline lambda parameters do not inadvertently call composables when they should not.
+Prevent Unintended Composable Calls: When writing composable functions that accept inline lambda parameters, these lambdas can potentially call composable functions. By marking a lambda parameter with @DisallowComposableCalls, you ensure that no composable functions can be called within it. This helps avoid unintentional side effects and keeps the composable logic clean and controlled.
+```kotlin
+@Composable
+inline fun <T> remember(calculation: @DisallowComposableCalls () -> T): T =
+    currentComposer.cache(false, calculation)
+
+```
+- Prevents composable function calls within a specific lambda expression.
+- Improves performance and memory efficiency by avoiding unnecessary slot table allocations.
+- Enforces correct usage of composable functions within specific contexts.
+
+So by default when we use 
+
+```kotlin
+@Composable
+ fun <T> remember(calculation: () -> T): T =
+    currentComposer.cache(false, calculation)
+```
+
+for above function we can not call a composable function inside calculation lambda function 
+but when i make remember to inline we can call a composable function 
+for prevent such this senario we must use @DisallowComposableCalls
+
+
+You’re correct that you cannot call composable functions from a non-composable context, such as within a lambda passed to a composable function, even without using @DisallowComposableCalls. The error you encountered—@Composable invocations can only happen from the context of a @Composable function—is a safeguard enforced by Jetpack Compose to ensure composable functions are only invoked within a valid composable context.
+
+**Why @DisallowComposableCalls is Important**
+The @DisallowComposableCalls annotation serves a specific purpose that extends beyond what basic Compose rules enforce. Here’s a detailed explanation of its significance:
+
+1. Compile-Time Safety:
+     - Even though you cannot call composable functions outside a composable context by default, @DisallowComposableCalls provides additional compile-time safety and clarity. It explicitly signals that a lambda or function should not contain any composable invocations, ensuring that you and others understand that composables should not be used within this context.
+
+2. Inline Lambda Contexts:
+  - For inline lambdas that might be called within composables, @DisallowComposableCalls ensures that no composables are inadvertently called inside these lambdas. It is particularly useful in scenarios where you have inline lambdas that are called conditionally or from within other composables, and you want to enforce stricter control over composable invocations.
+3. Performance and State Management:
+    - If a composable function is invoked within a lambda that is meant to be executed conditionally or on a limited basis, allowing composables in such contexts could lead to performance issues or improper state management. The @DisallowComposableCalls annotation helps in avoiding these potential problems by explicitly disallowing composable calls in these scenarios.
+```kotlin
+@Composable
+fun AA(a: @DisallowComposableCalls () -> Unit) {
+    // `a` cannot call composables
+}
+
+@Composable
+fun BB(modifier: Modifier = Modifier) {
+    AA {
+        // This will cause a compile-time error if `@DisallowComposableCalls`          is in effect
+        HomeItemPreview()
+         // Error: Cannot call composable function inside  this lambda
+    }
+}
+
+```
