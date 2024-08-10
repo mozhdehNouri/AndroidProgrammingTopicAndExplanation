@@ -98,5 +98,34 @@ Note that this is a stronger promise than the language val keyword, since val on
 One good example of a class that could safely be flagged as @Immutable would be a data class with val properties only, where none of them have custom getters –that would otherwise get computed on every call and potentially return different results every time, making it become a non-stable api to read from– and all of them are either primitive types, or types also flagged as @Immutable.
 
 **@Stable**
-This one might be a bit of a lighter promise than @Immutable. It has different meaning depending on
-what language element it is applied to.
+This one might be a bit of a lighter promise than @Immutable. It has different meaning depending on what language element it is applied to. When this annotation is applied to a type, it means the type is mutable –(We’d use @Immutable otherwise)– and it will only have the implications inherited by @StableMarker. Feel free to read them once again to refresh your memory.
+
+When @Stable annotation is applied to a function or a property instead, it tells the compiler that the function will always return the same result for the same inputs (pure). This is only possible when the parameters of the function are also @Stable, @Immutable or primitive types (those are considered stable).
+The @Stable annotation in Jetpack Compose is a way to indicate to the compiler and runtime that a type, function, or property is stable, even though it might not be strictly immutable.
+ The @Stable annotation is used to mark a type, function, or property as stable. Stability in this context means that the behavior or value of the annotated element is predictable and consistent, even if it is mutable.
+ Indicates Mutability with Predictability: When @Stable is applied to a type (like a class or data class), it means the type is mutable, but its mutability is controlled and predictable. The type is not immutable (otherwise, you’d use @Immutable), but it behaves in a way that allows Compose to make certain optimizations.
+ ```kotlin
+ @Stable
+class Counter {
+    private var count = 0
+    val value: Int get() = count
+    fun increment() { count++ }
+}
+```
+In this example, the Counter class is mutable because count changes, but the public interface (value) is stable and predictable.
+
+Pure Functions: When @Stable is applied to a function, it indicates that the function will always return the same result given the same inputs. This concept is known as a "pure" function. For a function to be pure, all its parameters must also be stable (marked with @Stable, @Immutable, or be primitive types).
+
+Optimization in Compose:
+The @Stable annotation allows the Compose compiler and runtime to optimize recompositions. When a Composable function takes stable parameters, Compose can use positional memoization to compare the parameters' values across different compositions. If the values haven't changed, Compose can skip recomposition for that function, improving performance.
+
+**Lightweight Promise:**
+Unlike @Immutable, which is a strict guarantee that a type will never change after it's created, @Stable is a lighter promise. It acknowledges that a type might change, but ensures those changes are predictable and that the public API remains consistent.
+
+
+---
+// write an article about it page 25
+beacuse kotlin use kotlin compile needs to be match with kotlin version 
+Developers have the option to bypass this version check by using the suppressKotlinVersionCompatibilityCheck compiler argument. This compiler flag allows you to use Compose with a Kotlin version that hasn't been officially validated or supported by the Compose team.
+suppressKotlinVersionCompatibilityCheck   -> check this for compiler plugin
+
