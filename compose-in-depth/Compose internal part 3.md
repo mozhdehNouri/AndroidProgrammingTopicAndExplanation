@@ -90,3 +90,13 @@ Not Validated at Compile Time: The compiler does not enforce these guarantees, m
 When to Use These Annotations
 @Immutable: Use this when you know that the data within a type will never change after it is created.
 @Stable: Use this when a type might change, but you can guarantee that these changes will be consistent, predictable, and will notify Compose appropriately.
+
+**@Immutable**
+This annotation is applied over a class as a strict promise for the compiler about all the publicly accessible class properties and fields remaining unchanged after creation.
+Note that this is a stronger promise than the language val keyword, since val only ensures that the property can’t be reassigned via setter, but it can point to a mutable data structure for example, making our data mutable even if it only has val properties. 
+ In other words, this annotation is needed by Compose essentially because the Kotlin language does not provide a mechanism (a keyword or something) to ensure when some data structure is immutable.
+One good example of a class that could safely be flagged as @Immutable would be a data class with val properties only, where none of them have custom getters –that would otherwise get computed on every call and potentially return different results every time, making it become a non-stable api to read from– and all of them are either primitive types, or types also flagged as @Immutable.
+
+**@Stable**
+This one might be a bit of a lighter promise than @Immutable. It has different meaning depending on
+what language element it is applied to.
