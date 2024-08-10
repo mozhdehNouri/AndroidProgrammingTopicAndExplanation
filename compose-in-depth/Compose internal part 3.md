@@ -43,4 +43,50 @@ This annotation should rarely/never be needed for “correctness”, but can be 
 ---
 **@StableMarker**
 
-The Compose runtime also provides some annotations to denote the stability of a type. Those are the @StableMarker meta-annotation, and the @Immutable and @Stable annotations. Let’s start with the @StableMarker one
+The Compose runtime also provides some annotations to denote the stability of a type. Those are the @StableMarker meta-annotation, and the @Immutable and @Stable annotations. 
+
+@StableMarker is a meta-annotation that annotates other annotations like @Immutable and @Stable. This might sound a bit redundant, but it is meant for reusability, so the implications it has also apply over all the annotations annotated with it.
+
+@StableMarker implies the following requirements related to data stability for the ultimately
+annotated type:
+• The result of calls to equals will always be the same for the same two instances.
+• Composition is always notified when a public property of the annotated type changes.
+• All the public properties of the annotated type are also stable.
+
+Note how these are promises we give to the compiler so it can make some assumptions when processing the sources, but they are not validated at compile time. That means it is up to you, the developer, to decide when all the requirements are met.
+That said, the Compose compiler will do its best to infer when certain types meet the requirements stated above and treat the types as stable without being annotated as such. In many cases this is preferred as it is guaranteed to be correct.
+
+Stability in Jetpack Compose is crucial for optimizing how the UI reacts to changes in data. When Compose knows that a type is stable, it can make certain optimizations, such as avoiding unnecessary recompositions, which improves performance.
+
+@StableMarker:
+What It Is: A meta-annotation, meaning it’s an annotation used to mark other annotations (@Immutable and @Stable).
+Purpose: It groups certain annotations together (like @Immutable and @Stable) to signify that they enforce stability requirements on types.
+
+@Immutable:
+What It Means: An annotation indicating that a type is immutable, meaning that once an instance of this type is created, its data cannot change.
+Why It Matters: Compose can confidently assume that the data won't change, so it doesn't need to watch this data for changes, reducing the need for recomposition.
+
+
+@Stable:
+What It Means: An annotation indicating that a type is stable. A stable type can change (unlike immutable types), but it guarantees that changes are predictable and controlled.
+Why It Matters: Even though the data might change, Compose knows how to efficiently handle these changes. For example, it might only recompose parts of the UI that depend on the changed data.
+
+**The Guarantees Provided by @StableMarker**
+
+1- Consistent equals Results:
+What It Means: The result of comparing two instances of this type using the equals method will always be the same if those instances haven’t changed. This ensures that the identity of the data is stable and predictable.
+
+2- Notification on Changes:
+What It Means: If any public property of this type changes, Compose will be notified. This is crucial for triggering UI updates (recomposition) when data changes.
+
+3- Stability of Public Properties:
+What It Means: All the public properties of a type annotated with @Immutable or @Stable must themselves be stable. This ensures that the entire type is predictable and consistent, which helps Compose optimize its behavior.
+
+Developer Responsibility
+Trusting the Developer: The annotations are promises you, as a developer, make to the compiler. The compiler trusts that if you annotate something as @Stable or @Immutable, you have ensured that the type meets the required stability guarantees.
+
+Not Validated at Compile Time: The compiler does not enforce these guarantees, meaning you must ensure they are met. If you incorrectly annotate a type that doesn't meet these stability requirements, it could lead to unexpected behavior in your UI.
+
+When to Use These Annotations
+@Immutable: Use this when you know that the data within a type will never change after it is created.
+@Stable: Use this when a type might change, but you can guarantee that these changes will be consistent, predictable, and will notify Compose appropriately.
