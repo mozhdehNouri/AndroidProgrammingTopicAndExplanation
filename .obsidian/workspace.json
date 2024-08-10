@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d9d1789a43a5e0f1",
+        "id": "9cbd660f50bebc7e",
         "type": "tabs",
         "children": [
           {
-            "id": "e862387a63f6f9fb",
+            "id": "61aec93e668bf74b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compose-in-depth/Compose internal part 3.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose-in-depth/Compose internal part 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose-in-depth/Compose internal part 3.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "compose-in-depth/Compose internal part 3.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,10 +148,10 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "e862387a63f6f9fb",
+  "active": "61aec93e668bf74b",
   "lastOpenFiles": [
-    "compose-in-depth/Compose in depth part 2.md",
     "compose-in-depth/Compose internal part 3.md",
+    "compose-in-depth/Compose in depth part 2.md",
     "Screenshot (10).png",
     "compose-in-depth/Compose in depth part one - Composable functions.md",
     "Screenshot (9) 1.png",
