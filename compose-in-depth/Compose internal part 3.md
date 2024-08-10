@@ -42,3 +42,5 @@ This annotation should rarely/never be needed for “correctness”, but can be 
 
 ---
 **@StableMarker**
+
+The Compose runtime also provides some annotations to denote the stability of a type. Those are the @StableMarker meta-annotation, and the @Immutable and @Stable annotations. Let’s start with the @StableMarker one
