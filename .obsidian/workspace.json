@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c0fbdc3f13cbca20",
+        "id": "58d371f5cc8ff14b",
         "type": "tabs",
         "children": [
           {
-            "id": "d9efd8d9baacb7e9",
+            "id": "7d224f31efe2c157",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "compose/Effects from Google explain.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "compose/Effects from Google explain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "compose/Effects from Google explain.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "compose/Effects from Google explain.md"
-              }
+              "state": {}
             }
           },
           {
@@ -142,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,25 +147,23 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "d9efd8d9baacb7e9",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
-    "compose/Effects from Google explain.md",
-    "compose/Understanding side effects.md",
+    "Untitled 2.md",
     "Untitled 1.md",
-    "compose/State and Recomposition.md",
-    "What is composition tree.md",
-    "performance-issue/Reason of performance issue.md",
-    "performance-issue/Pasted image 20240305155712.png",
-    "performance-issue/Pasted image 20240305155117.png",
-    "performance-issue/Pasted image 20240305154126.png",
-    "performance-issue/Pasted image 20240305154037.png",
-    "performance-issue/Pasted image 20240305151442.png",
-    "performance-issue/Pasted image 20240304152802.png",
-    "performance-issue/Pasted image 20240304152647.png",
-    "performance-issue/Pasted image 20240304140320.png",
-    "performance-issue/Identifying Indicators of Performance Issues.md",
-    "performance-issue/Functional Approach.md",
-    "performance-issue",
+    "Untitled",
+    "compose/everything about recompostion.md",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "compose/Understanding side effects.md",
+    "weatherAppProject/mvi-main-document.md",
+    "weatherAppProject/mvi-main-document.rar",
+    "compose/Recompostion.md",
+    "compose/Compose compiler.md",
+    "compose/What is Compose.md",
+    "compose/Important knowledge from compose.md",
+    "Untitled.md",
     "coroutine-flow/flow/BasicFlowKonwlodge.md",
     "coroutine-flow/flow/Flow_question_answer.md",
     "coroutine-flow/flow/TerminalOperator.md",
@@ -193,18 +182,21 @@
     "coroutine-flow/New folder",
     "coroutine-flow/SuspendFunction.md",
     "coroutine-flow/CoroutineMostQuestion.md",
-    "coroutine-flow/BasicDescription.md",
-    "coroutine-flow/CoroutineBuilderExplanation.md",
     "coroutine-flow",
     "New folder",
     "all_studing/kotlin/coroutine",
     "all_studing/kotlin/anotation",
     "all_studing/kotlin",
     "all_studing/common",
-    "all_studing/atomatic-kotlin",
     "Screenshot (386).png",
     "Screenshot (385).png",
-    "Untitled.canvas",
-    "Untitled 1.canvas"
+    "Screenshot (384).png",
+    "Pasted image 20240229192556.png",
+    "Pasted image 20240229192345.png",
+    "compose/Pasted image 20240217205918.png",
+    "compose/Pasted image 20240217205931.png",
+    "compose/Pasted image 20240216204007.png",
+    "compose/Pasted image 20240216184404.png",
+    "compose/Pasted image 20240216183520.png"
   ]
 }
