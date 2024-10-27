@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "64dd5231f8a43369",
+        "id": "cc339cf2f1c47647",
         "type": "tabs",
         "children": [
           {
-            "id": "87550af62128dc56",
+            "id": "5593f060cf646c61",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -166,8 +166,9 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "87550af62128dc56",
+  "active": "c07d257c419d4346",
   "lastOpenFiles": [
+    "My Mvi new document.md",
     "conflict-files-obsidian-git.md",
     "refactor/async/flow/Hot Flow and Cold Flow Usage.md",
     "kotlin/ContinueOOP.md",
@@ -193,7 +194,6 @@
     "refactor/async/flow/Channel and Flow.md",
     "refactor/async/flow/Buffer Operator.md",
     "refactor/async/flow/Basic Flow Konwlodge.md",
-    "refactor/async/coroutine/SuspendFunction.md",
     "refactor/compose/Theme",
     "refactor/compose/State And Rememeber",
     "refactor/async/flow",
