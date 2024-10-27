@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "58d371f5cc8ff14b",
+        "id": "64dd5231f8a43369",
         "type": "tabs",
         "children": [
           {
-            "id": "7d224f31efe2c157",
+            "id": "87550af62128dc56",
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -35,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -50,7 +54,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -88,7 +96,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": true,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -99,7 +109,9 @@
               "state": {
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -110,7 +122,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -118,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           },
           {
@@ -126,7 +142,9 @@
             "type": "leaf",
             "state": {
               "type": "todo",
-              "state": {}
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
             }
           }
         ],
@@ -134,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,56 +166,57 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c07d257c419d4346",
+  "active": "87550af62128dc56",
   "lastOpenFiles": [
-    "Untitled 2.md",
-    "Untitled 1.md",
-    "Untitled",
-    "compose/everything about recompostion.md",
+    "conflict-files-obsidian-git.md",
+    "refactor/async/flow/Hot Flow and Cold Flow Usage.md",
+    "kotlin/ContinueOOP.md",
+    "refactor/additional concepts/CompanionObject Vs Object.md",
+    "refactor/additional concepts/What is abstraction.md",
+    "refactor/additional concepts/JvmOverloads.md",
+    "refactor/functional programming/Diff between function and method.md",
+    "Context Reciver.md",
+    "refactor/compose/Theme/Material 3 Typograph apply.md",
+    "refactor/compose/Theme/Material 3 padding.md",
+    "refactor/compose/Theme/Material 3 Color.md",
+    "refactor/compose/State And Rememeber/State In compose.md",
+    "refactor/compose/State And Rememeber/Deep Dive into Rememeber.md",
+    "refactor/async/flow/TerminalOperator.md",
+    "refactor/async/flow/IntermediateOperator.md",
+    "refactor/async/flow/FlowOn.md",
+    "refactor/async/flow/FlowInDepth-StateFlowAndSharedFlow.md",
+    "refactor/async/flow/FlowBuilder.md",
+    "refactor/async/flow/Flow question and answer.md",
+    "refactor/async/flow/Flow Lifecycle Operator.md",
+    "refactor/async/flow/ConflateOperator.md",
+    "refactor/async/flow/Compose Flow.md",
+    "refactor/async/flow/Channel and Flow.md",
+    "refactor/async/flow/Buffer Operator.md",
+    "refactor/async/flow/Basic Flow Konwlodge.md",
+    "refactor/async/coroutine/SuspendFunction.md",
+    "refactor/compose/Theme",
+    "refactor/compose/State And Rememeber",
+    "refactor/async/flow",
+    "refactor/async/coroutine",
+    "refactor/test",
+    "refactor/networking",
+    "refactor/Modular",
+    "refactor/functional programming",
+    "refactor/design patterns",
+    "refactor/database",
+    "performance-issue/Untitled.canvas",
+    "Screenshot (9).png",
+    "Screenshot (9) 1.png",
+    "Screenshot (8).png",
+    "Screenshot (7).png",
+    "Screenshot (6).png",
+    "Screenshot (5).png",
+    "Screenshot (423).png",
+    "Screenshot (422).png",
+    "Screenshot (421).png",
+    "Screenshot (420).png",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "compose/Understanding side effects.md",
-    "weatherAppProject/mvi-main-document.md",
-    "weatherAppProject/mvi-main-document.rar",
-    "compose/Recompostion.md",
-    "compose/Compose compiler.md",
-    "compose/What is Compose.md",
-    "compose/Important knowledge from compose.md",
-    "Untitled.md",
-    "coroutine-flow/flow/BasicFlowKonwlodge.md",
-    "coroutine-flow/flow/Flow_question_answer.md",
-    "coroutine-flow/flow/TerminalOperator.md",
-    "coroutine-flow/flow/AsLiveDataOpertor.md",
-    "coroutine-flow/flow/HotFlowAndHotFlows.md",
-    "coroutine-flow/flow/StateFlow.md",
-    "coroutine-flow/flow/SharedFlow.md",
-    "coroutine-flow/flow/IntermediateOperator.md",
-    "coroutine-flow/flow/FlowOn.md",
-    "coroutine-flow/flow/FlowBuilder.md",
-    "coroutine-flow/flow/FlowLifecycleOperatot.md",
-    "coroutine-flow/flow/ConflateOperator.md",
-    "coroutine-flow/flow/BufferOperator.md",
-    "coroutine-flow/flow/ComposeFlow.md",
-    "coroutine-flow/flow",
-    "coroutine-flow/New folder",
-    "coroutine-flow/SuspendFunction.md",
-    "coroutine-flow/CoroutineMostQuestion.md",
-    "coroutine-flow",
-    "New folder",
-    "all_studing/kotlin/coroutine",
-    "all_studing/kotlin/anotation",
-    "all_studing/kotlin",
-    "all_studing/common",
-    "Screenshot (386).png",
-    "Screenshot (385).png",
-    "Screenshot (384).png",
-    "Pasted image 20240229192556.png",
-    "Pasted image 20240229192345.png",
-    "compose/Pasted image 20240217205918.png",
-    "compose/Pasted image 20240217205931.png",
-    "compose/Pasted image 20240216204007.png",
-    "compose/Pasted image 20240216184404.png",
-    "compose/Pasted image 20240216183520.png"
+    "Untitled.canvas"
   ]
 }
