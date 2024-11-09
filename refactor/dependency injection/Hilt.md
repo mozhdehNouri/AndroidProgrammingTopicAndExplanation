@@ -16,6 +16,7 @@ To understand Dagger we have to understand the 4 major annotations:
 - Component
 - Provides
 - Inject
+
 To understand it better in a basic way, think module as a provider of dependency and consider an activity or any other class as a consumer. Now to provide dependency from provider to consumer we have a bridge between them, in Dagger, Component work as that specific bridge.
 Now, a module is a class and we annotate it with @Module for Dagger to understand it as Module. A component is an interface, which is annotated with @Component and takes modules in it.
 **Provides** are annotation which is used in Module class to provide dependency and,
