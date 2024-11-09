@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "560663d6a3ff6c78",
+        "id": "55c4b7063a8b07cf",
         "type": "tabs",
         "children": [
           {
-            "id": "20911474abf9f8dc",
+            "id": "a50284ea7d5e2ef4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "performance-issue/Compose performance.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Compose performance"
+              "title": "New tab"
             }
           }
         ]
@@ -170,10 +166,16 @@
       "yet-another-obsidian-synchronizer:YAOS": false
     }
   },
-  "active": "c07d257c419d4346",
+  "active": "a50284ea7d5e2ef4",
   "lastOpenFiles": [
-    "performance-issue/Identifying Indicators of Performance Issues.md",
+    "refactor/compose/Composition Local.md",
+    "refactor/compose/Compose Tips definition.md",
+    "refactor/compose/Compose Lifecycle.md",
+    "refactor/compose/Compose In General.md",
+    "refactor/compose/State And Rememeber/Deep Dive into Rememeber.md",
+    "refactor/compose/State And Rememeber/State In compose.md",
     "performance-issue/Compose performance.md",
+    "performance-issue/Identifying Indicators of Performance Issues.md",
     "refactor/dependency injection/Hilt.md",
     "My Mvi new document.md",
     "conflict-files-obsidian-git.md",
@@ -187,17 +189,11 @@
     "refactor/compose/Theme/Material 3 Typograph apply.md",
     "refactor/compose/Theme/Material 3 padding.md",
     "refactor/compose/Theme/Material 3 Color.md",
-    "refactor/compose/State And Rememeber/State In compose.md",
-    "refactor/compose/State And Rememeber/Deep Dive into Rememeber.md",
     "refactor/async/flow/TerminalOperator.md",
     "refactor/async/flow/IntermediateOperator.md",
     "refactor/async/flow/FlowOn.md",
     "refactor/async/flow/FlowInDepth-StateFlowAndSharedFlow.md",
     "refactor/async/flow/FlowBuilder.md",
-    "refactor/async/flow/Flow question and answer.md",
-    "refactor/async/flow/Flow Lifecycle Operator.md",
-    "refactor/async/flow/ConflateOperator.md",
-    "refactor/async/flow/Compose Flow.md",
     "refactor/compose/Theme",
     "refactor/compose/State And Rememeber",
     "refactor/async/flow",
